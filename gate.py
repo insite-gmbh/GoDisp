@@ -56,20 +56,49 @@ class Gate (threading.Thread):
 		GPIO.output(enable, False)
 
 		for i in range(0, steps):
-			if (limits) and (((curpos + delta) < minpos) or ((curpos + delta) > maxpos)):
+			if (limits) and (((self.curpos + delta) < self.minpos) or ((self.curpos + delta) > self.maxpos)):
 				break;
 			GPIO.output(step, True)
 			sleep(speed)
 			GPIO.output(step, False)
 			sleep(speed)
-			curpos += delta
+			self.curpos += delta
 		GPIO.output(enable, True)
 
 	def run(self):
 		while ExitFlag == 0:
-			
-			time.sleep(0.005)
-		self.name.exit();	
+			qLock.acquire()
+			if not q.empty():
+				data = q.get()
+				self._processQData(data)
+			qLock.release()
+			sleep(0.05)
+	
+	def execute(self, cmd):
+		qLock.acquire()
+		qLock.put(cmd)
+		qLock.release()
+		
+	def _processQData(self, data):
+		State = 1
+		if data[0] == "O":
+			self._open()
+		elif data[0] == "C":
+			self._close(self)
+		elif data[0] == "Z":
+			self._zero(self)
+		elif data[0] == "X":
+			self.ExitFlag = 1
+		else:
+			targetPos = self._percentage(int(data))
+			if targetPos > self.curpos:
+				self._up(targetPos - self.curpos)
+			elif targetPos < self.curpos:
+				self._down(self.curpos - targetPos)
+		State = 0
+		
+	def _percentageToSteps(self, percentage):
+		return self.minpos + (((self.maxpos - self.minpos) * percentage) / 100)
 		
 	def __del__(self):
 		GPIO.cleanup()

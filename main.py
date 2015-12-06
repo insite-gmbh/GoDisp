@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 #
-#  unbenannt.py
+#  main.py
 #  
 #  Copyright 2015  <pi@raspberrypi>
 #  
@@ -22,9 +22,20 @@
 #  
 #  
 
-
+from gate import Gate
 
 def main():
+	gate = Gate()
+	gate.execute("O")
+	
+	gate.execute("C")
+	gate.execute("50")
+	gate.execute("75")
+	gate.execute("25")
+	gate.execute("0");
+	gate.execute("X");
+	
+	gate.join();
 	
 	return 0
 
