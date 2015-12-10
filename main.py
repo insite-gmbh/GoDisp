@@ -26,16 +26,26 @@ from gate import Gate
 
 def main():
 	gate = Gate()
+	gate.start()
+	print("O")
 	gate.execute("O")
+	print("C")
 	
 	gate.execute("C")
+	print("50")
 	gate.execute("50")
+	print("75")
 	gate.execute("75")
+	print("25")
 	gate.execute("25")
+	print("0")
 	gate.execute("0");
+	print("X")
 	gate.execute("X");
+	print("before join")
 	
 	gate.join();
+	print("ready")
 	
 	return 0
 
