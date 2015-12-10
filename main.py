@@ -23,28 +23,55 @@
 #  
 
 from gate import Gate
+from scales import Scales
+from time import sleep
 
-def main():
-	gate = Gate()
-	gate.start()
-	print("O")
-	gate.execute("O")
-	print("C")
+gate = Gate()
+
+def processWeightChange(sender, weight):
+	print(weight)
+	if weight > 200:
+		gate.execute("C")
+	elif weight > 100:
+		gate.execute("50")
+	elif weight > 10:
+		gate.execute("75")
+	else:
+		gate.execute("O")
 	
-	gate.execute("C")
-	print("50")
-	gate.execute("50")
-	print("75")
-	gate.execute("75")
-	print("25")
-	gate.execute("25")
-	print("0")
-	gate.execute("0");
-	print("X")
+def main():
+	gate.start()
+	scales = Scales(processWeightChange)
+	scales.start()
+	scales.execute("T")
+	scales.execute("Z")
+
+	counter = 0
+	while counter < 60:
+		sleep(1.0)
+		counter = counter + 1
+	
+#	print("O")
+#	gate.execute("O")
+#	print("C")
+	
+#	gate.execute("C")
+#	print("50")
+#	gate.execute("50")
+#	print("75")
+#	gate.execute("75")
+#	print("25")
+#	gate.execute("25")
+#	print("0")
+#	gate.execute("0");
+#	print("X")
 	gate.execute("X");
+	scales.execute("X");
 	print("before join")
 	
 	gate.join();
+	scales.join();
+	
 	print("ready")
 	
 	return 0
