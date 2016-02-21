@@ -5,6 +5,8 @@ push origin master
 user: karsten.gorkow@insite-gmbh.de
 pwd: Hepp-113
 
+um die eingabe von user/pwd wurde ssh-key generiert (Passphrase: 2sma...)
+aber bisher nicht bei github aktiviert, da der browser des raspi die seite nicht anzeigen kann
 
 Schieber (gate)
 
