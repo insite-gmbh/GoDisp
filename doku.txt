@@ -1,0 +1,21 @@
+Schieber (gate)
+
+Kommandos
+
+["C"] ... schließen (ganz unten)
+["O"] ... öffnen (ganz oben)
+["Z"] ... aktuelle Position als Nullposition einstellen
+[<int>] ... Öffnung in Prozent einstellen
+["S", <int>] ... <int> Schritte nach unten (> 0) oder nach oben (< 0) bewegen
+["X"] ... Thread beenden
+
+
+
+Waage (scales)
+
+Kommandos
+
+["T"] ... Waage tarieren
+["Z"] ... Waage auf 0 stellen
+["R"] ... aktuelles Gewicht anfordern
+["X"] ... Thread beenden
