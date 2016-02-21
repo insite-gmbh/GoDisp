@@ -18,7 +18,7 @@ class Gate (threading.Thread):
 		self.enable = 3
 		self.minpos = 0
 		self.maxpos = 200
-		self.curpos = self.minpos
+		self.curpos = self.maxpos
 		self.stop = 0
 		self.qLock = threading.Lock();
 		self.q = queue.Queue(10);
@@ -89,8 +89,13 @@ class Gate (threading.Thread):
 			self._zero()
 		elif data[0] == "X":
 			self.ExitFlag = 1
+		elif data[0] == "S":
+			if data[1] < 0:
+				self._up(-(data[1]))
+			elif data[1] > 0:
+				self._down(data[1])
 		else:
-			targetPos = self._percentageToSteps(int(data))
+			targetPos = self._percentageToSteps(data[0])
 			if targetPos > self.curpos:
 				self._up(int(targetPos - self.curpos + 0.5))
 			elif targetPos < self.curpos:
