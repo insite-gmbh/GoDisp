@@ -1,3 +1,11 @@
+git:
+lokal git commit -a
+web: 
+push origin master
+user: karsten.gorkow@insite-gmbh.de
+pwd: Hepp-113
+
+
 Schieber (gate)
 
 Kommandos
