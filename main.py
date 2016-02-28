@@ -177,6 +177,7 @@ class ThreadedClient:
 	def loadDispensingRule(self):
 		if self.dispensingRule is None:
 			self.dispensingRule = DispensingRule()
+		self.dispensingRule.load()
 		self.gui.update(["DispensingRule", self.dispensingRule.asString()])
 		
 def main():
