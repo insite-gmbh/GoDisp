@@ -24,20 +24,19 @@
 from tkinter import *
 import time
 import threading
-import random
 import queue
 
 from gate import Gate
 from scales import Scales
 from gui import GuiPart	
+from dispensingrule import DispensingRule
 
 
 class ThreadedClient:
 	
-	gate = Gate()
+	gate = None
 	scales = None
-	rand = random.Random()
-
+	dispensingRule = None
 	
 	"""
 	Launch the main part of the GUI and the worker thread. periodicCall and
@@ -51,44 +50,42 @@ class ThreadedClient:
 		the GUI. We spawn a new thread for the worker.
 		"""
 		self.master = master
+		self.running = 1
+		self.dispensing_state = 0
 
 		# Create the queue
 		self.queue = queue.Queue()
 
 		# Set up the GUI part
-		self.gui = GuiPart(master, self.queue, self.endApplication)
+		self.gui = GuiPart(master, self.queue, self.onEndApplication, self.onGUIEvent)
 
-		# Set up the thread to do asynchronous I/O
-		# More can be made if necessary
-		self.running = 1
-		self.thread1 = threading.Thread(target=self.workerThread1)
-		self.thread1.start()
-
+		self.gate = Gate(self.processOpeningChange)
 		self.gate.start()
-		self.gate.execute(["S", 100])
-		self.gate.execute(["S", -100])
+		self.gate.execute(["Z"])
+		# self.gate.execute(["S", 100])
+		# self.gate.execute(["S", -100])
 
 		self.scales = Scales(self.processWeightChange)
 		self.scales.start()
 		self.scales.execute("T")
 		self.scales.execute("Z")
 
+		self.loadDispensingRule()
+
 
 		# Start the periodic call in the GUI to check if the queue contains
 		# anything
 		self.periodicCall()
 
-	def processWeightChange(self, sender, weight):
-		print(weight)
-		if weight > 200:
-			self.gate.execute(["C"])
-		elif weight > 100:
-			self.gate.execute([50])
-		elif weight > 10:
-			self.gate.execute([75])
-		else:
-			self.gate.execute(["O"])
+	def processOpeningChange(self, sender, openingData):
+		self.gui.update(["OpeningPercentage", openingData[0]])
+		self.gui.update(["OpeningSteps", openingData[1]])
 		
+	def processWeightChange(self, sender, weight):
+		self.gui.update(["ActualWeight", weight])
+		if self.dispensing_state == 1:
+			self.gate.execute(["P", self.dispensingRule.getOpeningForWeight(weight)])
+	
 
 	def periodicCall(self):
 		"""
@@ -102,35 +99,86 @@ class ThreadedClient:
 			sys.exit(1)
 		self.master.after(100, self.periodicCall)
 
-	def workerThread1(self):
-		"""
-		This is where we handle the asynchronous I/O. For example, it may be
-		a 'select()'.
-		One important thing to remember is that the thread has to yield
-		control.
-		"""
-		while self.running:
-			# To simulate asynchronous I/O, we create a random number at
-			# random intervals. Replace the following 2 lines with the real
-			# thing.
-			time.sleep(self.rand.random() * 0.3)
-			msg = self.rand.random()
-			self.queue.put(msg)
 
-	def endApplication(self):
+	def onEndApplication(self):
+		self.gate.execute(["C"])
 		self.gate.execute("X");
 		self.scales.execute("X");
 		print("before join")
 		
-		self.gate.join();
-		self.scales.join();
+		self.gate.join()
+		self.scales.join()
 		
 		print("ready")
 		
 		self.running = 0
 
+	def onGUIEvent(self, event):
+		if isinstance(event.widget, Button):
+			btn_text = event.widget.cget("text")
+			if btn_text == "Down":
+				self.btn_down_click()
+			elif btn_text == "Up":
+				self.btn_up_click()
+			elif btn_text == "TickDn":
+				self.btn_tickdown_click()
+			elif btn_text == "TickUp":
+				self.btn_tickup_click()
+			elif btn_text == "Zero":
+				self.btn_zero_click()
+			elif btn_text == "Open":
+				self.btn_open_click()
+			elif btn_text == "Close":
+				self.btn_close_click()
+			elif btn_text == "StartDispensing":
+				self.btn_startdispensing_click()
+			elif btn_text == "StopDispensing":
+				self.btn_stopdispensing_click()
+			elif btn_text == "LoadDispRule":
+				self.btn_loaddispensingrule_click()
+		else:	
+			print("widgetType = ", typeof(event.widget), ", x= ", event.x, ", y = ", event.y, ", num = ", event.num)
+			
+	def btn_down_click(self):
+		self.gate.execute(["S", 10])
 
+	def btn_up_click(self):
+		self.gate.execute(["S", -10])
 
+	def btn_tickdown_click(self):
+		self.gate.execute(["S", 1])
+
+	def btn_tickup_click(self):
+		self.gate.execute(["S", -1])
+
+	def btn_zero_click(self):
+		self.gate.execute(["Z"])
+
+	def btn_open_click(self):
+		self.gate.execute(["O"])
+
+	def btn_close_click(self):
+		self.gate.execute(["C"])
+
+	def btn_startdispensing_click(self):
+		self.dispensing_state = 1
+		self.scales.execute(["T"])
+		self.gate.execute(["O"])
+		self.gui.update(["DispensingState", self.dispensing_state])
+
+	def btn_stopdispensing_click(self):
+		self.dispensing_state = 0
+		self.gate.execute(["C"])
+		self.gui.update(["DispensingState", self.dispensing_state])
+		
+	def btn_loaddispensingrule_click(self):
+		self.loadDispensingRule()
+
+	def loadDispensingRule(self):
+		if self.dispensingRule is None:
+			self.dispensingRule = DispensingRule()
+		self.gui.update(["DispensingRule", self.dispensingRule.asString()])
+		
 def main():
 	
 	root = Tk()

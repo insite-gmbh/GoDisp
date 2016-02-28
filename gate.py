@@ -11,7 +11,7 @@ class Gate (threading.Thread):
 	State = 0
 	
 	
-	def __init__(self):
+	def __init__(self, openingChangedHandler):
 		threading.Thread.__init__(self)
 		self.step = 5
 		self.dir = 7
@@ -22,6 +22,7 @@ class Gate (threading.Thread):
 		self.stop = 0
 		self.qLock = threading.Lock();
 		self.q = queue.Queue(10);
+		self.openingChangedHandler = openingChangedHandler
 		GPIO.setmode(GPIO.BOARD)
 		GPIO.setwarnings(False)
 		GPIO.setup(self.step, GPIO.OUT)
@@ -63,6 +64,8 @@ class Gate (threading.Thread):
 			GPIO.output(self.step, False)
 			sleep(speed)
 			self.curpos += delta
+			self.openingChangedHandler(self, [self._stepsToPercentage(self.curpos), self.curpos])
+
 		GPIO.output(self.enable, True)
 
 	def run(self):
@@ -94,8 +97,14 @@ class Gate (threading.Thread):
 				self._up(-(data[1]))
 			elif data[1] > 0:
 				self._down(data[1])
+		elif data[0] == "P":
+			targetPos = self._percentageToSteps(data[1])
+			if targetPos > self.curpos:
+				self._up(int(targetPos - self.curpos + 0.5))
+			elif targetPos < self.curpos:
+				self._down(int(self.curpos - targetPos + 0.5))
 		else:
-			targetPos = self._percentageToSteps(data[0])
+			targetPos = int(self._percentageToSteps(data[0]))
 			if targetPos > self.curpos:
 				self._up(int(targetPos - self.curpos + 0.5))
 			elif targetPos < self.curpos:
@@ -104,6 +113,9 @@ class Gate (threading.Thread):
 		
 	def _percentageToSteps(self, percentage):
 		return self.minpos + (((self.maxpos - self.minpos) * percentage) / 100)
+		
+	def _stepsToPercentage(self, steps):
+		return int(steps / (self.maxpos - self.minpos) * 100 + 0.5)
 		
 	def __del__(self):
 		GPIO.cleanup()
