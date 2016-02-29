@@ -37,6 +37,7 @@ class ThreadedClient:
 	gate = None
 	scales = None
 	dispensingRule = None
+	tickCounter = 0
 	
 	"""
 	Launch the main part of the GUI and the worker thread. periodicCall and
@@ -84,7 +85,11 @@ class ThreadedClient:
 	def processWeightChange(self, sender, weight):
 		self.gui.update(["ActualWeight", weight])
 		if self.dispensing_state == 1:
-			self.gate.execute(["P", self.dispensingRule.getOpeningForWeight(weight)])
+			opening = self.dispensingRule.getOpeningForWeight(weight)
+			if opening < 0:
+				self.btn_stopdispensing_click()
+			else:
+				self.gate.execute(["P", opening])
 	
 
 	def periodicCall(self):
@@ -98,6 +103,15 @@ class ThreadedClient:
 			import sys
 			sys.exit(1)
 		self.master.after(100, self.periodicCall)
+
+	def periodicWeight(self):
+		"""
+		Check weight every 250 ms.
+		"""
+		if self.dispensing_state > 0:
+			print("requesting weight")
+			self.scales.execute(["R"])
+			self.master.after(250, self.periodicWeight)
 
 
 	def onEndApplication(self):
@@ -165,6 +179,8 @@ class ThreadedClient:
 		self.scales.execute(["T"])
 		self.gate.execute(["O"])
 		self.gui.update(["DispensingState", self.dispensing_state])
+		# self.periodicWeight()
+
 
 	def btn_stopdispensing_click(self):
 		self.dispensing_state = 0

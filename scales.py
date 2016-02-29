@@ -54,7 +54,7 @@ class Scales (threading.Thread):
 			if rx != self.lastRx:
 				if rx == "":
 					self.weightChangedHandler(self, 0)
-				elif rx.startswith("ST"):
+				elif rx.startswith("ST") or rx.startswith("US"):
 					self._processRxData(rx)
 				self.lastRx = rx
 			sleep(0.001)
@@ -81,7 +81,12 @@ class Scales (threading.Thread):
 		self.State = 0
 		
 	def _processRxData(self, rx):
-		self.weightChangedHandler(self, int(float(rx[4:-5]) * 1000.0 + 0.5))
+		print("scales rx", rx)
+		if rx.startswith("ST") or rx.startswith("US"):
+			try:
+				self.weightChangedHandler(self, int(float(rx[4:-5]) * 1000.0 + 0.5))
+			except:
+				self.weightChangedHandler(self, 0)
 		
 	def __del__(self):
 		self.ser.close()

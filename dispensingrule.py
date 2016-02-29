@@ -14,8 +14,8 @@ class DispensingRule:
 	@destinationWeight.setter
 	def	destinationWeight(self, val):
 		self.__destinationWeight = val
-		self.__minTolerance = val - val * 0.02
-		self.__maxTolerance = val + val * 0.02
+		self.__minTolerance = val 
+		self.__maxTolerance = val + val * self.max_deviation
 		
 	def __init__(self):
 		self.destinationWeight = 200
@@ -44,12 +44,12 @@ class DispensingRule:
 			
 	def getOpeningForWeight(self, weight):
 		if weight > self.__maxTolerance:
-			print("Destination weight ", self.__maxTolerance, " exceeded!")
-			return 0
+			print("Destination weight ", self.__maxTolerance, " exceeded! BAD!")
+			return -1
 
 		if weight >= self.__minTolerance and weight <= self.__maxTolerance:
 			print("Destination weight ", weight, " within tolerance (", self.__minTolerance, ", ", self.__maxTolerance, "). GOOD!")
-			return 0
+			return -1
 			
 		for tuple in sorted(self.table, key=self.getTupleSortKey, reverse=True):
 			print(tuple[0], tuple[1])
