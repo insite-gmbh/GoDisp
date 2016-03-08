@@ -2,9 +2,13 @@
 # coding=utf-8
 import queue
 import threading
-import RPi.GPIO as GPIO
 from time import sleep
 
+try:
+        import RPi.GPIO as GPIO
+except ImportError:
+        import MockGPIO as GPIO
+        
 class Gate (threading.Thread):
 	
 	ExitFlag = 0

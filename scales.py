@@ -2,10 +2,14 @@
 # coding=utf-8
 import queue
 import threading
-import serial
 import numpy as np
 from time import sleep
 
+try:
+        import serial
+except ImportError:
+        import MockSerial as serial
+        
 class Scales (threading.Thread):
 	
 	State = 0
