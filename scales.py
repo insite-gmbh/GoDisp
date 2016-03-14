@@ -3,24 +3,28 @@
 import queue
 import threading
 import numpy as np
-from time import sleep
+import time
+from Util.Publisher import Publisher
+
+# raspi: serPort = "/dev/ttyUSB0"
+serPort = "/dev/tty.usbserial-FTDWE8ZH"
 
 try:
-        import serial
+	import serial
 except ImportError:
-        import MockSerial as serial
-        
-class Scales (threading.Thread):
+	import MockSerial as serial
+	
+class Scales (threading.Thread, Publisher):
 	
 	State = 0
 	ExitFlag = 0
 	
-	def __init__(self, weightChangedHandler):
+	def __init__(self):
 		threading.Thread.__init__(self)
+		Publisher.__init__(self, ["WeightChanged"])
 		self.qCmdLock = threading.Lock()
 		self.qCmd = queue.Queue(10);
-		self.weightChangedHandler = weightChangedHandler
-		self.ser = serial.Serial("/dev/ttyUSB0", baudrate=9600, timeout=0.1)
+		self.ser = serial.Serial(serPort, baudrate=9600, timeout=0.1)
 		self.lastRx = ""
 
 	def _tare(self):
@@ -32,7 +36,7 @@ class Scales (threading.Thread):
 		self._waitzero();
 
 	def _waitzero(self):
-		sleep(0.5);
+		time.sleep(0.5);
 		self._requestWeight();
 		if not self.lastRx.find("0.000,kg"):
 			raise ValueError("no zero weight received!") 
@@ -40,7 +44,7 @@ class Scales (threading.Thread):
 	def _requestWeight(self):
 		self.ser.flushInput()
 		self._send("S")
-		sleep(1.0)
+		time.sleep(1.0)
 		self.lastRx = self._receive()
 		self._processRxData(self.lastRx)
 
@@ -57,11 +61,12 @@ class Scales (threading.Thread):
 			rx = self._receive()
 			if rx != self.lastRx:
 				if rx == "":
-					self.weightChangedHandler(self, 0)
+					Publisher.dispatch(self, "WeightChanged", [0, True])
 				elif rx.startswith("ST") or rx.startswith("US"):
 					self._processRxData(rx)
 				self.lastRx = rx
-			sleep(0.001)
+			time.sleep(0.001)
+		self.ser.close()
 	
 	def _receive(self):
 		ascii = self.ser.readline()
@@ -85,12 +90,12 @@ class Scales (threading.Thread):
 		self.State = 0
 		
 	def _processRxData(self, rx):
-		print("scales rx", rx)
+		print(time.time(), "scales rx: >", rx, "<")
 		if rx.startswith("ST") or rx.startswith("US"):
 			try:
-				self.weightChangedHandler(self, int(float(rx[4:-5]) * 1000.0 + 0.5))
+				Publisher.dispatch(self, "WeightChanged", [int(float(rx[4:-5]) * 1000.0 + 0.5), rx.startswith("ST")])
 			except:
-				self.weightChangedHandler(self, 0)
+				Publisher.dispatch(self, "WeightChanged", [0, True])
 		
 	def __del__(self):
 		self.ser.close()

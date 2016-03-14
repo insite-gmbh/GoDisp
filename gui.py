@@ -26,6 +26,10 @@ class GuiPart:
 		Label(self.master, text="Weight: ").grid(column=0, row=3)
 		Label(self.master, textvariable=self.actual_weight).grid(column=1, row=3)
 
+		self.actual_flow = IntVar()
+		Label(self.master, text="Flow: ").grid(column=2, row=3)
+		Label(self.master, textvariable=self.actual_flow).grid(column=4, row=3)
+
 		self.opening_percentage = IntVar()
 		Label(self.master, text="Opening: ").grid(column=0, row=4)
 		Label(self.master, textvariable=self.opening_percentage).grid(column=1, row=4)
@@ -60,6 +64,8 @@ class GuiPart:
 				msg = self.queue.get(0)
 				if msg[0] == "ActualWeight":
 					self.actual_weight.set(msg[1])
+				elif msg[0] == "ActualFlow":
+					self.actual_flow.set(msg[1])
 				elif msg[0] == "OpeningPercentage":
 					self.opening_percentage.set(msg[1])
 				elif msg[0] == "OpeningSteps":

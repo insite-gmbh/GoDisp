@@ -30,12 +30,14 @@ from gate import Gate
 from scales import Scales
 from gui import GuiPart	
 from dispensingrule import DispensingRule
+from DispensingControl import DispensingControl
 
 
 class ThreadedClient:
 	
 	gate = None
 	scales = None
+	dispensingControl = None
 	dispensingRule = None
 	tickCounter = 0
 	
@@ -63,16 +65,17 @@ class ThreadedClient:
 		self.gate = Gate(self.processOpeningChange)
 		self.gate.start()
 		self.gate.execute(["Z"])
-		# self.gate.execute(["S", 100])
-		# self.gate.execute(["S", -100])
 
-		self.scales = Scales(self.processWeightChange)
+		self.scales = Scales()
+		self.scales.subscribe("WeightChanged", self)
 		self.scales.start()
 		self.scales.execute("T")
 		self.scales.execute("Z")
 
+		self.dispensingControl = DispensingControl(self.scales, self.gate)
+		self.dispensingControl.subscribe("FlowChanged", self)
+		
 		self.loadDispensingRule()
-
 
 		# Start the periodic call in the GUI to check if the queue contains
 		# anything
@@ -82,7 +85,9 @@ class ThreadedClient:
 		self.gui.update(["OpeningPercentage", openingData[0]])
 		self.gui.update(["OpeningSteps", openingData[1]])
 		
-	def processWeightChange(self, sender, weight):
+	def onWeightChanged(self, weightAndState):
+		weight = weightAndState[0]
+		stable = weightAndState[1]
 		self.gui.update(["ActualWeight", weight])
 		if self.dispensing_state == 1:
 			opening = self.dispensingRule.getOpeningForWeight(weight)
@@ -90,7 +95,10 @@ class ThreadedClient:
 				self.btn_stopdispensing_click()
 			else:
 				self.gate.execute(["P", opening])
-	
+
+	def onFlowChanged(self, flow):
+		self.gui.update(["ActualFlow", flow])
+		
 
 	def periodicCall(self):
 		"""
@@ -103,16 +111,6 @@ class ThreadedClient:
 			import sys
 			sys.exit(1)
 		self.master.after(100, self.periodicCall)
-
-	def periodicWeight(self):
-		"""
-		Check weight every 250 ms.
-		"""
-		if self.dispensing_state > 0:
-			print("requesting weight")
-			self.scales.execute(["R"])
-			self.master.after(250, self.periodicWeight)
-
 
 	def onEndApplication(self):
 		self.gate.execute(["C"])
