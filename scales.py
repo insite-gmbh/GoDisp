@@ -90,10 +90,11 @@ class Scales (threading.Thread, Publisher):
 		self.State = 0
 		
 	def _processRxData(self, rx):
-		print(time.time(), "scales rx: >", rx, "<")
-		if rx.startswith("ST") or rx.startswith("US"):
+		stable = rx.startswith("ST")
+		if stable or rx.startswith("US"):
 			try:
-				Publisher.dispatch(self, "WeightChanged", [int(float(rx[4:-5]) * 1000.0 + 0.5), rx.startswith("ST")])
+				print("scales rx: >", rx[4:-5], "<, stable=", stable)
+				Publisher.dispatch(self, "WeightChanged", [int(float(rx[4:-5]) * 1000.0 + 0.5), stable])
 			except:
 				Publisher.dispatch(self, "WeightChanged", [0, True])
 		
