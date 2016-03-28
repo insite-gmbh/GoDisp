@@ -7,7 +7,9 @@ import time
 from Util.Publisher import Publisher
 
 # raspi: serPort = "/dev/ttyUSB0"
-serPort = "/dev/tty.usbserial-FTDWE8ZH"
+# mac serPort = "/dev/tty.usbserial-FTDWE8ZH"
+
+serPort = "/dev/ttyUSB0"
 
 try:
 	import serial
