@@ -1,0 +1,5964 @@
+Python 3.2.3 (default, Mar  1 2013, 11:53:50) 
+[GCC 4.6.3] on linux2
+Type "copyright", "credits" or "license()" for more information.
+>>> ================================ RESTART ================================
+>>> 
+
+Warning (from warnings module):
+  File "/home/pi/godisp/gate.py", line 32
+    GPIO.setup(self.step, GPIO.OUT)
+RuntimeWarning: A physical pull up resistor is fitted on this channel!
+
+Warning (from warnings module):
+  File "/home/pi/godisp/gate.py", line 34
+    GPIO.setup(self.enable, GPIO.OUT)
+RuntimeWarning: A physical pull up resistor is fitted on this channel!
+in load
+scales rx: >      0.003 <, stable= False
+scales rx: >      0.003 <, stable= True
+scales rx: >      0.004 <, stable= True
+scales rx: >      0.003 <, stable= False
+scales rx: >      0.002 <, stable= False
+scales rx: >      0.001 <, stable= False
+scales rx: >      0.197 <, stable= False
+scales rx: >      0.230 <, stable= False
+scales rx: >      0.211 <, stable= False
+scales rx: >      0.206 <, stable= False
+scales rx: >      0.202 <, stable= False
+scales rx: >      0.201 <, stable= False
+scales rx: >      0.200 <, stable= True
+scales rx: >      0.204 <, stable= False
+scales rx: >      0.203 <, stable= False
+scales rx: >      0.202 <, stable= False
+scales rx: >      0.201 <, stable= True
+scales rx: >      0.200 <, stable= True
+scales rx: >      0.202 <, stable= False
+scales rx: >      0.202 <, stable= True
+scales rx: >      0.205 <, stable= False
+scales rx: >      0.204 <, stable= False
+scales rx: >      0.204 <, stable= True
+scales rx: >      0.203 <, stable= False
+scales rx: >      0.202 <, stable= False
+scales rx: >      0.201 <, stable= True
+scales rx: >      0.200 <, stable= True
+scales rx: >      0.199 <, stable= True
+scales rx: >      0.200 <, stable= False
+scales rx: >      0.201 <, stable= False
+scales rx: >      0.201 <, stable= True
+scales rx: >      0.200 <, stable= False
+scales rx: >      0.200 <, stable= True
+scales rx: >      0.199 <, stable= True
+scales rx: >      0.201 <, stable= False
+scales rx: >      0.200 <, stable= True
+scales rx: >      0.201 <, stable= True
+scales rx: >      0.202 <, stable= False
+scales rx: >      0.206 <, stable= False
+scales rx: >      0.205 <, stable= True
+scales rx: >      0.206 <, stable= True
+scales rx: >      0.205 <, stable= True
+scales rx: >      0.204 <, stable= True
+scales rx: >      0.205 <, stable= False
+scales rx: >      0.205 <, stable= True
+scales rx: >      0.204 <, stable= True
+scales rx: >      0.203 <, stable= True
+scales rx: >      0.204 <, stable= True
+scales rx: >      0.203 <, stable= True
+scales rx: >      0.204 <, stable= True
+scales rx: >      0.203 <, stable= True
+scales rx: >      0.204 <, stable= True
+scales rx: >      0.203 <, stable= True
+scales rx: >      0.204 <, stable= True
+scales rx: >      0.203 <, stable= True
+scales rx: >      0.204 <, stable= True
+scales rx: >      0.203 <, stable= True
+scales rx: >      0.204 <, stable= True
+scales rx: >      0.203 <, stable= True
+scales rx: >      0.202 <, stable= True
+scales rx: >      0.203 <, stable= True
+scales rx: >      0.202 <, stable= True
+scales rx: >      0.203 <, stable= True
+scales rx: >      0.207 <, stable= False
+scales rx: >      0.207 <, stable= True
+scales rx: >      0.208 <, stable= False
+scales rx: >      0.208 <, stable= True
+scales rx: >      0.209 <, stable= True
+scales rx: >      0.211 <, stable= False
+scales rx: >      0.211 <, stable= True
+scales rx: >      0.209 <, stable= False
+scales rx: >      0.209 <, stable= True
+scales rx: >      0.210 <, stable= True
+scales rx: >      0.211 <, stable= True
+scales rx: >      0.210 <, stable= True
+scales rx: >      0.202 <, stable= False
+scales rx: >      0.197 <, stable= False
+scales rx: >      0.184 <, stable= False
+scales rx: >      0.216 <, stable= False
+scales rx: >      0.220 <, stable= False
+scales rx: >      0.218 <, stable= False
+scales rx: >      0.216 <, stable= False
+scales rx: >      0.216 <, stable= True
+scales rx: >      0.104 <, stable= False
+scales rx: >      0.098 <, stable= False
+scales rx: >      0.100 <, stable= False
+scales rx: >      0.056 <, stable= False
+scales rx: >      0.063 <, stable= False
+scales rx: >      0.053 <, stable= False
+scales rx: >      0.054 <, stable= False
+scales rx: >      0.048 <, stable= False
+scales rx: >      0.103 <, stable= False
+scales rx: >      0.140 <, stable= False
+scales rx: >      0.144 <, stable= False
+scales rx: >      0.138 <, stable= False
+scales rx: >      0.129 <, stable= False
+scales rx: >      0.133 <, stable= False
+scales rx: >      0.132 <, stable= True
+scales rx: >      0.131 <, stable= True
+scales rx: >      0.132 <, stable= True
+scales rx: >      0.133 <, stable= True
+scales rx: >      0.134 <, stable= True
+scales rx: >      0.135 <, stable= True
+scales rx: >      0.136 <, stable= True
+scales rx: >      0.137 <, stable= True
+scales rx: >      0.138 <, stable= True
+scales rx: >      0.139 <, stable= False
+scales rx: >      0.139 <, stable= True
+scales rx: >      0.145 <, stable= False
+scales rx: >      0.132 <, stable= False
+scales rx: >      0.119 <, stable= False
+scales rx: >      0.112 <, stable= False
+scales rx: >      0.109 <, stable= False
+scales rx: >      0.124 <, stable= False
+scales rx: >      0.125 <, stable= False
+scales rx: >      0.131 <, stable= False
+scales rx: >      0.130 <, stable= True
+scales rx: >      0.126 <, stable= False
+scales rx: >      0.115 <, stable= False
+scales rx: >      0.110 <, stable= False
+scales rx: >      0.111 <, stable= False
+scales rx: >      0.124 <, stable= False
+scales rx: >      0.128 <, stable= False
+scales rx: >      0.123 <, stable= False
+scales rx: >      0.116 <, stable= False
+scales rx: >      0.115 <, stable= False
+scales rx: >      0.116 <, stable= True
+scales rx: >      0.133 <, stable= False
+scales rx: >      0.128 <, stable= False
+scales rx: >      0.119 <, stable= False
+scales rx: >      0.113 <, stable= False
+scales rx: >      0.120 <, stable= False
+scales rx: >      0.119 <, stable= False
+scales rx: >      0.134 <, stable= False
+scales rx: >      0.129 <, stable= False
+scales rx: >      0.130 <, stable= False
+scales rx: >      0.125 <, stable= False
+scales rx: >      0.118 <, stable= False
+scales rx: >      0.102 <, stable= False
+scales rx: >      0.098 <, stable= False
+scales rx: >      0.087 <, stable= False
+scales rx: >      0.099 <, stable= False
+scales rx: >      0.109 <, stable= False
+scales rx: >      0.124 <, stable= False
+scales rx: >      0.122 <, stable= False
+scales rx: >      0.118 <, stable= False
+scales rx: >      0.097 <, stable= False
+scales rx: >      0.088 <, stable= False
+scales rx: >      0.100 <, stable= False
+scales rx: >      0.105 <, stable= False
+scales rx: >      0.111 <, stable= False
+scales rx: >      0.121 <, stable= False
+scales rx: >      0.113 <, stable= False
+scales rx: >      0.096 <, stable= False
+scales rx: >      0.101 <, stable= False
+scales rx: >      0.106 <, stable= False
+scales rx: >      0.112 <, stable= False
+scales rx: >      0.116 <, stable= False
+scales rx: >      0.120 <, stable= False
+scales rx: >      0.119 <, stable= False
+scales rx: >      0.107 <, stable= False
+scales rx: >      0.105 <, stable= False
+scales rx: >      0.105 <, stable= True
+scales rx: >      0.109 <, stable= False
+scales rx: >      0.108 <, stable= False
+scales rx: >      0.109 <, stable= False
+scales rx: >      0.109 <, stable= True
+scales rx: >      0.133 <, stable= False
+scales rx: >      0.128 <, stable= False
+scales rx: >      0.121 <, stable= False
+scales rx: >      0.101 <, stable= False
+scales rx: >      0.102 <, stable= False
+scales rx: >      0.099 <, stable= False
+scales rx: >      0.110 <, stable= False
+scales rx: >      0.124 <, stable= False
+scales rx: >      0.146 <, stable= False
+scales rx: >      0.137 <, stable= False
+scales rx: >      0.121 <, stable= False
+scales rx: >      0.097 <, stable= False
+scales rx: >      0.097 <, stable= True
+scales rx: >      0.112 <, stable= False
+scales rx: >      0.123 <, stable= False
+scales rx: >      0.121 <, stable= False
+scales rx: >      0.137 <, stable= False
+scales rx: >      0.126 <, stable= False
+scales rx: >      0.117 <, stable= False
+scales rx: >      0.117 <, stable= True
+scales rx: >      0.121 <, stable= False
+scales rx: >      0.109 <, stable= False
+scales rx: >      0.113 <, stable= False
+scales rx: >      0.105 <, stable= False
+scales rx: >      0.106 <, stable= False
+scales rx: >      0.098 <, stable= False
+scales rx: >      0.083 <, stable= False
+scales rx: >      0.093 <, stable= False
+scales rx: >      0.114 <, stable= False
+scales rx: >      0.125 <, stable= False
+scales rx: >      0.126 <, stable= False
+scales rx: >      0.115 <, stable= False
+scales rx: >      0.111 <, stable= False
+scales rx: >      0.108 <, stable= False
+scales rx: >      0.107 <, stable= False
+scales rx: >      0.108 <, stable= False
+scales rx: >      0.108 <, stable= True
+scales rx: >      0.125 <, stable= False
+scales rx: >      0.125 <, stable= True
+scales rx: >      0.132 <, stable= False
+scales rx: >      0.120 <, stable= False
+scales rx: >      0.124 <, stable= False
+scales rx: >      0.129 <, stable= False
+scales rx: >      0.133 <, stable= False
+scales rx: >      0.128 <, stable= False
+scales rx: >      0.127 <, stable= True
+scales rx: >      0.131 <, stable= False
+scales rx: >      0.130 <, stable= False
+scales rx: >      0.129 <, stable= True
+scales rx: >      0.130 <, stable= True
+scales rx: >      0.128 <, stable= False
+scales rx: >      0.128 <, stable= True
+scales rx: >      0.129 <, stable= False
+scales rx: >      0.130 <, stable= True
+scales rx: >      0.133 <, stable= False
+scales rx: >      0.137 <, stable= False
+scales rx: >      0.131 <, stable= False
+scales rx: >      0.125 <, stable= False
+scales rx: >      0.126 <, stable= False
+scales rx: >      0.127 <, stable= False
+scales rx: >      0.130 <, stable= False
+scales rx: >      0.130 <, stable= True
+scales rx: >      0.128 <, stable= False
+scales rx: >      0.128 <, stable= True
+scales rx: >      0.129 <, stable= True
+scales rx: >      0.130 <, stable= True
+scales rx: >      0.129 <, stable= True
+scales rx: >      0.130 <, stable= True
+scales rx: >      0.129 <, stable= True
+scales rx: >      0.130 <, stable= True
+scales rx: >      0.129 <, stable= True
+scales rx: >      0.130 <, stable= True
+scales rx: >      0.131 <, stable= False
+scales rx: >      0.131 <, stable= True
+scales rx: >      0.129 <, stable= False
+scales rx: >      0.128 <, stable= False
+scales rx: >      0.128 <, stable= True
+scales rx: >      0.124 <, stable= False
+scales rx: >      0.124 <, stable= True
+scales rx: >      0.125 <, stable= True
+scales rx: >      0.124 <, stable= True
+scales rx: >      0.125 <, stable= True
+scales rx: >      0.126 <, stable= False
+scales rx: >      0.126 <, stable= True
+scales rx: >      0.127 <, stable= True
+scales rx: >      0.128 <, stable= False
+scales rx: >      0.129 <, stable= False
+scales rx: >      0.129 <, stable= True
+scales rx: >      0.131 <, stable= False
+scales rx: >      0.131 <, stable= True
+scales rx: >      0.132 <, stable= True
+scales rx: >      0.022 <, stable= False
+scales rx: >      0.080 <, stable= False
+scales rx: >      0.066 <, stable= False
+scales rx: >      0.137 <, stable= False
+scales rx: >      0.102 <, stable= False
+scales rx: >      0.088 <, stable= False
+scales rx: >      0.055 <, stable= False
+scales rx: >      0.049 <, stable= False
+scales rx: >      0.118 <, stable= False
+scales rx: >      0.140 <, stable= False
+scales rx: >      0.121 <, stable= False
+scales rx: >      0.119 <, stable= False
+scales rx: >      0.118 <, stable= False
+scales rx: >      0.116 <, stable= False
+scales rx: >      0.116 <, stable= True
+scales rx: >      0.115 <, stable= True
+scales rx: >      0.114 <, stable= True
+scales rx: >      0.105 <, stable= False
+scales rx: >      0.110 <, stable= False
+scales rx: >      0.119 <, stable= False
+scales rx: >      0.119 <, stable= True
+scales rx: >      0.118 <, stable= True
+scales rx: >      0.117 <, stable= False
+scales rx: >      0.117 <, stable= True
+scales rx: >      0.116 <, stable= True
+scales rx: >      0.114 <, stable= False
+scales rx: >      0.114 <, stable= True
+scales rx: >      0.113 <, stable= True
+scales rx: >      0.112 <, stable= True
+scales rx: >      0.111 <, stable= True
+scales rx: >      0.110 <, stable= True
+scales rx: >      0.109 <, stable= True
+scales rx: >     0.109 <, stable= True
+298 0
+280 30
+180 50
+0 100
+weight  109  returning  100
+scales rx: >      0.109 <, stable= True
+298 0
+280 30
+180 50
+0 100
+weight  109  returning  100
+scales rx: >      0.139 <, stable= False
+298 0
+280 30
+180 50
+0 100
+weight  139  returning  100
+scales rx: >      0.152 <, stable= False
+298 0
+280 30
+180 50
+0 100
+weight  152  returning  100
+scales rx: >      0.168 <, stable= False
+298 0
+280 30
+180 50
+0 100
+weight  168  returning  100
+scales rx: >      0.185 <, stable= False
+298 0
+280 30
+180 50
+weight  185  returning  50
+scales rx: >      0.205 <, stable= False
+298 0
+280 30
+180 50
+weight  205  returning  50
+scales rx: >      0.227 <, stable= False
+298 0
+280 30
+180 50
+weight  227  returning  50
+scales rx: >      0.250 <, stable= False
+298 0
+280 30
+180 50
+weight  250  returning  50
+scales rx: >      0.273 <, stable= False
+298 0
+280 30
+180 50
+weight  273  returning  50
+scales rx: >      0.296 <, stable= False
+298 0
+280 30
+weight  296  returning  30
+scales rx: >      0.319 <, stable= False
+Destination weight  306.0  exceeded! BAD!
+scales rx: >      0.341 <, stable= False
+scales rx: >      0.364 <, stable= False
+scales rx: >      0.386 <, stable= False
+scales rx: >      0.408 <, stable= False
+scales rx: >      0.430 <, stable= False
+scales rx: >      0.451 <, stable= False
+scales rx: >      0.472 <, stable= False
+scales rx: >      0.494 <, stable= False
+scales rx: >      0.515 <, stable= False
+scales rx: >      0.536 <, stable= False
+scales rx: >      0.557 <, stable= False
+scales rx: >      0.578 <, stable= False
+scales rx: >      0.599 <, stable= False
+scales rx: >      0.619 <, stable= False
+scales rx: >      0.640 <, stable= False
+scales rx: >      0.658 <, stable= False
+scales rx: >      0.674 <, stable= False
+scales rx: >      0.688 <, stable= False
+scales rx: >      0.700 <, stable= False
+scales rx: >      0.711 <, stable= False
+scales rx: >      0.719 <, stable= False
+scales rx: >      0.724 <, stable= False
+scales rx: >      0.728 <, stable= False
+scales rx: >      0.735 <, stable= False
+scales rx: >      0.741 <, stable= False
+scales rx: >      0.747 <, stable= False
+scales rx: >      0.751 <, stable= False
+scales rx: >      0.759 <, stable= False
+scales rx: >      0.764 <, stable= False
+scales rx: >      0.770 <, stable= False
+scales rx: >      0.776 <, stable= False
+scales rx: >      0.782 <, stable= False
+scales rx: >      0.787 <, stable= False
+scales rx: >      0.793 <, stable= False
+scales rx: >      0.797 <, stable= False
+scales rx: >      0.801 <, stable= False
+scales rx: >      0.802 <, stable= False
+scales rx: >      0.803 <, stable= False
+scales rx: >      0.804 <, stable= False
+scales rx: >      0.805 <, stable= True
+scales rx: >      0.806 <, stable= True
+scales rx: >      0.805 <, stable= True
+scales rx: >      0.806 <, stable= True
+scales rx: >      0.805 <, stable= True
+scales rx: >      0.818 <, stable= False
+scales rx: >      0.819 <, stable= False
+scales rx: >      0.820 <, stable= False
+scales rx: >      0.821 <, stable= False
+scales rx: >      0.821 <, stable= True
+scales rx: >      0.820 <, stable= True
+scales rx: >      0.812 <, stable= False
+scales rx: >      0.811 <, stable= False
+scales rx: >      0.811 <, stable= True
+scales rx: >      0.818 <, stable= False
+scales rx: >      0.817 <, stable= True
+scales rx: >      0.816 <, stable= True
+scales rx: >      0.815 <, stable= True
+scales rx: >      0.820 <, stable= False
+scales rx: >      0.820 <, stable= True
+scales rx: >      0.646 <, stable= False
+scales rx: >      0.387 <, stable= False
+scales rx: >      0.105 <, stable= False
+scales rx: >      0.045 <, stable= False
+scales rx: >      0.130 <, stable= False
+scales rx: >      0.215 <, stable= False
+scales rx: >      0.196 <, stable= False
+scales rx: >      0.166 <, stable= False
+scales rx: >      0.165 <, stable= False
+scales rx: >      0.164 <, stable= True
+scales rx: >      0.164 <, stable= False
+scales rx: >      0.163 <, stable= False
+scales rx: >      0.163 <, stable= True
+scales rx: >      0.162 <, stable= True
+scales rx: >      0.173 <, stable= False
+scales rx: >      0.177 <, stable= False
+scales rx: >      0.170 <, stable= False
+scales rx: >      0.166 <, stable= False
+scales rx: >      0.167 <, stable= False
+scales rx: >      0.167 <, stable= True
+scales rx: >      0.162 <, stable= False
+scales rx: >      0.163 <, stable= False
+scales rx: >      0.164 <, stable= True
+scales rx: >      0.162 <, stable= False
+scales rx: >      0.162 <, stable= True
+scales rx: >      0.163 <, stable= True
+scales rx: >      0.164 <, stable= False
+scales rx: >      0.164 <, stable= True
+scales rx: >      0.163 <, stable= True
+scales rx: >      0.164 <, stable= True
+scales rx: >      0.163 <, stable= True
+scales rx: >      0.164 <, stable= True
+scales rx: >      0.163 <, stable= True
+scales rx: >      0.164 <, stable= True
+scales rx: >      0.165 <, stable= True
+scales rx: >      0.172 <, stable= False
+scales rx: >      0.171 <, stable= False
+scales rx: >      0.171 <, stable= True
+scales rx: >      0.169 <, stable= False
+scales rx: >      0.169 <, stable= True
+scales rx: >      0.168 <, stable= True
+scales rx: >      0.167 <, stable= False
+scales rx: >      0.167 <, stable= True
+scales rx: >      0.166 <, stable= True
+scales rx: >      0.165 <, stable= True
+scales rx: >      0.164 <, stable= True
+scales rx: >      0.163 <, stable= True
+scales rx: >      0.164 <, stable= True
+scales rx: >      0.165 <, stable= False
+scales rx: >      0.166 <, stable= False
+scales rx: >      0.166 <, stable= True
+scales rx: >      0.167 <, stable= True
+scales rx: >      0.166 <, stable= True
+scales rx: >      0.167 <, stable= True
+scales rx: >      0.405 <, stable= False
+scales rx: >      0.652 <, stable= False
+scales rx: >      0.522 <, stable= False
+scales rx: >      0.377 <, stable= False
+scales rx: >      0.409 <, stable= False
+scales rx: >      0.531 <, stable= False
+scales rx: >      0.388 <, stable= False
+scales rx: >      0.403 <, stable= False
+scales rx: >      0.500 <, stable= False
+scales rx: >      0.506 <, stable= False
+scales rx: >      0.373 <, stable= False
+scales rx: >      0.230 <, stable= False
+scales rx: >      0.177 <, stable= False
+scales rx: >      0.186 <, stable= False
+scales rx: >      0.196 <, stable= False
+scales rx: >      0.219 <, stable= False
+scales rx: >      0.215 <, stable= False
+scales rx: >      0.077 <, stable= False
+scales rx: >      0.006 <, stable= False
+scales rx: >      0.014 <, stable= False
+scales rx: >      0.123 <, stable= False
+scales rx: >      0.170 <, stable= False
+scales rx: >      0.109 <, stable= False
+scales rx: >      0.106 <, stable= False
+scales rx: >      0.106 <, stable= True
+scales rx: >      0.105 <, stable= True
+scales rx: >      0.104 <, stable= True
+scales rx: >      0.124 <, stable= False
+scales rx: >      0.116 <, stable= False
+scales rx: >      0.115 <, stable= False
+scales rx: >      0.114 <, stable= False
+scales rx: >      0.114 <, stable= True
+scales rx: >      0.113 <, stable= True
+scales rx: >      0.114 <, stable= True
+scales rx: >      0.113 <, stable= True
+scales rx: >      0.112 <, stable= True
+scales rx: >      0.111 <, stable= False
+scales rx: >      0.111 <, stable= True
+scales rx: >      0.110 <, stable= True
+scales rx: >      0.109 <, stable= True
+scales rx: >      0.108 <, stable= True
+scales rx: >      0.107 <, stable= True
+scales rx: >      0.106 <, stable= True
+scales rx: >      0.105 <, stable= True
+scales rx: >      0.106 <, stable= True
+scales rx: >      0.107 <, stable= False
+scales rx: >      0.108 <, stable= False
+scales rx: >      0.109 <, stable= False
+scales rx: >      0.110 <, stable= False
+scales rx: >      0.110 <, stable= True
+scales rx: >      0.111 <, stable= True
+scales rx: >      0.109 <, stable= False
+scales rx: >      0.109 <, stable= True
+scales rx: >      0.108 <, stable= True
+scales rx: >      0.107 <, stable= True
+scales rx: >      0.106 <, stable= True
+scales rx: >      0.110 <, stable= False
+scales rx: >      0.110 <, stable= True
+scales rx: >      0.109 <, stable= False
+scales rx: >      0.109 <, stable= True
+scales rx: >      0.108 <, stable= True
+scales rx: >      0.107 <, stable= True
+scales rx: >      0.109 <, stable= False
+scales rx: >      0.109 <, stable= True
+scales rx: >      0.110 <, stable= True
+scales rx: >      0.109 <, stable= False
+scales rx: >      0.108 <, stable= True
+scales rx: >      0.107 <, stable= True
+scales rx: >      0.106 <, stable= True
+scales rx: >      0.109 <, stable= False
+scales rx: >      0.109 <, stable= True
+scales rx: >      0.110 <, stable= True
+scales rx: >      0.109 <, stable= True
+scales rx: >      0.108 <, stable= True
+scales rx: >      0.107 <, stable= True
+scales rx: >      0.106 <, stable= True
+scales rx: >      0.105 <, stable= True
+scales rx: >      0.104 <, stable= True
+scales rx: >      0.103 <, stable= True
+scales rx: >      0.104 <, stable= True
+scales rx: >      0.105 <, stable= True
+scales rx: >      0.106 <, stable= True
+scales rx: >      0.107 <, stable= False
+scales rx: >      0.108 <, stable= True
+scales rx: >      0.110 <, stable= False
+scales rx: >      0.110 <, stable= True
+scales rx: >      0.111 <, stable= True
+scales rx: >      0.112 <, stable= False
+scales rx: >      0.112 <, stable= True
+scales rx: >      0.114 <, stable= False
+scales rx: >      0.114 <, stable= True
+scales rx: >      0.115 <, stable= True
+scales rx: >      0.116 <, stable= False
+scales rx: >      0.116 <, stable= True
+scales rx: >      0.117 <, stable= True
+scales rx: >      0.118 <, stable= False
+scales rx: >      0.118 <, stable= True
+scales rx: >      0.126 <, stable= False
+scales rx: >      0.127 <, stable= False
+scales rx: >      0.128 <, stable= True
+scales rx: >      0.129 <, stable= False
+scales rx: >      0.130 <, stable= True
+scales rx: >      0.132 <, stable= False
+scales rx: >      0.132 <, stable= True
+scales rx: >      0.134 <, stable= False
+scales rx: >      0.134 <, stable= True
+scales rx: >      0.136 <, stable= False
+scales rx: >      0.136 <, stable= True
+scales rx: >      0.138 <, stable= False
+scales rx: >      0.138 <, stable= True
+scales rx: >      0.139 <, stable= True
+scales rx: >      0.140 <, stable= False
+scales rx: >      0.141 <, stable= True
+scales rx: >      0.143 <, stable= False
+scales rx: >      0.143 <, stable= True
+scales rx: >      0.145 <, stable= False
+scales rx: >      0.145 <, stable= True
+scales rx: >      0.146 <, stable= True
+scales rx: >      0.147 <, stable= False
+scales rx: >      0.147 <, stable= True
+scales rx: >      0.148 <, stable= True
+scales rx: >      0.149 <, stable= False
+scales rx: >      0.149 <, stable= True
+scales rx: >      0.150 <, stable= True
+scales rx: >      0.151 <, stable= False
+scales rx: >      0.151 <, stable= True
+scales rx: >      0.152 <, stable= True
+scales rx: >      0.153 <, stable= False
+scales rx: >      0.154 <, stable= True
+scales rx: >      0.155 <, stable= False
+scales rx: >      0.156 <, stable= True
+scales rx: >      0.157 <, stable= True
+scales rx: >      0.158 <, stable= True
+scales rx: >      0.159 <, stable= True
+scales rx: >      0.163 <, stable= False
+scales rx: >      0.163 <, stable= True
+scales rx: >      0.164 <, stable= True
+scales rx: >      0.160 <, stable= False
+scales rx: >      0.160 <, stable= True
+scales rx: >      0.159 <, stable= True
+scales rx: >      0.163 <, stable= False
+scales rx: >      0.163 <, stable= True
+scales rx: >      0.164 <, stable= True
+scales rx: >      0.162 <, stable= False
+scales rx: >      0.162 <, stable= True
+scales rx: >      0.161 <, stable= True
+scales rx: >      0.162 <, stable= False
+scales rx: >      0.163 <, stable= False
+scales rx: >      0.163 <, stable= True
+scales rx: >      0.164 <, stable= True
+scales rx: >      0.162 <, stable= False
+scales rx: >      0.162 <, stable= True
+scales rx: >      0.161 <, stable= True
+scales rx: >      0.160 <, stable= False
+scales rx: >      0.160 <, stable= True
+before join
+ready
+Traceback (most recent call last):
+  File "/home/pi/godisp/main.py", line 207, in <module>
+    main()
+  File "/home/pi/godisp/main.py", line 202, in main
+    root.mainloop()
+  File "/usr/lib/python3.2/tkinter/__init__.py", line 1027, in mainloop
+    self.tk.mainloop(n)
+  File "/usr/lib/python3.2/tkinter/__init__.py", line 1428, in __call__
+    raise SystemExit(msg)
+SystemExit: 1
+>>> ================================ RESTART ================================
+>>> ================================ RESTART ================================
+>>> 
+
+Warning (from warnings module):
+  File "/home/pi/godisp/gate.py", line 32
+    GPIO.setup(self.step, GPIO.OUT)
+RuntimeWarning: A physical pull up resistor is fitted on this channel!
+
+Warning (from warnings module):
+  File "/home/pi/godisp/gate.py", line 34
+    GPIO.setup(self.enable, GPIO.OUT)
+RuntimeWarning: A physical pull up resistor is fitted on this channel!
+in load
+scales rx: >     0.000 <, stable= True
+scales rx: >     0.000 <, stable= True
+scales rx: >      0.001 <, stable= False
+scales rx: >      0.002 <, stable= True
+scales rx: >      0.003 <, stable= False
+scales rx: >      0.004 <, stable= True
+scales rx: >      0.005 <, stable= False
+scales rx: >      0.005 <, stable= True
+scales rx: >      0.006 <, stable= True
+scales rx: >      0.007 <, stable= False
+scales rx: >      0.007 <, stable= True
+scales rx: >      0.008 <, stable= True
+scales rx: >      0.009 <, stable= True
+scales rx: >      0.010 <, stable= True
+scales rx: >      0.011 <, stable= False
+scales rx: >      0.011 <, stable= True
+scales rx: >      0.013 <, stable= False
+scales rx: >      0.013 <, stable= True
+scales rx: >      0.014 <, stable= True
+scales rx: >      0.015 <, stable= False
+scales rx: >      0.015 <, stable= True
+scales rx: >      0.016 <, stable= True
+scales rx: >      0.017 <, stable= False
+scales rx: >      0.017 <, stable= True
+scales rx: >      0.018 <, stable= True
+scales rx: >      0.019 <, stable= False
+scales rx: >      0.019 <, stable= True
+scales rx: >      0.020 <, stable= True
+scales rx: >      0.021 <, stable= False
+scales rx: >      0.022 <, stable= True
+scales rx: >      0.023 <, stable= False
+scales rx: >      0.024 <, stable= True
+scales rx: >      0.026 <, stable= False
+scales rx: >      0.026 <, stable= True
+scales rx: >      0.028 <, stable= False
+scales rx: >      0.028 <, stable= True
+scales rx: >      0.029 <, stable= True
+scales rx: >      0.030 <, stable= False
+scales rx: >      0.030 <, stable= True
+scales rx: >      0.031 <, stable= True
+scales rx: >      0.032 <, stable= False
+scales rx: >      0.032 <, stable= True
+scales rx: >      0.033 <, stable= True
+scales rx: >      0.034 <, stable= False
+scales rx: >      0.034 <, stable= True
+scales rx: >      0.035 <, stable= True
+scales rx: >      0.036 <, stable= False
+scales rx: >      0.036 <, stable= True
+scales rx: >      0.037 <, stable= True
+scales rx: >      0.038 <, stable= False
+scales rx: >      0.038 <, stable= True
+scales rx: >      0.039 <, stable= True
+scales rx: >      0.040 <, stable= False
+scales rx: >      0.040 <, stable= True
+scales rx: >      0.041 <, stable= True
+scales rx: >      0.042 <, stable= False
+scales rx: >      0.050 <, stable= False
+scales rx: >      0.051 <, stable= False
+scales rx: >      0.052 <, stable= False
+scales rx: >      0.056 <, stable= False
+scales rx: >      0.057 <, stable= False
+scales rx: >      0.060 <, stable= False
+scales rx: >      0.061 <, stable= False
+scales rx: >      0.062 <, stable= False
+scales rx: >      0.065 <, stable= False
+scales rx: >      0.066 <, stable= False
+scales rx: >      0.070 <, stable= False
+scales rx: >      0.071 <, stable= False
+scales rx: >      0.072 <, stable= False
+scales rx: >      0.075 <, stable= False
+scales rx: >      0.076 <, stable= False
+scales rx: >      0.080 <, stable= False
+scales rx: >      0.081 <, stable= False
+scales rx: >      0.082 <, stable= False
+scales rx: >      0.085 <, stable= False
+scales rx: >      0.086 <, stable= False
+scales rx: >      0.090 <, stable= False
+scales rx: >      0.091 <, stable= False
+scales rx: >      0.092 <, stable= False
+scales rx: >      0.095 <, stable= False
+scales rx: >      0.096 <, stable= False
+scales rx: >      0.100 <, stable= False
+scales rx: >      0.101 <, stable= False
+scales rx: >      0.102 <, stable= False
+scales rx: >      0.106 <, stable= False
+scales rx: >      0.107 <, stable= False
+scales rx: >      0.111 <, stable= False
+scales rx: >      0.112 <, stable= False
+scales rx: >      0.115 <, stable= False
+scales rx: >      0.116 <, stable= False
+scales rx: >      0.118 <, stable= False
+scales rx: >      0.121 <, stable= False
+scales rx: >      0.122 <, stable= False
+scales rx: >      0.126 <, stable= False
+scales rx: >      0.127 <, stable= False
+scales rx: >      0.131 <, stable= False
+scales rx: >      0.132 <, stable= False
+scales rx: >      0.135 <, stable= False
+scales rx: >      0.136 <, stable= False
+scales rx: >      0.137 <, stable= False
+scales rx: >      0.140 <, stable= False
+scales rx: >      0.141 <, stable= False
+scales rx: >      0.142 <, stable= False
+scales rx: >      0.146 <, stable= False
+scales rx: >      0.147 <, stable= False
+scales rx: >      0.150 <, stable= False
+scales rx: >      0.151 <, stable= False
+scales rx: >      0.152 <, stable= False
+scales rx: >      0.156 <, stable= False
+scales rx: >      0.157 <, stable= False
+scales rx: >      0.160 <, stable= False
+scales rx: >      0.161 <, stable= False
+scales rx: >      0.162 <, stable= False
+scales rx: >      0.166 <, stable= False
+scales rx: >      0.167 <, stable= False
+scales rx: >      0.170 <, stable= False
+scales rx: >      0.171 <, stable= False
+scales rx: >      0.174 <, stable= False
+scales rx: >      0.175 <, stable= False
+scales rx: >      0.176 <, stable= False
+scales rx: >      0.179 <, stable= False
+scales rx: >      0.180 <, stable= False
+scales rx: >      0.181 <, stable= False
+scales rx: >      0.185 <, stable= False
+scales rx: >      0.186 <, stable= False
+scales rx: >      0.189 <, stable= False
+scales rx: >      0.190 <, stable= False
+scales rx: >      0.191 <, stable= False
+scales rx: >      0.195 <, stable= False
+scales rx: >      0.196 <, stable= False
+scales rx: >      0.197 <, stable= False
+scales rx: >      0.201 <, stable= False
+scales rx: >      0.202 <, stable= False
+scales rx: >      0.205 <, stable= False
+scales rx: >      0.206 <, stable= False
+scales rx: >      0.207 <, stable= False
+scales rx: >      0.209 <, stable= False
+scales rx: >      0.211 <, stable= False
+scales rx: >      0.213 <, stable= False
+scales rx: >      0.217 <, stable= False
+scales rx: >      0.217 <, stable= True
+scales rx: >      0.218 <, stable= True
+scales rx: >      0.219 <, stable= True
+scales rx: >      0.221 <, stable= False
+scales rx: >      0.227 <, stable= False
+scales rx: >      0.228 <, stable= True
+scales rx: >      0.229 <, stable= True
+scales rx: >      0.230 <, stable= True
+scales rx: >      0.229 <, stable= True
+scales rx: >      0.228 <, stable= False
+scales rx: >      0.228 <, stable= True
+scales rx: >      0.229 <, stable= True
+scales rx: >      0.230 <, stable= False
+scales rx: >      0.230 <, stable= True
+scales rx: >      0.231 <, stable= True
+scales rx: >      0.232 <, stable= True
+scales rx: >      0.234 <, stable= False
+scales rx: >      0.236 <, stable= False
+scales rx: >      0.236 <, stable= True
+scales rx: >      0.240 <, stable= False
+scales rx: >      0.241 <, stable= True
+scales rx: >      0.243 <, stable= False
+scales rx: >      0.244 <, stable= True
+scales rx: >      0.245 <, stable= True
+scales rx: >      0.246 <, stable= True
+scales rx: >      0.247 <, stable= True
+scales rx: >      0.248 <, stable= True
+scales rx: >      0.249 <, stable= True
+scales rx: >      0.250 <, stable= True
+scales rx: >      0.251 <, stable= True
+scales rx: >      0.252 <, stable= True
+scales rx: >      0.253 <, stable= True
+scales rx: >      0.254 <, stable= True
+scales rx: >      0.255 <, stable= True
+scales rx: >      0.256 <, stable= True
+scales rx: >      0.257 <, stable= True
+scales rx: >      0.258 <, stable= True
+scales rx: >      0.259 <, stable= True
+scales rx: >      0.260 <, stable= True
+scales rx: >      0.261 <, stable= True
+scales rx: >      0.262 <, stable= True
+scales rx: >      0.263 <, stable= True
+scales rx: >      0.264 <, stable= True
+scales rx: >      0.263 <, stable= False
+scales rx: >      0.263 <, stable= True
+scales rx: >      0.265 <, stable= False
+scales rx: >      0.265 <, stable= True
+scales rx: >      0.263 <, stable= False
+scales rx: >      0.263 <, stable= True
+scales rx: >      0.264 <, stable= True
+scales rx: >      0.265 <, stable= True
+scales rx: >      0.266 <, stable= True
+scales rx: >      0.267 <, stable= True
+scales rx: >      0.268 <, stable= True
+scales rx: >      0.269 <, stable= True
+scales rx: >      0.270 <, stable= True
+scales rx: >      0.271 <, stable= True
+scales rx: >      0.272 <, stable= True
+scales rx: >      0.273 <, stable= True
+scales rx: >      0.274 <, stable= True
+scales rx: >      0.275 <, stable= True
+scales rx: >      0.276 <, stable= True
+scales rx: >      0.278 <, stable= False
+scales rx: >      0.278 <, stable= True
+scales rx: >      0.277 <, stable= True
+scales rx: >      0.275 <, stable= False
+scales rx: >      0.275 <, stable= True
+scales rx: >      0.270 <, stable= False
+scales rx: >      0.275 <, stable= False
+scales rx: >      0.274 <, stable= True
+scales rx: >      0.273 <, stable= True
+before join
+ready
+Traceback (most recent call last):
+  File "/home/pi/godisp/main.py", line 207, in <module>
+    main()
+  File "/home/pi/godisp/main.py", line 202, in main
+    root.mainloop()
+  File "/usr/lib/python3.2/tkinter/__init__.py", line 1027, in mainloop
+    self.tk.mainloop(n)
+  File "/usr/lib/python3.2/tkinter/__init__.py", line 1428, in __call__
+    raise SystemExit(msg)
+SystemExit: 1
+>>> ================================ RESTART ================================
+>>> ================================ RESTART ================================
+>>> 
+
+Warning (from warnings module):
+  File "/home/pi/godisp/gate.py", line 32
+    GPIO.setup(self.step, GPIO.OUT)
+RuntimeWarning: A physical pull up resistor is fitted on this channel!
+
+Warning (from warnings module):
+  File "/home/pi/godisp/gate.py", line 34
+    GPIO.setup(self.enable, GPIO.OUT)
+RuntimeWarning: A physical pull up resistor is fitted on this channel!
+in load
+scales rx: >      0.274 <, stable= True
+scales rx: >     0.000 <, stable= True
+scales rx: >      0.001 <, stable= False
+1459186314719 274
+1459186316362 0
+1459186316362 0
+1459186316487 1
+1459186314719 274
+1459186316362 0
+1459186316362 0
+1459186316487 1
+scales rx: >      0.002 <, stable= True
+1459186316362 0
+1459186316487 1
+1459186316487 1
+1459186317150 2
+1459186316362 0
+1459186316487 1
+1459186316487 1
+1459186317150 2
+scales rx: >      0.001 <, stable= True
+1459186316487 1
+1459186317150 2
+1459186317150 2
+1459186317773 1
+1459186316487 1
+1459186317150 2
+1459186317150 2
+1459186317773 1
+scales rx: >      0.002 <, stable= True
+1459186317150 2
+1459186317773 1
+1459186317773 1
+1459186318364 2
+scales rx: >      0.001 <, stable= False
+1459186317773 1
+1459186318364 2
+1459186318364 2
+1459186318813 1
+1459186318364 2
+1459186318813 1
+1459186318813 1
+1459186319169 0
+1459186318364 2
+1459186318813 1
+1459186318813 1
+1459186319169 0
+scales rx: >      0.001 <, stable= False
+1459186318813 1
+1459186319169 0
+1459186319169 0
+1459186321219 1
+1459186318813 1
+1459186319169 0
+1459186319169 0
+1459186321219 1
+scales rx: >      0.002 <, stable= True
+1459186319169 0
+1459186321219 1
+1459186321219 1
+1459186321811 2
+1459186319169 0
+1459186321219 1
+1459186321219 1
+1459186321811 2
+1459186321219 1
+1459186321811 2
+1459186321811 2
+1459186330497 0
+1459186321219 1
+1459186321811 2
+1459186321811 2
+1459186330497 0
+scales rx: >      0.003 <, stable= False
+1459186321811 2
+1459186330497 0
+1459186330497 0
+1459186333255 3
+scales rx: >      0.003 <, stable= True
+1459186330497 0
+1459186333255 3
+1459186333255 3
+1459186333642 3
+1459186330497 0
+1459186333255 3
+1459186333255 3
+1459186333642 3
+scales rx: >      0.002 <, stable= True
+1459186333255 3
+1459186333642 3
+1459186333642 3
+1459186334702 2
+1459186333255 3
+1459186333642 3
+1459186333642 3
+1459186334702 2
+scales rx: >      0.001 <, stable= True
+1459186333642 3
+1459186334702 2
+1459186334702 2
+1459186335522 1
+1459186333642 3
+1459186334702 2
+1459186334702 2
+1459186335522 1
+scales rx: >      0.002 <, stable= True
+1459186334702 2
+1459186335522 1
+1459186335522 1
+1459186336559 2
+1459186334702 2
+1459186335522 1
+1459186335522 1
+1459186336559 2
+scales rx: >      0.001 <, stable= True
+1459186335522 1
+1459186336559 2
+1459186336559 2
+1459186338207 1
+scales rx: >      0.002 <, stable= True
+1459186336559 2
+1459186338207 1
+1459186338207 1
+1459186340695 2
+scales rx: >      0.001 <, stable= True
+1459186338207 1
+1459186340695 2
+1459186340695 2
+1459186341108 1
+1459186338207 1
+1459186340695 2
+1459186340695 2
+1459186341108 1
+scales rx: >      0.002 <, stable= True
+1459186340695 2
+1459186341108 1
+1459186341108 1
+1459186341811 2
+1459186340695 2
+1459186341108 1
+1459186341108before join 
+1
+1459186341811 2
+ready
+Traceback (most recent call last):
+  File "/home/pi/godisp/main.py", line 207, in <module>
+    main()
+  File "/home/pi/godisp/main.py", line 202, in main
+    root.mainloop()
+  File "/usr/lib/python3.2/tkinter/__init__.py", line 1027, in mainloop
+    self.tk.mainloop(n)
+  File "/usr/lib/python3.2/tkinter/__init__.py", line 1428, in __call__
+    raise SystemExit(msg)
+SystemExit: 1
+>>> ================================ RESTART ================================
+>>> ================================ RESTART ================================
+>>> 
+
+Warning (from warnings module):
+  File "/home/pi/godisp/gate.py", line 32
+    GPIO.setup(self.step, GPIO.OUT)
+RuntimeWarning: A physical pull up resistor is fitted on this channel!
+
+Warning (from warnings module):
+  File "/home/pi/godisp/gate.py", line 34
+    GPIO.setup(self.enable, GPIO.OUT)
+RuntimeWarning: A physical pull up resistor is fitted on this channel!
+in load
+scales rx: >     0.000 <, stable= True
+1459186379434 0
+1459186381056 0
+1459186381056 0
+1459186381157 0
+scales rx: >      0.001 <, stable= True
+1459186381056 0
+1459186381157 0
+1459186381157 0
+1459186384759 1
+1459186381056 0
+1459186381157 0
+1459186381157 0
+1459186384759 1
+1459186381157 0
+1459186384759 1
+1459186384759 1
+1459186385493 0
+1459186381157 0
+1459186384759 1
+1459186384759 1
+1459186385493 0
+scales rx: >      0.002 <, stable= False
+1459186384759 1
+1459186385493 0
+1459186385493 0
+1459186388787 2
+1459186384759 1
+1459186385493 0
+1459186385493 0
+1459186388787 2
+scales rx: >      0.003 <, stable= True
+1459186385493 0
+1459186388787 2
+1459186388787 2
+1459186389468 3
+1459186385493 0
+1459186388787 2
+1459186388787 2
+1459186389468 3
+scales rx: >      0.002 <, stable= False
+1459186388787 2
+1459186389468 3
+1459186389468 3
+1459186390161 2
+1459186388787 2
+1459186389468 3
+1459186389468 3
+1459186390161 2
+scales rx: >      0.002 <, stable= True
+1459186389468 3
+1459186390161 2
+1459186390161 2
+1459186390798 2
+1459186389468 3
+1459186390161 2
+1459186390161 2
+1459186390798 2
+scales rx: >      0.001 <, stable= True
+1459186390161 2
+1459186390798 2
+1459186390798 2
+1459186392106 1
+1459186390161 2
+1459186390798 2
+1459186390798 2
+1459186392106 1
+scales rx: >      0.002 <, stable= True
+1459186390798 2
+1459186392106 1
+1459186392106 1
+1459186394760 2
+1459186390798 2
+1459186392106 1
+1459186392106 1
+1459186394760 2
+scales rx: >      0.001 <, stable= True
+1459186392106 1
+1459186394760 2
+1459186394760 2
+1459186395393 1
+1459186392106 1
+1459186394760 2
+1459186394760 2
+1459186395393 1
+1459186394760 2
+1459186395393 1
+1459186395393 1
+1459186395995 0
+1459186394760 2
+1459186395393 1
+1459186395393 1
+1459186395995 0
+scales rx: >      0.008 <, stable= False
+1459186395393 1
+1459186395995 0
+1459186395995 0
+1459186396614 8
+1459186395393 1
+1459186395995 0
+1459186395995 0
+1459186396614 8
+scales rx: >      0.009 <, stable= True
+1459186395995 0
+1459186396614 8
+1459186396614 8
+1459186397246 9
+1459186395995 0
+1459186396614 8
+1459186396614 8
+1459186397246 9
+scales rx: >      0.008 <, stable= True
+1459186396614 8
+1459186397246 9
+1459186397246 9
+1459186410373 8
+1459186396614 8
+1459186397246 9
+1459186397246 9
+1459186410373 8
+scales rx: >      0.007 <, stable= True
+1459186397246 9
+1459186410373 8
+1459186410373 8
+1459186411154 7
+1459186397246 9
+1459186410373 8
+1459186410373 8
+1459186411154 7
+scales rx: >      0.006 <, stable= True
+1459186410373 8
+1459186411154 7
+1459186411154 7
+1459186413714 6
+1459186410373 8
+1459186411154 7
+1459186411154 7
+1459186413714 6
+scales rx: >      0.008 <, stable= False
+1459186411154 7
+1459186413714 6
+1459186413714 6
+1459186429939 8
+1459186411154 7
+1459186413714 6
+1459186413714 6
+1459186429939 8
+scales rx: >      0.008 <, stable= True
+1459186413714 6
+1459186429939 8
+1459186429939 8
+1459186430614 8
+1459186413714 6
+1459186429939 8
+1459186429939 8
+1459186430614 8
+scales rx: >      0.009 <, stable= True
+1459186429939 8
+1459186430614 8
+1459186430614 8
+1459186431335 9
+1459186429939 8
+1459186430614 8
+1459186430614 8
+1459186431335 9
+scales rx: >      0.008 <, stable= False
+1459186430614 8
+1459186431335 9
+1459186431335 9
+1459186433573 8
+1459186430614 8
+1459186431335 9
+1459186431335 9
+1459186433573 8
+scales rx: >      0.008 <, stable= True
+1459186431335 9
+1459186433573 8
+1459186433573 8
+1459186434205 8
+1459186431335 9
+1459186433573 8
+1459186433573 8
+1459186434205 8
+scales rx: >      0.007 <, stable= True
+1459186433573 8
+1459186434205 8
+1459186434205 8
+1459186434906 7
+1459186433573 8
+1459186434205 8
+1459186434205 8
+1459186434906 7
+scales rx: >      0.008 <, stable= False
+1459186434205 8
+1459186434906 7
+1459186434906 7
+1459186435630 8
+1459186434205 8
+1459186434906 7
+1459186434906 7
+1459186435630 8
+scales rx: >      0.008 <, stable= True
+1459186434906 7
+1459186435630 8
+1459186435630 8
+1459186436254 8
+1459186434906 7
+1459186435630 8
+1459186435630 8
+1459186436254 8
+scales rx: >      0.009 <, stable= True
+1459186435630 8
+1459186436254 8
+1459186436254 8
+1459186437699 9
+1459186435630 8
+1459186436254 8
+1459186436254 8
+1459186437699 9
+scales rx: >      0.010 <, stable= True
+1459186436254 8
+1459186437699 9
+1459186437699 9
+1459186441679 10
+1459186436254 8
+1459186437699 9
+1459186437699 9
+1459186441679 10
+scales rx: >      0.011 <, stable= False
+1459186437699 9
+1459186441679 10
+1459186441679 10
+1459186442360 11
+1459186437699 9
+1459186441679 10
+1459186441679 10
+1459186442360 11
+scales rx: >      0.011 <, stable= True
+1459186441679 10
+1459186442360 11
+1459186442360 11
+1459186442963 11
+1459186441679 10
+1459186442360 11
+1459186442360 11
+1459186442963 11
+scales rx: >      0.012 <, stable= True
+1459186442360 11
+1459186442963 11
+1459186442963 11
+1459186443569 12
+1459186442360 11
+1459186442963 11
+1459186442963 11
+1459186443569 12
+scales rx: >      0.013 <, stable= False
+1459186442963 11
+1459186443569 12
+1459186443569 12
+1459186444217 13
+1459186442963 11
+1459186443569 12
+1459186443569 12
+1459186444217 13
+scales rx: >      0.014 <, stable= True
+1459186443569 12
+1459186444217 13
+1459186444217 13
+1459186444823 14
+scales rx: >      0.016 <, stable= False
+1459186444217 13
+1459186444823 14
+1459186444823 14
+1459186445276 16
+1459186444217 13
+1459186444823 14
+1459186444823 14
+1459186445276 16
+scales rx: >      0.016 <, stable= True
+1459186444823 14
+1459186445276 16
+1459186445276 16
+1459186445882 16
+1459186444823 14
+1459186445276 16
+1459186445276 16
+1459186445882 16
+scales rx: >      0.018 <, stable= False
+1459186445276 16
+1459186445882 16
+1459186445882 16
+1459186446617 18
+1459186445276 16
+1459186445882 16
+1459186445882 16
+1459186446617 18
+scales rx: >      0.018 <, stable= True
+1459186445882 16
+1459186446617 18
+1459186446617 18
+1459186447205 18
+scales rx: >      0.019 <, stable= True
+1459186446617 18
+1459186447205 18
+1459186447205 18
+1459186447664 19
+1459186446617 18
+1459186447205 18
+1459186447205 18
+1459186447664 19
+scales rx: >      0.020 <, stable= False
+1459186447205 18
+1459186447664 19
+1459186447664 19
+1459186448259 20
+1459186447205 18
+1459186447664 19
+1459186447664 19
+1459186448259 20
+scales rx: >      0.020 <, stable= True
+1459186447664 19
+1459186448259 20
+1459186448259 20
+1459186448872 20
+1459186447664 19
+1459186448259 20
+1459186448259 20
+1459186448872 20
+scales rx: >      0.021 <, stable= True
+1459186448259 20
+1459186448872 20
+1459186448872 20
+1459186449468 21
+1459186448259 20
+1459186448872 20
+1459186448872 20
+1459186449468 21
+scales rx: >      0.022 <, stable= False
+1459186448872 20
+1459186449468 21
+1459186449468 21
+1459186450074 22
+1459186448872 20
+1459186449468 21
+1459186449468 21
+1459186450074 22
+scales rx: >      0.022 <, stable= True
+1459186449468 21
+1459186450074 22
+1459186450074 22
+1459186450679 22
+1459186449468 21
+1459186450074 22
+1459186450074 22
+1459186450679 22
+scales rx: >      0.023 <, stable= True
+1459186450074 22
+1459186450679 22
+1459186450679 22
+1459186451293 23
+1459186450074 22
+1459186450679 22
+1459186450679 22
+1459186451293 23
+scales rx: >      0.024 <, stable= False
+1459186450679 22
+1459186451293 23
+1459186451293 23
+1459186451920 24
+1459186450679 22
+1459186451293 23
+1459186451293 23
+1459186451920 24
+scales rx: >      0.024 <, stable= True
+1459186451293 23
+1459186451920 24
+1459186451920 24
+1459186452504 24
+1459186451293 23
+1459186451920 24
+1459186451920 24
+1459186452504 24
+scales rx: >      0.025 <, stable= True
+1459186451920 24
+1459186452504 24
+1459186452504 24
+1459186453105 25
+1459186451920 24
+1459186452504 24
+1459186452504 24
+1459186453105 25
+scales rx: >      0.026 <, stable= False
+1459186452504 24
+1459186453105 25
+1459186453105 25
+1459186453698 26
+1459186452504 24
+1459186453105 25
+1459186453105 25
+1459186453698 26
+scales rx: >      0.026 <, stable= True
+1459186453105 25
+1459186453698 26
+1459186453698 26
+1459186454317 26
+1459186453105 25
+1459186453698 26
+1459186453698 26
+1459186454317 26
+scales rx: >      0.027 <, stable= True
+1459186453698 26
+1459186454317 26
+1459186454317 26
+1459186454932 27
+1459186453698 26
+1459186454317 26
+1459186454317 26
+1459186454932 27
+scales rx: >      0.028 <, stable= False
+1459186454317 26
+1459186454932 27
+1459186454932 27
+1459186455583 28
+1459186454317 26
+1459186454932 27
+1459186454932 27
+1459186455583 28
+scales rx: >      0.029 <, stable= True
+1459186454932 27
+1459186455583 28
+1459186455583 28
+1459186456165 29
+1459186454932 27
+1459186455583 28
+1459186455583 28
+1459186456165 29
+scales rx: >      0.030 <, stable= False
+1459186455583 28
+1459186456165 29
+1459186456165 29
+1459186456780 30
+1459186455583 28
+1459186456165 29
+1459186456165 29
+1459186456780 30
+scales rx: >      0.031 <, stable= True
+1459186456165 29
+1459186456780 30
+1459186456780 30
+1459186457355 31
+1459186456165 29
+1459186456780 30
+1459186456780 30
+1459186457355 31
+scales rx: >      0.033 <, stable= False
+1459186456780 30
+1459186457355 31
+1459186457355 31
+1459186458016 33
+1459186456780 30
+1459186457355 31
+1459186457355 31
+1459186458016 33
+scales rx: >      0.033 <, stable= True
+1459186457355 31
+1459186458016 33
+1459186458016 33
+1459186458575 33
+1459186457355 31
+1459186458016 33
+1459186458016 33
+1459186458575 33
+scales rx: >      0.034 <, stable= True
+1459186458016 33
+1459186458575 33
+1459186458575 33
+1459186459175 34
+1459186458016 33
+1459186458575 33
+1459186458575 33
+1459186459175 34
+scales rx: >      0.035 <, stable= False
+1459186458575 33
+1459186459175 34
+1459186459175 34
+1459186459761 35
+1459186458575 33
+1459186459175 34
+1459186459175 34
+1459186459761 35
+scales rx: >      0.035 <, stable= True
+1459186459175 34
+1459186459761 35
+1459186459761 35
+1459186460340 35
+1459186459175 34
+1459186459761 35
+1459186459761 35
+1459186460340 35
+scales rx: >      0.037 <, stable= False
+1459186459761 35
+1459186460340 35
+1459186460340 35
+1459186460976 37
+1459186459761 35
+1459186460340 35
+1459186460340 35
+1459186460976 37
+scales rx: >      0.037 <, stable= True
+1459186460340 35
+1459186460976 37
+1459186460976 37
+1459186461576 37
+scales rx: >      0.038 <, stable= True
+1459186460976 37
+1459186461576 37
+1459186461576 37
+1459186461964 38
+1459186460976 37
+1459186461576 37
+1459186461576 37
+1459186461964 38
+scales rx: >      0.039 <, stable= False
+1459186461576 37
+1459186461964 38
+1459186461964 38
+1459186462575 39
+1459186461576 37
+1459186461964 38
+1459186461964 38
+1459186462575 39
+scales rx: >      0.039 <, stable= True
+1459186461964 38
+1459186462575 39
+1459186462575 39
+1459186463173 39
+1459186461964 38
+1459186462575 39
+1459186462575 39
+1459186463173 39
+scales rx: >      0.040 <, stable= True
+1459186462575 39
+1459186463173 39
+1459186463173 39
+1459186463796 40
+1459186462575 39
+1459186463173 39
+1459186463173 39
+1459186463796 40
+scales rx: >      0.041 <, stable= False
+1459186463173 39
+1459186463796 40
+1459186463796 40
+1459186464382 41
+1459186463173 39
+1459186463796 40
+1459186463796 40
+1459186464382 41
+scales rx: >      0.041 <, stable= True
+1459186463796 40
+1459186464382 41
+1459186464382 41
+1459186464985 41
+1459186463796 40
+1459186464382 41
+1459186464382 41
+1459186464985 41
+scales rx: >      0.042 <, stable= True
+1459186464382 41
+1459186464985 41
+1459186464985 41
+1459186465609 42
+1459186464382 41
+1459186464985 41
+1459186464985 41
+1459186465609 42
+scales rx: >      0.043 <, stable= False
+1459186464985 41
+1459186465609 42
+1459186465609 42
+1459186466247 43
+1459186464985 41
+1459186465609 42
+1459186465609 42
+1459186466247 43
+scales rx: >      0.043 <, stable= True
+1459186465609 42
+1459186466247 43
+1459186466247 43
+1459186466892 43
+1459186465609 42
+1459186466247 43
+1459186466247 43
+1459186466892 43
+scales rx: >      0.044 <, stable= True
+1459186466247 43
+1459186466892 43
+1459186466892 43
+1459186467509 44
+1459186466247 43
+1459186466892 43
+1459186466892 43
+1459186467509 44
+scales rx: >      0.045 <, stable= False
+1459186466892 43
+1459186467509 44
+1459186467509 44
+1459186468102 45
+1459186466892 43
+1459186467509 44
+1459186467509 44
+1459186468102 45
+scales rx: >      0.045 <, stable= True
+1459186467509 44
+1459186468102 45
+1459186468102 45
+1459186468694 45
+1459186467509 44
+1459186468102 45
+1459186468102 45
+1459186468694 45
+scales rx: >      0.046 <, stable= True
+1459186468102 45
+1459186468694 45
+1459186468694 45
+1459186469299 46
+1459186468102 45
+1459186468694 45
+1459186468694 45
+1459186469299 46
+scales rx: >      0.047 <, stable= False
+1459186468694 45
+1459186469299 46
+1459186469299 46
+1459186469915 47
+1459186468694 45
+1459186469299 46
+1459186469299 46
+1459186469915 47
+scales rx: >      0.047, <, stable= False
+1459186469299 46
+1459186469915 47
+1459186469915 47
+1459186470638 0
+1459186469299 46
+1459186469915 47
+1459186469915 47
+1459186470638 0
+scales rx: >      0.047 <, stable= False
+1459186469915 47
+1459186470638 0
+1459186470638 0
+1459186471275 47
+1459186469915 47
+1459186470638 0
+1459186470638 0
+1459186471275 47
+scales rx: >      0.047 <, stable= True
+1459186470638 0
+1459186471275 47
+1459186471275 47
+1459186472038 47
+1459186470638 0
+1459186471275 47
+1459186471275 47
+1459186472038 47
+scales rx: >       0.047 <, stable= True
+1459186471275 47
+1459186472038 47
+1459186472038 47
+1459186472719 0
+1459186471275 47
+1459186472038 47
+1459186472038 47
+1459186472719 0
+scales rx: >      0.047 <, stable= True
+1459186472038 47
+1459186472719 0
+1459186472719 0
+1459186473397 47
+1459186472038 47
+1459186472719 0
+1459186472719 0
+1459186473397 47
+scales rx: >      0.048 <, stable= True
+1459186472719 0
+1459186473397 47
+1459186473397 47
+1459186474018 48
+1459186472719 0
+1459186473397 47
+1459186473397 47
+1459186474018 48
+scales rx: >       0.048 <, stable= True
+1459186473397 47
+1459186474018 48
+1459186474018 48
+1459186474644 0
+1459186473397 47
+1459186474018 48
+1459186474018 48
+1459186474644 0
+scales rx: >      0.048 <, stable= True
+1459186474018 48
+1459186474644 0
+1459186474644 0
+1459186475273 48
+1459186474018 48
+1459186474644 0
+1459186474644 0
+1459186475273 48
+scales rx: >      0.048  <, stable= True
+1459186474644 0
+1459186475273 48
+1459186475273 48
+before join1459186475870
+ 0
+1459186474644 0
+1459186475273 48
+1459186475273 48
+1459186475870 0
+scales rx: >      0.048 <, stable= True
+1459186475273 48
+1459186475870 0
+1459186475870 0
+1459186476539 48
+1459186475273 48
+1459186475870 0
+1459186475870 0
+1459186476539 48
+ready
+Traceback (most recent call last):
+  File "/home/pi/godisp/main.py", line 207, in <module>
+    main()
+  File "/home/pi/godisp/main.py", line 202, in main
+    root.mainloop()
+  File "/usr/lib/python3.2/tkinter/__init__.py", line 1027, in mainloop
+    self.tk.mainloop(n)
+  File "/usr/lib/python3.2/tkinter/__init__.py", line 1428, in __call__
+    raise SystemExit(msg)
+SystemExit: 1
+>>> ================================ RESTART ================================
+>>> ================================ RESTART ================================
+>>> 
+
+Warning (from warnings module):
+  File "/home/pi/godisp/gate.py", line 32
+    GPIO.setup(self.step, GPIO.OUT)
+RuntimeWarning: A physical pull up resistor is fitted on this channel!
+
+Warning (from warnings module):
+  File "/home/pi/godisp/gate.py", line 34
+    GPIO.setup(self.enable, GPIO.OUT)
+RuntimeWarning: A physical pull up resistor is fitted on this channel!
+in load
+scales rx: >     0.000 <, stable= True
+scales rx: >      0.001 <, stable= False
+1459187315164 0
+1459187316793 0
+flowSum 0
+1459187316793 0
+1459187316921 1
+flowSum 7812
+avg 3906 ( 2 )
+1459187315164 0
+1459187316793 0
+flowSum 0
+1459187316793 0
+1459187316921 1
+flowSum 7812
+avg 3906 ( 2 )
+scales rx: >      0.001 <, stable= True
+1459187316793 0
+1459187316921 1
+flowSum 7812
+1459187316921 1
+1459187318031 1
+flowSum 7812
+avg 3906 ( 2 )
+1459187316921 1
+1459187318031 1
+flowSum 0
+1459187318031 1
+1459187318677 0
+flowSum -1548
+avg -773 ( 2 )
+1459187316921 1
+1459187318031 1
+flowSum 0
+1459187318031 1
+1459187318677 0
+flowSum -1548
+avg -773 ( 2 )
+scales rx: >      0.005 <, stable= False
+1459187318031 1
+1459187318677 0
+flowSum -1548
+1459187318677 0
+1459187319916 5
+flowSum 2487
+avg 1244 ( 2 )
+1459187318031 1
+1459187318677 0
+flowSum -1548
+1459187318677 0
+1459187319916 5
+flowSum 2487
+avg 1244 ( 2 )
+scales rx: >      0.005 <, stable= True
+1459187318677 0
+1459187319916 5
+flowSum 4035
+1459187319916 5
+1459187321126 5
+flowSum 4035
+avg 2018 ( 2 )
+1459187318677 0
+1459187319916 5
+flowSum 4035
+1459187319916 5
+1459187321126 5
+flowSum 4035
+avg 2018 ( 2 )
+scales rx: >      0.009 <, stable= False
+1459187319916 5
+1459187321126 5
+flowSum 0
+1459187321126 5
+1459187322352 9
+flowSum 3262
+avg 1631 ( 2 )
+1459187319916 5
+1459187321126 5
+flowSum 0
+1459187321126 5
+1459187322352 9
+flowSum 3262
+avg 1631 ( 2 )
+scales rx: >      0.008 <, stable= True
+1459187321126 5
+1459187322352 9
+flowSum 3262
+1459187322352 9
+1459187323506 8
+flowSum 2395
+avg 1198 ( 2 )
+1459187321126 5
+1459187322352 9
+flowSum 3262
+1459187322352 9
+1459187323506 8
+flowSum 2395
+avg 1198 ( 2 )
+scales rx: >      0.007 <, stable= True
+1459187322352 9
+1459187323506 8
+flowSum -867
+1459187323506 8
+1459187324938 7
+flowSum -1566
+avg -782 ( 2 )
+1459187322352 9
+1459187323506 8
+flowSum -867
+1459187323506 8
+1459187324938 7
+flowSum -1566
+avg -782 ( 2 )
+scales rx: >      0.006 <, stable= True
+1459187323506 8
+1459187324938 7
+flowSum -699
+1459187324938 7
+1459187332305 6
+flowSum -835
+avg -417 ( 2 )
+1459187323506 8
+1459187324938 7
+flowSum -699
+1459187324938 7
+1459187332305 6
+flowSum -835
+avg -417 ( 2 )
+scales rx: >      0.007 <, stable= True
+1459187324938 7
+1459187332305 6
+flowSum -136
+1459187332305 6
+1459187333594 7
+flowSum 639
+avg 320 ( 2 )
+1459187324938 7
+1459187332305 6
+flowSum -136
+1459187332305 6
+1459187333594 7
+flowSum 639
+avg 320 ( 2 )
+scales rx: >      0.006 <, stable= True
+1459187332305 6
+1459187333594 7
+flowSum 775
+1459187333594 7
+1459187334823 6
+flowSum -39
+avg -19 ( 2 )
+1459187332305 6
+1459187333594 7
+flowSum 775
+1459187333594 7
+1459187334823 6
+flowSum -39
+avg -19 ( 2 )
+scales rx: >      0.005 <, stable= True
+1459187333594 7
+1459187334823 6
+flowSum -814
+1459187334823 6
+1459187357785 5
+flowSum -858
+avg -428 ( 2 )
+1459187333594 7
+1459187334823 6
+flowSum -814
+1459187334823 6
+1459187357785 5
+flowSum -858
+avg -428 ( 2 )
+scales rx: >      0.006 <, stable= True
+1459187334823 6
+1459187357785 5
+flowSum -44
+1459187357785 5
+1459187359756 6
+flowSum 463
+avg 232 ( 2 )
+1459187334823 6
+1459187357785 5
+flowSum -44
+1459187357785 5
+1459187359756 6
+flowSum 463
+avg 232 ( 2 )
+scales rx: >      0.005 <, stable= True
+1459187357785 5
+1459187359756 6
+flowSum 507
+1459187359756 6
+1459187360945 5
+flowSum -335
+avg -167 ( 2 )
+1459187357785 5
+1459187359756 6
+flowSum 507
+1459187359756 6
+1459187360945 5
+flowSum -335
+avg -167 ( 2 )
+scales rx: >      0.007 <, stable= False
+1459187359756 6
+1459187360945 5
+flowSum -842
+1459187360945 5
+1459187368571 7
+flowSum -580
+avg -289 ( 2 )
+1459187359756 6
+1459187360945 5
+flowSum -842
+1459187360945 5
+1459187368571 7
+flowSum -580
+avg -289 ( 2 )
+scales rx: >      0.007 <, stable= True
+1459187360945 5
+1459187368571 7
+flowSum 262
+1459187368571 7
+1459187369679 7
+flowSum 262
+avg 131 ( 2 )
+1459187360945 5
+1459187368571 7
+flowSum 262
+1459187368571 7
+1459187369679 7
+flowSum 262
+avg 131 ( 2 )
+scales rx: >      0.008 <, stable= True
+1459187368571 7
+1459187369679 7
+flowSum 0
+1459187369679 7
+1459187370863 8
+flowSum 844
+avg 422 ( 2 )
+1459187368571 7
+1459187369679 7
+flowSum 0
+1459187369679 7
+1459187370863 8
+flowSum 844
+avg 422 ( 2 )
+scales rx: >      0.009 <, stable= False
+1459187369679 7
+1459187370863 8
+flowSum 844
+1459187370863 8
+1459187371959 9
+flowSum 1756
+avg 878 ( 2 )
+1459187369679 7
+1459187370863 8
+flowSum 844
+1459187370863 8
+1459187371959 9
+flowSum 1756
+avg 878 ( 2 )
+scales rx: >      0.009 <, stable= True
+1459187370863 8
+1459187371959 9
+flowSum 912
+1459187371959 9
+1459187373092 9
+flowSum 912
+avg 456 ( 2 )
+1459187370863 8
+1459187371959 9
+flowSum 912
+1459187371959 9
+1459187373092 9
+flowSum 912
+avg 456 ( 2 )
+scales rx: >      0.010 <, stable= True
+1459187371959 9
+1459187373092 9
+flowSum 0
+1459187373092 9
+1459187374285 10
+flowSum 838
+avg 419 ( 2 )
+1459187371959 9
+1459187373092 9
+flowSum 0
+1459187373092 9
+1459187374285 10
+flowSum 838
+avg 419 ( 2 )
+scales rx: >      0.013 <, stable= False
+1459187373092 9
+1459187374285 10
+flowSum 838
+1459187374285 10
+1459187375719 13
+flowSum 2930
+avg 1465 ( 2 )
+1459187373092 9
+1459187374285 10
+flowSum 838
+1459187374285 10
+1459187375719 13
+flowSum 2930
+avg 1465 ( 2 )
+scales rx: >      0.013 <, stable= True
+1459187374285 10
+1459187375719 13
+flowSum 2092
+1459187375719 13
+1459187376817 13
+flowSum 2092
+avg 1046 ( 2 )
+1459187374285 10
+1459187375719 13
+flowSum 2092
+1459187375719 13
+1459187376817 13
+flowSum 2092
+avg 1046 ( 2 )
+scales rx: >      0.014 <, stable= True
+1459187375719 13
+1459187376817 13
+flowSum 0
+1459187376817 13
+1459187377906 14
+flowSum 918
+avg 459 ( 2 )
+1459187375719 13
+1459187376817 13
+flowSum 0
+1459187376817 13
+1459187377906 14
+flowSum 918
+avg 459 ( 2 )
+scales rx: >      0.012 <, stable= False
+1459187376817 13
+1459187377906 14
+flowSum 918
+1459187377906 14
+1459187379206 12
+flowSum -621
+avg -310 ( 2 )
+1459187376817 13
+1459187377906 14
+flowSum 918
+1459187377906 14
+1459187379206 12
+flowSum -621
+avg -310 ( 2 )
+scales rx: >      0.012 <, stable= True
+1459187377906 14
+1459187379206 12
+flowSum -1539
+1459187379206 12
+1459187380384 12
+flowSum -1539
+avg -769 ( 2 )
+1459187377906 14
+1459187379206 12
+flowSum -1539
+1459187379206 12
+1459187380384 12
+flowSum -1539
+avg -769 ( 2 )
+scales rx: >      0.011 <, stable= True
+1459187379206 12
+1459187380384 12
+flowSum 0
+1459187380384 12
+1459187381593 11
+flowSum -828
+avg -413 ( 2 )
+1459187379206 12
+1459187380384 12
+flowSum 0
+1459187380384 12
+1459187381593 11
+flowSum -828
+avg -413 ( 2 )
+scales rx: >      0.063 <, stable= False
+1459187380384 12
+1459187381593 11
+flowSum -828
+1459187381593 11
+1459187383229 63
+flowSum 30956
+avg 15478 ( 2 )
+1459187380384 12
+1459187381593 11
+flowSum -828
+1459187381593 11
+1459187383229 63
+flowSum 30956
+avg 15478 ( 2 )
+scales rx: >      0.007 <, stable= False
+1459187381593 11
+1459187383229 63
+flowSum 31784
+1459187383229 63
+1459187384438 7
+flowSum -14536
+avg -7267 ( 2 )
+1459187381593 11
+1459187383229 63
+flowSum 31784
+1459187383229 63
+1459187384438 7
+flowSum -14536
+avg -7267 ( 2 )
+scales rx: >      0.007 <, stable= True
+1459187383229 63
+1459187384438 7
+flowSum -46320
+1459187384438 7
+1459187385629 7
+flowSum -46320
+avg -23159 ( 2 )
+1459187383229 63
+1459187384438 7
+flowSum -46320
+1459187384438 7
+1459187385629 7
+flowSum -46320
+avg -23159 ( 2 )
+scales rx: >      0.006 <, stable= True
+1459187384438 7
+1459187385629 7
+flowSum 0
+1459187385629 7
+1459187386898 6
+flowSum -789
+avg -394 ( 2 )
+1459187384438 7
+1459187385629 7
+flowSum 0
+1459187385629 7
+1459187386898 6
+flowSum -789
+avg -394 ( 2 )
+scales rx: >      0.003 <, stable= False
+1459187385629 7
+1459187386898 6
+flowSum -789
+1459187386898 6
+1459187388238 3
+flowSum -3028
+avg -1513 ( 2 )
+1459187385629 7
+1459187386898 6
+flowSum -789
+1459187386898 6
+1459187388238 3
+flowSum -3028
+avg -1513 ( 2 )
+scales rx: >      0.002 <, stable= False
+1459187386898 6
+1459187388238 3
+flowSum -2239
+1459187388238 3
+1459187389332 2
+flowSum -3154
+avg -1576 ( 2 )
+1459187386898 6
+1459187388238 3
+flowSum -2239
+1459187388238 3
+1459187389332 2
+flowSum -3154
+avg -1576 ( 2 )
+scales rx: >      0.002 <, stable= True
+1459187388238 3
+1459187389332 2
+flowSum -915
+1459187389332 2
+1459187390431 2
+flowSum -915
+avg -457 ( 2 )
+1459187388238 3
+1459187389332 2
+flowSum -915
+1459187389332 2
+1459187390431 2
+flowSum -915
+avg -457 ( 2 )
+scales rx: >      0.001 <, stable= True
+1459187389332 2
+1459187390431 2
+flowSum 0
+1459187390431 2
+1459187391616 1
+flowSum -844
+avg -421 ( 2 )
+1459187389332 2
+1459187390431 2
+flowSum 0
+1459187390431 2
+1459187391616 1
+flowSum -844
+avg -421 ( 2 )
+1459187390431 2
+1459187391616 1
+flowSum -844
+1459187391616 1
+1459187392707 0
+flowSum -1761
+avg -880 ( 2 )
+1459187390431 2
+1459187391616 1
+flowSum -844
+1459187391616 1
+1459187392707 0
+flowSum -1761
+avg -880 ( 2 )
+scales rx: >      0.001 <, stable= True
+1459187391616 1
+1459187392707 0
+flowSum -917
+1459187392707 0
+1459187407670 1
+flowSum -851
+avg -425 ( 2 )
+1459187391616 1
+1459187392707 0
+flowSum -917
+1459187392707 0
+1459187407670 1
+flowSum -851
+avg -425 ( 2 )
+1459187392707 0
+1459187407670 1
+flowSum 66
+1459187407670 1
+1459187408823 0
+flowSum -802
+avg -400 ( 2 )
+1459187392707 0
+1459187407670 1
+flowSum 66
+1459187407670 1
+1459187408823 0
+flowSum -802
+avg -400 ( 2 )
+scales rx: >      0.001 <, stable= True
+1459187407670 1
+1459187408823 0
+flowSum -868
+1459187408823 0
+1459187411132 1
+flowSum -435
+avg -217 ( 2 )
+1459187407670 1
+1459187408823 0
+flowSum -868
+1459187408823 0
+1459187411132 1
+flowSum -435
+avg -217 ( 2 )
+scales rx: >      0.002 <, stable= False
+1459187408823 0
+1459187411132 1
+flowSum 433
+1459187411132 1
+1459187423011 2
+flowSum 517
+avg 259 ( 2 )
+1459187408823 0
+1459187411132 1
+flowSum 433
+1459187411132 1
+1459187423011 2
+flowSum 517
+avg 259 ( 2 )
+scales rx: >      0.002 <, stable= True
+1459187411132 1
+1459187423011 2
+flowSum 84
+1459187423011 2
+1459187424402 2
+flowSum 84
+avg 42 ( 2 )
+1459187411132 1
+1459187423011 2
+flowSum 84
+1459187423011 2
+1459187424402 2
+flowSum 84
+avg 42 ( 2 )
+scales rx: >      0.003 <, stable= True
+1459187423011 2
+1459187424402 2
+flowSum 0
+1459187424402 2
+1459187425657 3
+flowSum 796
+avg 398 ( 2 )
+1459187423011 2
+1459187424402 2
+flowSum 0
+1459187424402 2
+1459187425657 3
+flowSum 796
+avg 398 ( 2 )
+scales rx: >      0.002 <, stable= True
+1459187424402 2
+1459187425657 3
+flowSum 796
+1459187425657 3
+1459187426850 2
+flowSum -43
+avg -21 ( 2 )
+1459187424402 2
+1459187425657 3
+flowSum 796
+1459187425657 3
+1459187426850 2
+flowSum -43
+avg -21 ( 2 )
+scales rx: >      0.001 <, stable= True
+1459187425657 3
+1459187426850 2
+flowSum -839
+1459187426850 2
+1459187428561 1
+flowSum -1424
+avg -711 ( 2 )
+1459187425657 3
+1459187426850 2
+flowSum -839
+1459187426850 2
+1459187428561 1
+flowSum -1424
+avg -711 ( 2 )
+1459187426850 2
+1459187428561 1
+flowSum -585
+1459187428561 1
+1459187432630 0
+flowSum -831
+avg -415 ( 2 )
+1459187426850 2
+1459187428561 1
+flowSum -585
+1459187428561 1
+1459187432630 0
+flowSum -831
+avg -415 ( 2 )
+scales rx: >      0.001 <, stable= True
+1459187428561 1
+1459187432630 0
+flowSum -246
+1459187432630 0
+1459187434440 1
+flowSum 306
+avg 153 ( 2 )
+1459187428561 1
+1459187432630 0
+flowSum -246
+1459187432630 0
+1459187434440 1
+flowSum 306
+avg 153 ( 2 )
+1459187432630 0
+1459187434440 1
+flowSum 552
+1459187434440 1
+1459187441836 0
+flowSum 416
+avg 208 ( 2 )
+1459187432630 0
+1459187434440 1
+flowSum 552
+1459187434440 1
+1459187441836 0
+flowSum 416
+avg 208 ( 2 )
+scales rx: >      0.001 <, stable= True
+1459187434440 1
+1459187441836 0
+flowSum -136
+1459187441836 0
+1459187442882 1
+flowSum 820
+avg 410 ( 2 )
+1459187434440 1
+1459187441836 0
+flowSum -136
+1459187441836 0
+1459187442882 1
+flowSum 820
+avg 410 ( 2 )
+scales rx: >      0.002 <, stable= False
+1459187441836 0
+1459187442882 1
+flowSum 956
+1459187442882 1
+1459187444432 2
+flowSum 1601
+avg 801 ( 2 )
+1459187441836 0
+1459187442882 1
+flowSum 956
+1459187442882 1
+1459187444432 2
+flowSum 1601
+avg 801 ( 2 )
+scales rx: >      0.004 <, stable= False
+1459187442882 1
+1459187444432 2
+flowSum 645
+1459187444432 2
+1459187445530 4
+flowSum 2466
+avg 1233 ( 2 )
+1459187442882 1
+1459187444432 2
+flowSum 645
+1459187444432 2
+1459187445530 4
+flowSum 2466
+avg 1233 ( 2 )
+scales rx: >      0.004 <, stable= True
+1459187444432 2
+1459187445530 4
+flowSum 1821
+1459187445530 4
+1459187446677 4
+flowSum 1821
+avg 911 ( 2 )
+1459187444432 2
+1459187445530 4
+flowSum 1821
+1459187445530 4
+1459187446677 4
+flowSum 1821
+avg 911 ( 2 )
+scales rx: >      0.005 <, stable= True
+1459187445530 4
+1459187446677 4
+flowSum 0
+1459187446677 4
+1459187447865 5
+flowSum 841
+avg 421 ( 2 )
+1459187445530 4
+1459187446677 4
+flowSum 0
+1459187446677 4
+1459187447865 5
+flowSum 841
+avg 421 ( 2 )
+scales rx: >      0.004 <, stable= True
+1459187446677 4
+1459187447865 5
+flowSum 841
+1459187447865 5
+1459187495393 4
+flowSum 819
+avg 410 ( 2 )
+1459187446677 4
+1459187447865 5
+flowSum 841
+1459187447865 5
+1459187495393 4
+flowSum 819
+avg 410 ( 2 )
+scales rx: >      0.005 <, stable= True
+1459187447865 5
+1459187495393 4
+flowSum -22
+1459187495393 4
+1459187496508 5
+flowSum 874
+avg 437 ( 2 )
+1459187447865 5
+1459187495393 4
+flowSum -22
+1459187495393 4
+1459187496508 5
+flowSum 874
+avg 437 ( 2 )
+scales rx: >      0.004 <, stable= True
+1459187495393 4
+1459187496508 5
+flowSum 896
+1459187496508 5
+1459187497558 4
+flowSum -57
+avg -28 ( 2 )
+1459187495393 4
+1459187496508 5
+flowSum 896
+1459187496508 5
+1459187497558 4
+flowSum -57
+avg -28 ( 2 )
+scales rx: >      0.005 <, stable= True
+1459187496508 5
+1459187497558 4
+flowSum -953
+1459187497558 4
+1459187498731 5
+flowSum -101
+avg -50 ( 2 )
+1459187496508 5
+1459187497558 4
+flowSum -953
+1459187497558 4
+1459187498731 5
+flowSum -101
+avg -50 ( 2 )
+scales rx: >      0.004 <, stable= True
+1459187497558 4
+1459187498731 5
+flowSum 852
+1459187498731 5
+1459187500067 4
+flowSum 103
+avg 52 ( 2 )
+1459187497558 4
+1459187498731 5
+flowSum 852
+1459187498731 5
+1459187500067 4
+flowSum 103
+avg 52 ( 2 )
+scales rx: >      0.005 <, stable= True
+1459187498731 5
+1459187500067 4
+flowSum -749
+1459187500067 4
+1459187501314 5
+flowSum 52
+avg 26 ( 2 )
+1459187498731 5
+1459187500067 4
+flowSum -749
+1459187500067 4
+1459187501314 5
+flowSum 52
+avg 26 ( 2 )
+scales rx: >      0.004 <, stable= True
+1459187500067 4
+1459187501314 5
+flowSum 801
+1459187501314 5
+1459187502586 4
+flowSum 14
+avg 7 ( 2 )
+1459187500067 4
+1459187501314 5
+flowSum 801
+1459187501314 5
+1459187502586 4
+flowSum 14
+avg 7 ( 2 )
+scales rx: >      0.005 <, stable= True
+1459187501314 5
+1459187502586 4
+flowSum -787
+1459187502586 4
+1459187504159 5
+flowSum -152
+avg -75 ( 2 )
+1459187501314 5
+1459187502586 4
+flowSum -787
+1459187502586 4
+1459187504159 5
+flowSum -152
+avg -75 ( 2 )
+scales rx: >      0.004 <, stable= True
+1459187502586 4
+1459187504159 5
+flowSum 635
+1459187504159 5
+1459187513922 4
+flowSum 532
+avg 266 ( 2 )
+1459187502586 4
+1459187504159 5
+flowSum 635
+1459187504159 5
+1459187513922 4
+flowSum 532
+avg 266 ( 2 )
+scales rx: >      0.005 <, stable= True
+1459187504159 5
+1459187513922 4
+flowSum -103
+1459187513922 4
+1459187515352 5
+flowSum 596
+avg 298 ( 2 )
+1459187504159 5
+1459187513922 4
+flowSum -103
+1459187513922 4
+1459187515352 5
+flowSum 596
+avg 298 ( 2 )
+scales rx: >      0.004 <, stable= True
+1459187513922 4
+1459187515352 5
+flowSum 699
+1459187515352 5
+1459187516495 4
+flowSum -176
+avg -87 ( 2 )
+1459187513922 4
+1459187515352 5
+flowSum 699
+1459187515352 5
+1459187516495 4
+flowSum -176
+avg -87 ( 2 )
+scales rx: >      0.005 <, stable= True
+1459187515352 5
+1459187516495 4
+flowSum -875
+1459187516495 4
+1459187517647 5
+flowSum -7
+avg -3 ( 2 )
+1459187515352 5
+1459187516495 4
+flowSum -875
+1459187516495 4
+1459187517647 5
+flowSum -7
+avg -3 ( 2 )
+scales rx: >      0.004 <, stable= True
+1459187516495 4
+1459187517647 5
+flowSum 868
+1459187517647 5
+1459187518783 4
+flowSum -13
+avg -6 ( 2 )
+1459187516495 4
+1459187517647 5
+flowSum 868
+1459187517647 5
+1459187518783 4
+flowSum -13
+avg -6 ( 2 )
+1459187517647 5
+1459187518783 4
+flowSum -881
+1459187518783 4
+1459187589566 0
+flowSum -938
+avg -468 ( 2 )
+1459187517647 5
+1459187518783 4
+flowSum -881
+1459187518783 4
+1459187589566 0
+flowSum -938
+avg -468 ( 2 )
+scales rx: >      0.001 <, stable= True
+1459187518783 4
+1459187589566 0
+flowSum -57
+1459187589566 0
+1459187591264 1
+flowSum 531
+avg 266 ( 2 )
+1459187518783 4
+1459187589566 0
+flowSum -57
+1459187589566 0
+1459187591264 1
+flowSum 531
+avg 266 ( 2 )
+1459187589566 0
+1459187591264 1
+flowSum 588
+1459187591264 1
+1459187592383 0
+flowSum -306
+avg -152 ( 2 )
+1459187589566 0
+1459187591264 1
+flowSum 588
+1459187591264 1
+1459187592383 0
+flowSum -306
+avg -152 ( 2 )
+before join
+ready
+Traceback (most recent call last):
+  File "/home/pi/godisp/main.py", line 207, in <module>
+    main()
+  File "/home/pi/godisp/main.py", line 202, in main
+    root.mainloop()
+  File "/usr/lib/python3.2/tkinter/__init__.py", line 1027, in mainloop
+    self.tk.mainloop(n)
+  File "/usr/lib/python3.2/tkinter/__init__.py", line 1428, in __call__
+    raise SystemExit(msg)
+SystemExit: 1
+>>> ================================ RESTART ================================
+>>> 
+Traceback (most recent call last):
+  File "/home/pi/godisp/main.py", line 33, in <module>
+    from DispensingControl import DispensingControl
+  File "/home/pi/godisp/DispensingControl.py", line 35
+    def __del__(self):
+                     ^
+TabError: inconsistent use of tabs and spaces in indentation
+>>> ================================ RESTART ================================
+>>> 
+Traceback (most recent call last):
+  File "/home/pi/godisp/main.py", line 33, in <module>
+    from DispensingControl import DispensingControl
+  File "/home/pi/godisp/DispensingControl.py", line 38
+    def forceFlowChanges(self)
+                             ^
+SyntaxError: invalid syntax
+>>> ================================ RESTART ================================
+>>> 
+
+Warning (from warnings module):
+  File "/home/pi/godisp/gate.py", line 32
+    GPIO.setup(self.step, GPIO.OUT)
+RuntimeWarning: A physical pull up resistor is fitted on this channel!
+
+Warning (from warnings module):
+  File "/home/pi/godisp/gate.py", line 34
+    GPIO.setup(self.enable, GPIO.OUT)
+RuntimeWarning: A physical pull up resistor is fitted on this channel!
+Traceback (most recent call last):
+  File "/home/pi/godisp/main.py", line 207, in <module>
+    main()
+  File "/home/pi/godisp/main.py", line 201, in main
+    client = ThreadedClient(root)
+  File "/home/pi/godisp/main.py", line 75, in __init__
+    self.dispensingControl = DispensingControl(self.scales, self.gate)
+  File "/home/pi/godisp/DispensingControl.py", line 32, in __init__
+    self.flowChangeForcer = ForceFlowChange(self.stopFlowChangeForcer, self.forceFlowChange)
+NameError: global name 'ForceFlowChange' is not defined
+>>> Exception in thread Thread-2:
+Traceback (most recent call last):
+  File "/usr/lib/python3.2/threading.py", line 740, in _bootstrap_inner
+    self.run()
+  File "/home/pi/godisp/scales.py", line 66, in run
+    Publisher.dispatch(self, "WeightChanged", [0, True])
+  File "/home/pi/godisp/Util/Publisher.py", line 21, in dispatch
+    callback(message)
+  File "/home/pi/godisp/DispensingControl.py", line 51, in onWeightChanged
+    synchronized(_internalOnWeightChanged)
+NameError: global name 'synchronized' is not defined
+
+KeyboardInterrupt
+>>> ================================ RESTART ================================
+>>> ================================ RESTART ================================
+>>> 
+
+Warning (from warnings module):
+  File "/home/pi/godisp/gate.py", line 32
+    GPIO.setup(self.step, GPIO.OUT)
+RuntimeWarning: A physical pull up resistor is fitted on this channel!
+
+Warning (from warnings module):
+  File "/home/pi/godisp/gate.py", line 34
+    GPIO.setup(self.enable, GPIO.OUT)
+RuntimeWarning: A physical pull up resistor is fitted on this channel!
+Traceback (most recent call last):
+  File "/home/pi/godisp/main.py", line 207, in <module>
+    main()
+  File "/home/pi/godisp/main.py", line 201, in main
+    client = ThreadedClient(root)
+  File "/home/pi/godisp/main.py", line 75, in __init__
+    self.dispensingControl = DispensingControl(self.scales, self.gate)
+  File "/home/pi/godisp/DispensingControl.py", line 32, in __init__
+    self.flowChangeForcer = ForceFlowChange(self.stopFlowChangeForcer, self.forceFlowChange)
+NameError: global name 'ForceFlowChange' is not defined
+>>> Exception in thread Thread-2:
+Traceback (most recent call last):
+  File "/usr/lib/python3.2/threading.py", line 740, in _bootstrap_inner
+    self.run()
+  File "/home/pi/godisp/scales.py", line 66, in run
+    Publisher.dispatch(self, "WeightChanged", [0, True])
+  File "/home/pi/godisp/Util/Publisher.py", line 21, in dispatch
+    callback(message)
+  File "/home/pi/godisp/DispensingControl.py", line 51, in onWeightChanged
+    Synchronization.synchronized(_internalOnWeightChanged)
+NameError: global name 'Synchronization' is not defined
+
+================================ RESTART ================================
+>>> ================================ RESTART ================================
+>>> 
+
+Warning (from warnings module):
+  File "/home/pi/godisp/gate.py", line 32
+    GPIO.setup(self.step, GPIO.OUT)
+RuntimeWarning: A physical pull up resistor is fitted on this channel!
+
+Warning (from warnings module):
+  File "/home/pi/godisp/gate.py", line 34
+    GPIO.setup(self.enable, GPIO.OUT)
+RuntimeWarning: A physical pull up resistor is fitted on this channel!
+Traceback (most recent call last):
+  File "/home/pi/godisp/main.py", line 207, in <module>
+    main()
+  File "/home/pi/godisp/main.py", line 201, in main
+    client = ThreadedClient(root)
+  File "/home/pi/godisp/main.py", line 75, in __init__
+    self.dispensingControl = DispensingControl(self.scales, self.gate)
+  File "/home/pi/godisp/DispensingControl.py", line 32, in __init__
+    self.flowChangeForcer = ForceFlowChange(self.stopFlowChangeForcer, self.forceFlowChanges)
+NameError: global name 'ForceFlowChange' is not defined
+>>> Exception in thread Thread-2:
+Traceback (most recent call last):
+  File "/usr/lib/python3.2/threading.py", line 740, in _bootstrap_inner
+    self.run()
+  File "/home/pi/godisp/scales.py", line 66, in run
+    Publisher.dispatch(self, "WeightChanged", [0, True])
+  File "/home/pi/godisp/Util/Publisher.py", line 21, in dispatch
+    callback(message)
+  File "/home/pi/godisp/DispensingControl.py", line 51, in onWeightChanged
+    Synchronization.synchronized(_internalOnWeightChanged)
+NameError: global name 'Synchronization' is not defined
+
+================================ RESTART ================================
+>>> ================================ RESTART ================================
+>>> 
+
+Warning (from warnings module):
+  File "/home/pi/godisp/gate.py", line 32
+    GPIO.setup(self.step, GPIO.OUT)
+RuntimeWarning: A physical pull up resistor is fitted on this channel!
+
+Warning (from warnings module):
+  File "/home/pi/godisp/gate.py", line 34
+    GPIO.setup(self.enable, GPIO.OUT)
+RuntimeWarning: A physical pull up resistor is fitted on this channel!
+Traceback (most recent call last):
+  File "/home/pi/godisp/main.py", line 207, in <module>
+    main()
+  File "/home/pi/godisp/main.py", line 201, in main
+    client = ThreadedClient(root)
+  File "/home/pi/godisp/main.py", line 75, in __init__
+    self.dispensingControl = DispensingControl(self.scales, self.gate)
+  File "/home/pi/godisp/DispensingControl.py", line 32, in __init__
+    self.flowChangeForcer = DispensingControl.ForceFlowChange(self.stopFlowChangeForcer, self.forceFlowChanges)
+  File "/home/pi/godisp/DispensingControl.py", line 12, in __init__
+    Thread.__init__(self)
+NameError: global name 'Thread' is not defined
+>>> Exception in thread Thread-2:
+Traceback (most recent call last):
+  File "/usr/lib/python3.2/threading.py", line 740, in _bootstrap_inner
+    self.run()
+  File "/home/pi/godisp/scales.py", line 66, in run
+    Publisher.dispatch(self, "WeightChanged", [0, True])
+  File "/home/pi/godisp/Util/Publisher.py", line 21, in dispatch
+    callback(message)
+  File "/home/pi/godisp/DispensingControl.py", line 51, in onWeightChanged
+    Synchronization.synchronized(_internalOnWeightChanged)
+NameError: global name 'Synchronization' is not defined
+
+================================ RESTART ================================
+>>> ================================ RESTART ================================
+>>> 
+
+Warning (from warnings module):
+  File "/home/pi/godisp/gate.py", line 32
+    GPIO.setup(self.step, GPIO.OUT)
+RuntimeWarning: A physical pull up resistor is fitted on this channel!
+
+Warning (from warnings module):
+  File "/home/pi/godisp/gate.py", line 34
+    GPIO.setup(self.enable, GPIO.OUT)
+RuntimeWarning: A physical pull up resistor is fitted on this channel!
+in load
+Exception in thread Thread-3:
+Traceback (most recent call last):
+  File "/usr/lib/python3.2/threading.py", line 740, in _bootstrap_inner
+    self.run()
+  File "/home/pi/godisp/DispensingControl.py", line 18, in run
+    self.callback()
+  File "/home/pi/godisp/DispensingControl.py", line 39, in forceFlowChanges
+    Synchronization.synchronized(_internalForceFlowChanges)
+NameError: global name 'Synchronization' is not defined
+
+Exception in thread Thread-2:
+Traceback (most recent call last):
+  File "/usr/lib/python3.2/threading.py", line 740, in _bootstrap_inner
+    self.run()
+  File "/home/pi/godisp/scales.py", line 66, in run
+    Publisher.dispatch(self, "WeightChanged", [0, True])
+  File "/home/pi/godisp/Util/Publisher.py", line 21, in dispatch
+    callback(message)
+  File "/home/pi/godisp/DispensingControl.py", line 51, in onWeightChanged
+    Synchronization.synchronized(_internalOnWeightChanged)
+NameError: global name 'Synchronization' is not defined
+
+before join
+ready
+Traceback (most recent call last):
+  File "/home/pi/godisp/main.py", line 207, in <module>
+    main()
+  File "/home/pi/godisp/main.py", line 202, in main
+    root.mainloop()
+  File "/usr/lib/python3.2/tkinter/__init__.py", line 1027, in mainloop
+    self.tk.mainloop(n)
+  File "/usr/lib/python3.2/tkinter/__init__.py", line 1428, in __call__
+    raise SystemExit(msg)
+SystemExit: 1
+>>> ================================ RESTART ================================
+>>> 
+
+Warning (from warnings module):
+  File "/home/pi/godisp/gate.py", line 32
+    GPIO.setup(self.step, GPIO.OUT)
+RuntimeWarning: A physical pull up resistor is fitted on this channel!
+
+Warning (from warnings module):
+  File "/home/pi/godisp/gate.py", line 34
+    GPIO.setup(self.enable, GPIO.OUT)
+RuntimeWarning: A physical pull up resistor is fitted on this channel!
+in load
+Exception in thread Thread-3:
+Traceback (most recent call last):
+  File "/usr/lib/python3.2/threading.py", line 740, in _bootstrap_inner
+    self.run()
+  File "/home/pi/godisp/DispensingControl.py", line 18, in run
+    self.callback()
+  File "/home/pi/godisp/DispensingControl.py", line 39, in forceFlowChanges
+    Synchronization.synchronized(_internalForceFlowChanges)
+AttributeError: type object 'Synchronization' has no attribute 'synchronized'
+
+scales rx: >     0.000 <, stable= True
+Exception in thread Thread-2:
+Traceback (most recent call last):
+  File "/home/pi/godisp/scales.py", line 99, in _processRxData
+    Publisher.dispatch(self, "WeightChanged", [int(float(rx[4:-5]) * 1000.0 + 0.5), stable])
+  File "/home/pi/godisp/Util/Publisher.py", line 21, in dispatch
+    callback(message)
+  File "/home/pi/godisp/DispensingControl.py", line 51, in onWeightChanged
+    Synchronization.synchronized(_internalOnWeightChanged)
+AttributeError: type object 'Synchronization' has no attribute 'synchronized'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.2/threading.py", line 740, in _bootstrap_inner
+    self.run()
+  File "/home/pi/godisp/scales.py", line 61, in run
+    self._processQCmdData(data)
+  File "/home/pi/godisp/scales.py", line 85, in _processQCmdData
+    self._tare()
+  File "/home/pi/godisp/scales.py", line 34, in _tare
+    self._waitzero();
+  File "/home/pi/godisp/scales.py", line 42, in _waitzero
+    self._requestWeight();
+  File "/home/pi/godisp/scales.py", line 51, in _requestWeight
+    self._processRxData(self.lastRx)
+  File "/home/pi/godisp/scales.py", line 101, in _processRxData
+    Publisher.dispatch(self, "WeightChanged", [0, True])
+  File "/home/pi/godisp/Util/Publisher.py", line 21, in dispatch
+    callback(message)
+  File "/home/pi/godisp/DispensingControl.py", line 51, in onWeightChanged
+    Synchronization.synchronized(_internalOnWeightChanged)
+AttributeError: type object 'Synchronization' has no attribute 'synchronized'
+
+
+>>> ================================ RESTART ================================
+>>> ================================ RESTART ================================
+>>> 
+
+Warning (from warnings module):
+  File "/home/pi/godisp/gate.py", line 32
+    GPIO.setup(self.step, GPIO.OUT)
+RuntimeWarning: A physical pull up resistor is fitted on this channel!
+
+Warning (from warnings module):
+  File "/home/pi/godisp/gate.py", line 34
+    GPIO.setup(self.enable, GPIO.OUT)
+RuntimeWarning: A physical pull up resistor is fitted on this channel!
+in load
+Exception in thread Thread-3:
+Traceback (most recent call last):
+  File "/usr/lib/python3.2/threading.py", line 740, in _bootstrap_inner
+    self.run()
+  File "/home/pi/godisp/DispensingControl.py", line 18, in run
+    self.callback()
+  File "/home/pi/godisp/DispensingControl.py", line 39, in forceFlowChanges
+    synchronized(_internalForceFlowChanges)
+NameError: global name '_internalForceFlowChanges' is not defined
+
+Exception in thread Thread-2:
+Traceback (most recent call last):
+  File "/usr/lib/python3.2/threading.py", line 740, in _bootstrap_inner
+    self.run()
+  File "/home/pi/godisp/scales.py", line 66, in run
+    Publisher.dispatch(self, "WeightChanged", [0, True])
+  File "/home/pi/godisp/Util/Publisher.py", line 21, in dispatch
+    callback(message)
+  File "/home/pi/godisp/DispensingControl.py", line 51, in onWeightChanged
+    synchronized(_internalOnWeightChanged)
+NameError: global name '_internalOnWeightChanged' is not defined
+
+before join
+ready
+Traceback (most recent call last):
+  File "/home/pi/godisp/main.py", line 207, in <module>
+    main()
+  File "/home/pi/godisp/main.py", line 202, in main
+    root.mainloop()
+  File "/usr/lib/python3.2/tkinter/__init__.py", line 1027, in mainloop
+    self.tk.mainloop(n)
+  File "/usr/lib/python3.2/tkinter/__init__.py", line 1428, in __call__
+    raise SystemExit(msg)
+SystemExit: 1
+>>> ================================ RESTART ================================
+>>> ================================ RESTART ================================
+>>> 
+
+Warning (from warnings module):
+  File "/home/pi/godisp/gate.py", line 32
+    GPIO.setup(self.step, GPIO.OUT)
+RuntimeWarning: A physical pull up resistor is fitted on this channel!
+
+Warning (from warnings module):
+  File "/home/pi/godisp/gate.py", line 34
+    GPIO.setup(self.enable, GPIO.OUT)
+RuntimeWarning: A physical pull up resistor is fitted on this channel!
+in load
+scales rx: >      0.004 <, stable= False
+scales rx: >     0.004 <, stable= True
+scales rx: >      0.004 <, stable= True
+scales rx: >      0.003 <, stable= True
+scales rx: >      0.005 <, stable= False
+scales rx: >      0.005 <, stable= True
+scales rx: >      0.003 <, stable= False
+scales rx: >      0.003 <, stable= True
+scales rx: >      0.002 <, stable= True
+scales rx: >      0.001 <, stable= True
+scales rx: >      0.003 <, stable= False
+scales rx: >      0.003 <, stable= True
+scales rx: >      0.004 <, stable= True
+scales rx: >      0.005 <, stable= True
+scales rx: >      0.015 <, stable= False
+scales rx: >      0.015 <, stable= True
+scales rx: >      0.047 <, stable= False
+scales rx: >      0.029 <, stable= False
+scales rx: >      0.007 <, stable= False
+scales rx: >      0.005 <, stable= False
+scales rx: >      0.005 <, stable= True
+scales rx: >      0.004 <, stable= True
+scales rx: >      0.003 <, stable= True
+scales rx: >      0.002 <, stable= False
+scales rx: >      0.002 <, stable= True
+scales rx: >      0.001 <, stable= True
+scales rx: >      0.005 <, stable= False
+scales rx: >      0.005 <, stable= True
+scales rx: >      0.004 <, stable= True
+scales rx: >      0.005 <, stable= True
+scales rx: >      0.004 <, stable= True
+scales rx: >      0.005 <, stable= True
+scales rx: >      0.004 <, stable= True
+scales rx: >      0.003 <, stable= True
+before join
+ready
+Traceback (most recent call last):
+  File "/home/pi/godisp/main.py", line 207, in <module>
+    main()
+  File "/home/pi/godisp/main.py", line 202, in main
+    root.mainloop()
+  File "/usr/lib/python3.2/tkinter/__init__.py", line 1027, in mainloop
+    self.tk.mainloop(n)
+  File "/usr/lib/python3.2/tkinter/__init__.py", line 1428, in __call__
+    raise SystemExit(msg)
+SystemExit: 1
+>>> ================================ RESTART ================================
+>>> ================================ RESTART ================================
+>>> 
+
+Warning (from warnings module):
+  File "/home/pi/godisp/gate.py", line 32
+    GPIO.setup(self.step, GPIO.OUT)
+RuntimeWarning: A physical pull up resistor is fitted on this channel!
+
+Warning (from warnings module):
+  File "/home/pi/godisp/gate.py", line 34
+    GPIO.setup(self.enable, GPIO.OUT)
+RuntimeWarning: A physical pull up resistor is fitted on this channel!
+in load
+scales rx: >     0.000 <, stable= True
+scales rx: >     0.000 <, stable= True
+scales rx: >      0.001 <, stable= False
+scales rx: >      0.002 <, stable= False
+scales rx: >      0.002 <, stable= True
+scales rx: >      0.001 <, stable= True
+scales rx: >      0.002 <, stable= False
+scales rx: >      0.002 <, stable= True
+scales rx: >      0.003 <, stable= True
+scales rx: >      0.002 <, stable= True
+scales rx: >      0.003 <, stable= True
+scales rx: >      0.002 <, stable= False
+scales rx: >      0.001 <, stable= True
+scales rx: >      0.001 <, stable= False
+scales rx: >      0.001 <, stable= True
+scales rx: >      0.002 <, stable= False
+scales rx: >      0.002 <, stable= True
+scales rx: >      0.003 <, stable= True
+scales rx: >      0.002 <, stable= True
+scales rx: >      0.001 <, stable= True
+scales rx: >      0.001 <, stable= True
+
+>>> ================================ RESTART ================================
+>>> ================================ RESTART ================================
+>>> 
+Traceback (most recent call last):
+  File "/home/pi/godisp/main.py", line 33, in <module>
+    from DispensingControl import DispensingControl
+  File "/home/pi/godisp/DispensingControl.py", line 40
+    synchronized(self._internalForceFlowChanges)
+                                               ^
+TabError: inconsistent use of tabs and spaces in indentation
+>>> ================================ RESTART ================================
+>>> 
+
+Warning (from warnings module):
+  File "/home/pi/godisp/gate.py", line 32
+    GPIO.setup(self.step, GPIO.OUT)
+RuntimeWarning: A physical pull up resistor is fitted on this channel!
+
+Warning (from warnings module):
+  File "/home/pi/godisp/gate.py", line 34
+    GPIO.setup(self.enable, GPIO.OUT)
+RuntimeWarning: A physical pull up resistor is fitted on this channel!
+in load
+called back!
+scales rx: >     0.000 <, stable= True
+called back!
+called back!
+scales rx: >     0.000 <, stable= True
+called back!
+called back!
+called back!
+called back!
+called back!
+called back!
+called back!
+called back!
+called back!
+before join
+ready
+Traceback (most recent call last):
+  File "/home/pi/godisp/main.py", line 207, in <module>
+    main()
+  File "/home/pi/godisp/main.py", line 202, in main
+    root.mainloop()
+  File "/usr/lib/python3.2/tkinter/__init__.py", line 1027, in mainloop
+    self.tk.mainloop(n)
+  File "/usr/lib/python3.2/tkinter/__init__.py", line 1428, in __call__
+    raise SystemExit(msg)
+SystemExit: 1
+>>> called back!
+called back!
+called back!
+================================ RESTART ================================
+>>> ================================ RESTART ================================
+>>> 
+
+Warning (from warnings module):
+  File "/home/pi/godisp/gate.py", line 32
+    GPIO.setup(self.step, GPIO.OUT)
+RuntimeWarning: A physical pull up resistor is fitted on this channel!
+
+Warning (from warnings module):
+  File "/home/pi/godisp/gate.py", line 34
+    GPIO.setup(self.enable, GPIO.OUT)
+RuntimeWarning: A physical pull up resistor is fitted on this channel!
+in load
+called back!
+called back returns!
+scales rx: >     0.000 <, stable= True
+called back!
+called back returns!
+called back!
+called back returns!
+scales rx: >     0.000 <, stable= True
+called back!
+called back returns!
+before join
+ready
+called back!Traceback (most recent call last):
+
+called back returns!  File "/home/pi/godisp/main.py", line 207, in <module>
+
+    main()
+  File "/home/pi/godisp/main.py", line 202, in main
+    root.mainloop()
+  File "/usr/lib/python3.2/tkinter/__init__.py", line 1027, in mainloop
+    self.tk.mainloop(n)
+  File "/usr/lib/python3.2/tkinter/__init__.py", line 1428, in __call__
+    raise SystemExit(msg)
+SystemExit: 1
+>>> called back!
+called back returns!
+================================ RESTART ================================
+>>> ================================ RESTART ================================
+>>> 
+
+Warning (from warnings module):
+  File "/home/pi/godisp/gate.py", line 32
+    GPIO.setup(self.step, GPIO.OUT)
+RuntimeWarning: A physical pull up resistor is fitted on this channel!
+
+Warning (from warnings module):
+  File "/home/pi/godisp/gate.py", line 34
+    GPIO.setup(self.enable, GPIO.OUT)
+RuntimeWarning: A physical pull up resistor is fitted on this channel!
+in load
+scales rx: >     0.000 <, stable= True
+scales rx: >      0.001 <, stable= True
+scales rx: >      0.001 <, stable= False
+scales rx: >      0.001 <, stable= True
+scales rx: >      0.001 <, stable= False
+scales rx: >      0.001 <, stable= True
+scales rx: >      0.003 <, stable= False
+scales rx: >      0.003 <, stable= True
+scales rx: >      0.004 <, stable= True
+scales rx: >      0.003 <, stable= True
+scales rx: >      0.002 <, stable= True
+scales rx: >      0.003 <, stable= True
+scales rx: >      0.004 <, stable= True
+scales rx: >      0.003 <, stable= True
+scales rx: >      0.004 <, stable= True
+scales rx: >      0.003 <, stable= True
+scales rx: >      0.004 <, stable= True
+scales rx: >      0.003 <, stable= True
+scales rx: >      0.002 <, stable= False
+scales rx: >      0.001 <, stable= True
+before join
+ready
+Traceback (most recent call last):
+  File "/home/pi/godisp/main.py", line 207, in <module>
+    main()
+  File "/home/pi/godisp/main.py", line 202, in main
+    root.mainloop()
+  File "/usr/lib/python3.2/tkinter/__init__.py", line 1027, in mainloop
+    self.tk.mainloop(n)
+  File "/usr/lib/python3.2/tkinter/__init__.py", line 1428, in __call__
+    raise SystemExit(msg)
+SystemExit: 1
+>>> ================================ RESTART ================================
+>>> ================================ RESTART ================================
+>>> 
+Traceback (most recent call last):
+  File "/home/pi/godisp/main.py", line 33, in <module>
+    from DispensingControl import DispensingControl
+  File "/home/pi/godisp/DispensingControl.py", line 40
+    synchronized(self._internalForceFlowChanges)
+                                               ^
+TabError: inconsistent use of tabs and spaces in indentation
+>>> ================================ RESTART ================================
+>>> 
+Traceback (most recent call last):
+  File "/home/pi/godisp/main.py", line 33, in <module>
+    from DispensingControl import DispensingControl
+  File "/home/pi/godisp/DispensingControl.py", line 40
+    synchronized(self._internalForceFlowChanges)
+                                               ^
+TabError: inconsistent use of tabs and spaces in indentation
+>>> ================================ RESTART ================================
+>>> 
+
+Warning (from warnings module):
+  File "/home/pi/godisp/gate.py", line 32
+    GPIO.setup(self.step, GPIO.OUT)
+RuntimeWarning: A physical pull up resistor is fitted on this channel!
+
+Warning (from warnings module):
+  File "/home/pi/godisp/gate.py", line 34
+    GPIO.setup(self.enable, GPIO.OUT)
+RuntimeWarning: A physical pull up resistor is fitted on this channel!
+in load
+callback
+callback returns
+scales rx: >     0.004 <, stable= True
+callback
+callback returns
+scales rx: >callback 
+     0.004callback returns 
+<, stable= True
+scales rx: >     0.004 <, stable= True
+scales rx: >      0.004 <, stable= True
+callback
+callback returns
+callback
+callback returns
+callback
+callback returns
+callback
+callback returns
+callback
+callback returns
+callback
+callback returns
+callback
+callback returns
+scales rx: >      0.003 <, stable= True
+scales rx: >      0.002 <, stable= False
+scales rx: >      0.002 <, stable= True
+callback
+callback returns
+scales rx: >      0.003 <, stable= True
+scales rx: >      0.004 <, stable= False
+scales rx: >      0.004 <, stable= True
+callback
+callback returns
+callback
+callback returns
+callback
+callback returns
+scales rx: >      0.005 <, stable= True
+callback
+callback returns
+callback
+callback returns
+callback
+callback returns
+callback
+callback returns
+callback
+callback returns
+callback
+callback returns
+callback
+callback returns
+callback
+callback returns
+callback
+callback returns
+callback
+callback returns
+callback
+callback returns
+callback
+callback returns
+callback
+callback returns
+scales rx: >      0.004 <, stable= True
+callback
+callback returns
+scales rx: >      0.003 <, stable= True
+scales rx: >      0.004 <, stable= False
+scales rx: >      0.004callback 
+<, stable=callback returns 
+True
+scales rx: >      0.005 <, stable= True
+scales rx: >      0.004 <, stable= True
+callback
+callback returns
+callback
+callback returns
+scales rx: >      0.003 <, stable= True
+scales rx: >      0.004 <, stable= True
+callback
+callback returns
+scales rx: > callback     0.003
+ callback returns<, stable=
+ True
+scales rx: >      0.007 <, stable= False
+scales rx: >      0.007 <, stable= True
+callback
+callback returns
+scales rx: >      0.006callback 
+<, stable=callback returns 
+True
+scales rx: >      0.005 <, stable= True
+callback
+callback returns
+scales rx: >      0.006 <, stable= False
+scales rx: >      0.007 <, stable= True
+scales rx: > callback     0.006
+ callback returns<, stable=
+ True
+scales rx: >      0.007 <, stable= True
+callback
+callback returns
+scales rx: >      0.008 <, stable= True
+scales rx: >      0.007 <, stable= True
+callback
+callback returns
+scales rx: >      0.006 <, stable= False
+scales rx: >      0.005 <, stable= False
+scales rx: >      0.005 <, stable= True
+callback
+callback returns
+scales rx: >      0.004 <, stable= True
+callback
+callback returns
+callback
+callback returns
+callback
+callback returns
+before join
+ready
+Traceback (most recent call last):
+  File "/home/pi/godisp/main.py", line 207, in <module>
+    main()
+  File "/home/pi/godisp/main.py", line 202, in main
+    root.mainloop()
+  File "/usr/lib/python3.2/tkinter/__init__.py", line 1027, in mainloop
+    self.tk.mainloop(n)
+  File "/usr/lib/python3.2/tkinter/__init__.py", line 1428, in __call__
+    raise SystemExit(msg)
+SystemExit: 1
+>>> callback
+callback returns
+callback
+callback returns
+================================ RESTART ================================
+>>> ================================ RESTART ================================
+>>> 
+
+Warning (from warnings module):
+  File "/home/pi/godisp/gate.py", line 32
+    GPIO.setup(self.step, GPIO.OUT)
+RuntimeWarning: A physical pull up resistor is fitted on this channel!
+
+Warning (from warnings module):
+  File "/home/pi/godisp/gate.py", line 34
+    GPIO.setup(self.enable, GPIO.OUT)
+RuntimeWarning: A physical pull up resistor is fitted on this channel!
+in load
+callback
+callback returns
+scales rx: >     0.000 <, stable= True
+callback
+callback returns
+callback
+scales rx: >callback returns 
+    0.000 <, stable= True
+scales rx: >      0.001 <, stable= True
+callback
+callback returns
+callback
+callback returns
+callback
+callback returns
+callback
+callback returns
+callback
+callback returns
+callback
+callback returns
+callback
+callback returns
+callback
+callback returns
+callback
+callback returns
+callback
+callback returns
+scales rx: >      0.001 <, stable= True
+callback
+callback returns
+callback
+callback returns
+callback
+callback returns
+callback
+callback returns
+callback
+callback returns
+callback
+callback returns
+callback
+callback returns
+scales rx: >      0.001 <, stable= True
+before join
+ready
+Traceback (most recent call last):
+  File "/home/pi/godisp/main.py", line 207, in <module>
+callback    main()
+
+  File "/home/pi/godisp/main.py", line 202, in main
+callback returns    root.mainloop()
+
+  File "/usr/lib/python3.2/tkinter/__init__.py", line 1027, in mainloop
+    self.tk.mainloop(n)
+  File "/usr/lib/python3.2/tkinter/__init__.py", line 1428, in __call__
+    raise SystemExit(msg)
+SystemExit: 1
+>>> callback
+callback returns
+callback
+callback returns
+callback
+callback returns
+callback
+callback returns
+callback
+callback returns
+callback
+callback returns
+callback
+callback returns
+callback
+callback returns
+callback
+callback returns
+callback
+callback returns
+callback
+callback returns
+callback
+callback returns
+callback
+callback returns
+================================ RESTART ================================
+>>> ================================ RESTART ================================
+>>> 
+Traceback (most recent call last):
+  File "/home/pi/godisp/main.py", line 33, in <module>
+    from DispensingControl import DispensingControl
+  File "/home/pi/godisp/DispensingControl.py", line 40
+    try:
+       ^
+TabError: inconsistent use of tabs and spaces in indentation
+>>> ================================ RESTART ================================
+>>> 
+
+Warning (from warnings module):
+  File "/home/pi/godisp/gate.py", line 32
+    GPIO.setup(self.step, GPIO.OUT)
+RuntimeWarning: A physical pull up resistor is fitted on this channel!
+
+Warning (from warnings module):
+  File "/home/pi/godisp/gate.py", line 34
+    GPIO.setup(self.enable, GPIO.OUT)
+RuntimeWarning: A physical pull up resistor is fitted on this channel!
+in load
+scales rx: >     0.000 <, stable= True
+Exception in thread Thread-2:
+Traceback (most recent call last):
+  File "/home/pi/godisp/scales.py", line 99, in _processRxData
+    Publisher.dispatch(self, "WeightChanged", [int(float(rx[4:-5]) * 1000.0 + 0.5), stable])
+  File "/home/pi/godisp/Util/Publisher.py", line 21, in dispatch
+    callback(message)
+  File "/home/pi/godisp/DispensingControl.py", line 58, in onWeightChanged
+    synchronized(self._internalOnWeightChanged)
+NameError: global name 'synchronized' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.2/threading.py", line 740, in _bootstrap_inner
+    self.run()
+  File "/home/pi/godisp/scales.py", line 61, in run
+    self._processQCmdData(data)
+  File "/home/pi/godisp/scales.py", line 85, in _processQCmdData
+    self._tare()
+  File "/home/pi/godisp/scales.py", line 34, in _tare
+    self._waitzero();
+  File "/home/pi/godisp/scales.py", line 42, in _waitzero
+    self._requestWeight();
+  File "/home/pi/godisp/scales.py", line 51, in _requestWeight
+    self._processRxData(self.lastRx)
+  File "/home/pi/godisp/scales.py", line 101, in _processRxData
+    Publisher.dispatch(self, "WeightChanged", [0, True])
+  File "/home/pi/godisp/Util/Publisher.py", line 21, in dispatch
+    callback(message)
+  File "/home/pi/godisp/DispensingControl.py", line 58, in onWeightChanged
+    synchronized(self._internalOnWeightChanged)
+NameError: global name 'synchronized' is not defined
+
+
+>>> ================================ RESTART ================================
+>>> ================================ RESTART ================================
+>>> 
+
+Warning (from warnings module):
+  File "/home/pi/godisp/gate.py", line 32
+    GPIO.setup(self.step, GPIO.OUT)
+RuntimeWarning: A physical pull up resistor is fitted on this channel!
+
+Warning (from warnings module):
+  File "/home/pi/godisp/gate.py", line 34
+    GPIO.setup(self.enable, GPIO.OUT)
+RuntimeWarning: A physical pull up resistor is fitted on this channel!
+in load
+scales rx: >     0.000 <, stable= True
+scales rx: >     0.000 <, stable= True
+before join
+ready
+Traceback (most recent call last):
+  File "/home/pi/godisp/main.py", line 207, in <module>
+    main()
+  File "/home/pi/godisp/main.py", line 202, in main
+    root.mainloop()
+  File "/usr/lib/python3.2/tkinter/__init__.py", line 1027, in mainloop
+    self.tk.mainloop(n)
+  File "/usr/lib/python3.2/tkinter/__init__.py", line 1428, in __call__
+    raise SystemExit(msg)
+SystemExit: 1
+>>> ================================ RESTART ================================
+>>> ================================ RESTART ================================
+>>> 
+Traceback (most recent call last):
+  File "/home/pi/godisp/main.py", line 33, in <module>
+    from DispensingControl import DispensingControl
+  File "/home/pi/godisp/DispensingControl.py", line 40
+    self.mutex.acquire();
+                        ^
+TabError: inconsistent use of tabs and spaces in indentation
+>>> ================================ RESTART ================================
+>>> 
+
+Warning (from warnings module):
+  File "/home/pi/godisp/gate.py", line 32
+    GPIO.setup(self.step, GPIO.OUT)
+RuntimeWarning: A physical pull up resistor is fitted on this channel!
+
+Warning (from warnings module):
+  File "/home/pi/godisp/gate.py", line 34
+    GPIO.setup(self.enable, GPIO.OUT)
+RuntimeWarning: A physical pull up resistor is fitted on this channel!
+in load
+forced
+forced returns
+forced
+forced returns
+forced
+forced returns
+scales rx: >     0.000 <, stable= True
+forced
+forced returns
+scales rx: >      0.001 forced<, stable=
+ forced returnsFalse
+
+scales rx: >      0.001 <, stable= True
+scales rx: >      0.002 <, stable= True
+forced
+forced returns
+scales rx: >      0.001 <, stable= True
+forced
+forced returns
+forced
+forced returns
+forced
+forced returns
+forced
+forced returns
+forced
+forced returns
+forced
+forced returns
+forced
+forced returns
+scales rx: >      0.002 <, stable= True
+forced
+forced returns
+scales rx: >      0.001 <, stable= True
+forced
+forced returns
+forced
+forced returns
+forced
+forced returns
+before join
+ready
+Traceback (most recent call last):
+  File "/home/pi/godisp/main.py", line 207, in <module>
+    main()
+  File "/home/pi/godisp/main.py", line 202, in main
+    root.mainloop()
+  File "/usr/lib/python3.2/tkinter/__init__.py", line 1027, in mainloop
+    self.tk.mainloop(n)
+  File "/usr/lib/python3.2/tkinter/__init__.py", line 1428, in __call__
+    raise SystemExit(msg)
+SystemExit: 1
+>>> forced
+forced returns
+forced
+forced returns
+forced
+forced returns
+forced
+forced returns
+forced
+forced returns
+forced
+forced returns
+forced
+forced returns
+forced
+forced returns
+forced
+forced returns
+forced
+forced returns
+================================ RESTART ================================
+>>> ================================ RESTART ================================
+>>> 
+Traceback (most recent call last):
+  File "/home/pi/godisp/main.py", line 33, in <module>
+    from DispensingControl import DispensingControl
+  File "/home/pi/godisp/DispensingControl.py", line 8, in <module>
+    class DispensingControl(Publisher, Sychronization):
+NameError: name 'Sychronization' is not defined
+>>> ================================ RESTART ================================
+>>> 
+
+Warning (from warnings module):
+  File "/home/pi/godisp/gate.py", line 32
+    GPIO.setup(self.step, GPIO.OUT)
+RuntimeWarning: A physical pull up resistor is fitted on this channel!
+
+Warning (from warnings module):
+  File "/home/pi/godisp/gate.py", line 34
+    GPIO.setup(self.enable, GPIO.OUT)
+RuntimeWarning: A physical pull up resistor is fitted on this channel!
+in load
+count samples:  0
+count samples:  0
+count samples:  0
+count samples:  0
+count samples:  0
+scales rx: >      0.001 <, stable= True
+Exception in thread Thread-2:
+Traceback (most recent call last):
+  File "/home/pi/godisp/scales.py", line 99, in _processRxData
+    Publisher.dispatch(self, "WeightChanged", [int(float(rx[4:-5]) * 1000.0 + 0.5), stable])
+  File "/home/pi/godisp/Util/Publisher.py", line 21, in dispatch
+    callback(message)
+  File "/home/pi/godisp/DispensingControl.py", line 54, in onWeightChanged
+    synchronized(self._internalOnWeightChanged())
+TypeError: _internalOnWeightChanged() takes exactly 2 arguments (1 given)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.2/threading.py", line 740, in _bootstrap_inner
+    self.run()
+  File "/home/pi/godisp/scales.py", line 68, in run
+    self._processRxData(rx)
+  File "/home/pi/godisp/scales.py", line 101, in _processRxData
+    Publisher.dispatch(self, "WeightChanged", [0, True])
+  File "/home/pi/godisp/Util/Publisher.py", line 21, in dispatch
+    callback(message)
+  File "/home/pi/godisp/DispensingControl.py", line 54, in onWeightChanged
+    synchronized(self._internalOnWeightChanged())
+TypeError: _internalOnWeightChanged() takes exactly 2 arguments (1 given)
+
+count samples:  0
+count samples:  0
+count samples:  0
+count samples:  0
+count samples:  0
+count samples:  0
+count samples:  0
+count samples:  0
+count samples:  0
+count samples:  0
+count samples:  0
+count samples:  0
+count samples:  0
+count samples:  0
+count samples:  0
+before join
+ready
+Traceback (most recent call last):
+  File "/home/pi/godisp/main.py", line 207, in <module>
+    main()
+  File "/home/pi/godisp/main.py", line 202, in main
+    root.mainloop()
+  File "/usr/lib/python3.2/tkinter/__init__.py", line 1027, in mainloop
+    self.tk.mainloop(n)
+  File "/usr/lib/python3.2/tkinter/__init__.py", line 1428, in __call__
+    raise SystemExit(msg)
+SystemExit: 1
+>>> count samples:  0
+count samples:  0
+count samples:  0
+count samples:  0
+count samples:  0
+count samples:  0
+count samples:  0
+count samples:  0
+count samples:  0
+count samples:  0
+================================ RESTART ================================
+>>> ================================ RESTART ================================
+>>> 
+
+Warning (from warnings module):
+  File "/home/pi/godisp/gate.py", line 32
+    GPIO.setup(self.step, GPIO.OUT)
+RuntimeWarning: A physical pull up resistor is fitted on this channel!
+
+Warning (from warnings module):
+  File "/home/pi/godisp/gate.py", line 34
+    GPIO.setup(self.enable, GPIO.OUT)
+RuntimeWarning: A physical pull up resistor is fitted on this channel!
+in loadscales rx: >
+      0.001 <, stable= True
+checking artificial sample 786
+scales rx: >      0.003 <, stable= True
+checking artificial sample 262
+checking artificial sample 1389
+appending artificial sample
+1459192695099scales rx: >  1    0.010
+ 1459192696724<, stable=  3True
+
+flowSumscales rx: >  1230     0.010
+ 1459192696724<, stable=  3True
+
+1459192698113 3
+flowSum 1230
+avg 1 ( 2 )
+1459192695099 1
+1459192696724 3
+flowSum 1230
+1459192696724 3
+1459192698113 3
+flowSum 1230
+1459192698113 3
+1459192698464 10
+flowSum 21173
+1459192698464 10
+1459192698720 10
+flowSum 21173
+avg 5 ( 4 )
+scales rx: >      0.009 <, stable= True
+checking artificial sample 373
+checking artificial sample 1470
+appending artificial sample
+scales rx: >      0.002 <, stable= False
+scales rx: >      0.004 <, stable= False
+scales rx: >      0.007 <, stable= False
+scales rx: >      0.007 <, stable= Truechecking artificial sample
+ 119
+scales rx: >      0.008 <, stable= False
+scales rx: >      0.009 <, stable= True
+checking artificial sample 196
+scales rx: >      0.008 <, stable= True
+checking artificial sample 440
+scales rx: >      0.007 <, stable= True
+checking artificial sample 880
+checking artificial sample 1976
+appending artificial sample
+checking artificial sample 1131
+appending artificial sample
+scales rx: >      0.008 <, stable= True
+checking artificial sample 60
+scales rx: >      0.009 <, stable= True
+scales rx: >checking artificial sample       0.008269 
+<, stable= True
+checking artificial sample 902
+checking artificial sample 1990
+appending artificial sample
+scales rx: >      0.007 <, stable= True
+checking artificial sample 361
+checking artificial sample 1476
+appending artificial sample
+checking artificial sample 1120
+appending artificial sample
+checking artificial sample 1115
+appending artificial sample
+checking artificial sample 1124
+appending artificial sample
+checking artificial sample 1115
+appending artificial sample
+checking artificial sample 1111
+appending artificial sample
+checking artificial sample 1128
+appending artificial sample
+checking artificial sample 1119
+appending artificial sample
+scales rx: >      0.008 <, stable= True
+checking artificial sample 754
+checking artificial sample 1829
+appending artificial sample
+checking artificial sample 1120
+appending artificial sample
+scales rx: >      0.007 <, stable= True
+checking artificial sample 439
+scales rx: >      0.008 <, stable= True
+checking artificial sample 322
+scales rx: >      0.017 <, stable= False
+scales rx: >      0.017 <, stable= True
+checking artificial sample 710
+checking artificial sample 1774
+appending artificial sample
+checking artificial sample 1115
+appending artificial sample
+checking artificial sample 1121
+appending artificial sample
+checking artificial sample 1121
+appending artificial sample
+scales rx: >      0.016 <, stable= True
+checking artificial sample 670
+checking artificial sample 1778
+appending artificial sample
+checking artificial sample 1114
+appending artificial sample
+checking artificial sample 1145
+appending artificial sample
+checking artificial sample 1130
+appending artificial sample
+checking artificial sample 1135
+appending artificial sample
+checking artificial sample 1139
+appending artificial sample
+checking artificial sample 1149
+appending artificial sample
+checking artificial sample 1146
+appending artificial sample
+checking artificial sample 1130
+appending artificial sample
+checking artificial sample 1127
+appending artificial sample
+checking artificial sample 1131
+appending artificial sample
+checking artificial sample 1129
+appending artificial sample
+checking artificial sample 1124
+appending artificial sample
+checking artificial sample 1126
+appending artificial sample
+checking artificial sample 1142
+appending artificial sample
+checking artificial sample 1130
+appending artificial sample
+checking artificial sample 1117
+appending artificial sample
+checking artificial sample 1104
+appending artificial sample
+checking artificial sample 1119
+appending artificial sample
+checking artificial sample 1122
+appending artificial sample
+checking artificial samplescales rx: >  1136     0.010
+ appending artificial sample<, stable=
+ False
+scales rx: >      0.010 <, stable= True
+scales rx: >      0.009 <, stable= True
+checking artificial sample 610
+checking artificial sample 1683
+appending artificial sample
+scales rx: >      0.010 <, stable= True
+checking artificial sample 855
+scales rx: >      0.009 <, stable= True
+checking artificial sample 841
+checking artificial sample 1913
+appending artificial sample
+scales rx: >      0.010 <, stable= True
+scales rx: >      0.011 <, stable= False
+scales rx: >      0.011 <, stable= True
+checking artificial sample 441
+scales rx: >      0.010 <, stable= False
+scales rx: >      0.009 <, stable= False
+scales rx: >      0.009 <, stable= True
+scales rx: >      0.008 <, stable= True
+checking artificial sample 148
+checking artificial sample 1228
+appending artificial sample
+checking artificial sample 1104
+appending artificial sample
+checking artificial sample 1116
+appending artificial sample
+scales rx: >      0.009 <, stable= True
+checking artificial sample 373
+scales rx: >      0.017 <, stable= False
+scales rx: >      0.017 <, stable= True
+checking artificial sample 107
+checking artificial sample 1171
+appending artificial sample
+checking artificial sample 1110
+appending artificial sample
+scales rx: >      0.016 <, stable= True
+scales rx: >      0.017 <, stable= True
+checking artificial sample 355
+scales rx: >checking artificial sample       0.0161059 
+<, stable=appending artificial sample 
+True
+checking artificial sample 966
+scales rx: >      0.010 <, stable= False
+scales rx: >      0.010 <, stable= True
+checking artificial sample 143
+checking artificial sample 1071
+appending artificial sample
+checking artificial sample 1108
+appending artificial sample
+checking artificial sample 1107
+appending artificial sample
+checking artificial sample 1131
+appending artificial sample
+checking artificial sample 1119
+appending artificial sample
+checking artificial sample 1120
+appending artificial sample
+checking artificial sample 1119
+appending artificial sample
+checking artificial sample 1152
+appending artificial sample
+checking artificial sample 1134
+appending artificial sample
+checking artificial sample 1126
+appending artificial sample
+checking artificial sample 1122
+appending artificial sample
+scales rx: >      0.017 <, stable= False
+scales rx: >      0.017 <, stable= True
+checking artificial sample 119
+checking artificial sample 1062
+appending artificial sample
+checking artificial sample 1110
+appending artificial sample
+checking artificial sample 1102
+appending artificial sample
+scales rx: >      0.016 <, stable= True
+checking artificial sample 663
+checking artificial sample 1788
+appending artificial sample
+checking artificial sample 1117
+appending artificial sample
+checking artificial sample 1112
+appending artificial sample
+checking artificial sample 1117
+appending artificial sample
+checking artificial sample 1108
+appending artificial sample
+checking artificial sample 1135
+appending artificial sample
+checking artificial sample 1116
+appending artificial sample
+checking artificial sample 1130
+appending artificial sample
+checking artificial sample 1113
+appending artificial sample
+checking artificial sample 1117
+appending artificial sample
+checking artificial sample 1112
+appending artificial sample
+scales rx: >      0.006 <, stable= False
+scales rx: > checking artificial sample     0.006  53<, stable=
+ True
+checking artificial sample 952
+scales rx: >      0.008 <, stable= False
+scales rx: >      0.008 <, stable= True
+scales rx: >checking artificial sample       0.007282 
+<, stable= True
+scales rx: >      0.006 <, stable= False
+scales rx: >      0.006 <, stable= True
+checking artificial sample 637
+checking artificial sample 1716
+appending artificial sample
+checking artificial sample 1111
+appending artificial sample
+checking artificial sample 1139
+appending artificial sample
+scales rx: >      0.005 <, stable= True
+checking artificial sample 842
+checking artificial sample 1909
+appending artificial sample
+scales rx: >      0.006 <, stable= True
+checking artificial sample 472
+checking artificial sample 1588
+appending artificial sample
+checking artificial sample 1121
+appending artificial sample
+scales rx: >      0.005 <, stable= True
+checking artificial sample 838
+scales rx: >      0.006 <, stable= True
+checking artificial sample 464
+scales rx: >      0.005 <, stable= True
+checking artificial sample scales rx: >743 
+     0.006 <, stable= True
+checking artificial sample 917
+checking artificial sample 1988
+appending artificial sample
+checking artificial sample 1105
+appending artificial sample
+checking artificial sample 1114
+appending artificial sample
+checking artificial sample 1114
+appending artificial sample
+checking artificial sample 1115
+appending artificial sample
+checking artificial sample 1111
+appending artificial sample
+checking artificial sample 1119
+appending artificial sample
+checking artificial sample 1116
+appending artificial sample
+checking artificial sample 1117
+appending artificial sample
+checking artificial sample 1121
+appending artificial sample
+checking artificial sample 1105
+appending artificial sample
+checking artificial sample 1109
+appending artificial sample
+checking artificial sample 1115
+appending artificial sample
+checking artificial sample 1120
+appending artificial sample
+checking artificial sample 1136
+appending artificial sample
+checking artificial sample 1111
+appending artificial sample
+checking artificial sample 1127
+appending artificial sample
+scales rx: >      0.007 <, stable= True
+checking artificial sample 533
+scales rx: >      0.006 <, stable= False
+scales rx: >      0.005 <, stable= True
+checking artificial sample 128
+scales rx: >      0.006 <, stable= True
+checking artificial sample 170
+scales rx: >      0.007 <, stable= True
+checking artificial sample 641
+checking artificial sample 1705
+appending artificial sample
+checking artificial sample 1107
+appending artificial sample
+checking artificial sample 1130
+appending artificial sample
+checking artificial sample 1111
+appending artificial sample
+checking artificial sample 1109
+appending artificial sample
+checking artificial sample 1105
+appending artificial sample
+checking artificial sample 1132
+appending artificial sample
+checking artificial sample 1116
+appending artificial sample
+checking artificial sample 1105
+appending artificial sample
+checking artificial sample 1118
+appending artificial sample
+checking artificial sample 1125
+appending artificial sample
+checking artificial sample 1143
+appending artificial sample
+checking artificial sample 1129
+appending artificial sample
+checking artificial sample 1120
+appending artificial sample
+checking artificial sample 1123
+appending artificial sample
+checking artificial sample 1139
+appending artificial sample
+checking artificial sample 1129
+appending artificial sample
+checking artificial sample 1105
+appending artificial sample
+checking artificial sample 1131
+appending artificial sample
+checking artificial sample 1124
+appending artificial sample
+checking artificial sample 1132
+appending artificial sample
+checking artificial sample 1105
+appending artificial sample
+scales rx: >      0.002 <, stable=checking artificial sample  False1116
+
+scales rx: >appending artificial sample 
+     0.008 <, stable= False
+scales rx: >      0.015 <, stable= False
+scales rx: >      0.017 <, stable= False
+scales rx: >      0.017 <, stable= True
+checking artificial sample 427
+checking artificial sample 1500
+appending artificial sample
+scales rx: >      0.016 <, stable= True
+checking artificial sample 101
+scales rx: >      0.005 <, stable= False
+scales rx: >      0.004 <, stable= False
+scales rx: >      0.004 <, stable= True
+scales rx: >      0.003 <, stable= True
+checking artificial sample scales rx: >375 
+     0.002 <, stable= True
+scales rx: >      0.003 <, stable= True
+scales rx: >      0.002 <, stable= True
+scales rx: >      0.003 <, stable= True
+checking artificial sample 166
+checking artificial sample 1267
+appending artificial sample
+checking artificial sample 1136
+appending artificial sample
+checking artificial sample 1110
+appending artificial sample
+checking artificial sample 1116
+appending artificial sample
+checking artificial sample 1123
+appending artificial sample
+checking artificial sample 1163
+appending artificial sample
+checking artificial sample 1131
+appending artificial sample
+checking artificial sample 1135
+appending artificial sample
+checking artificial sample 1128
+appending artificial sample
+scales rx: >      0.017 <, stable= False
+scales rx: >      0.017 <, stable= True
+checking artificial sample scales rx: >249 
+     0.018 <, stable= True
+scales rx: >      0.017 <, stable= True
+checking artificial sample 775
+checking artificial sample 1877
+appending artificial sample
+checking artificial sample 1114
+appending artificial sample
+checking artificial sample 1115
+appending artificial sample
+checking artificial sample 1110
+appending artificial sample
+checking artificial sample 1113
+appending artificial sample
+scales rx: >      0.016 <, stable= True
+checking artificial sample 322
+scales rx: >      0.010 <, stable= False
+scales rx: >      0.009 <, stable= False
+scales rx: >      0.008 <, stable= False
+scales rx: >      0.008 <, stable= True
+scales rx: >      0.009checking artificial sample  <, stable=185 
+False
+scales rx: >      0.006 <, stable= False
+scales rx: >      0.006 <, stable= True
+scales rx: >      0.005 <, stable= True
+checking artificial sample 237
+checking artificial sample 1325
+appending artificial sample
+checking artificial sample 1115
+appending artificial sample
+checking artificial sample 1109
+appending artificial sample
+checking artificial sample 1100
+appending artificial sample
+checking artificial sample 1120
+appending artificial sample
+checking artificial sample 1103
+appending artificial sample
+checking artificial sample 1114
+appending artificial sample
+checking artificial sample 1109
+appending artificial sample
+checking artificial sample 1110
+appending artificial sample
+checking artificial sample 1114
+appending artificial sample
+checking artificial sample 1127
+appending artificial sample
+scales rx: >      0.017 <, stable= False
+scales rx: >      0.017 <, stable= True
+checking artificial sample scales rx: >637 
+     0.012 <, stable= False
+scales rx: >      0.011 <, stable= Truebefore join
+
+ready
+Traceback (most recent call last):
+  File "/home/pi/godisp/main.py", line 207, in <module>
+    main()
+  File "/home/pi/godisp/main.py", line 202, in main
+    root.mainloop()
+  File "/usr/lib/python3.2/tkinter/__init__.py", line 1027, in mainloop
+    self.tk.mainloop(n)
+  File "/usr/lib/python3.2/tkinter/__init__.py", line 1428, in __call__
+    raise SystemExit(msg)
+SystemExit: 1
+>>> checking artificial sample 585
+checking artificial sample 1671
+appending artificial sample
+checking artificial sample 1114
+appending artificial sample
+checking artificial sample 1119
+appending artificial sample
+================================ RESTART ================================
+>>> ================================ RESTART ================================
+>>> 
+Traceback (most recent call last):
+  File "/home/pi/godisp/main.py", line 33, in <module>
+    from DispensingControl import DispensingControl
+  File "/home/pi/godisp/DispensingControl.py", line 63
+    if len(self.Samples) == self.CountSamples:
+                                             ^
+TabError: inconsistent use of tabs and spaces in indentation
+>>> ================================ RESTART ================================
+>>> 
+
+Warning (from warnings module):
+  File "/home/pi/godisp/gate.py", line 32
+    GPIO.setup(self.step, GPIO.OUT)
+RuntimeWarning: A physical pull up resistor is fitted on this channel!
+
+Warning (from warnings module):
+  File "/home/pi/godisp/gate.py", line 34
+    GPIO.setup(self.enable, GPIO.OUT)
+RuntimeWarning: A physical pull up resistor is fitted on this channel!
+scales rx: >in load 
+     0.011 <, stable= True
+_fireFlowEventIfNeeded 1
+checking artificial sample 722
+scales rx: >      0.017 <, stable= False
+_fireFlowEventIfNeeded 2checking artificial sample
+ 42
+checking artificial sample 1137
+appending artificial sample
+_fireFlowEventIfNeeded 3
+1459192967512 11
+1459192969255 17
+flowSum 3442
+1459192969255 17
+1459192970392 17scales rx: >
+ flowSum    0.000  3442<, stable=
+ avgTrue 
+2_fireFlowEventIfNeeded  (4 
+2 )
+1459192967512 11_fireFlowEventIfNeeded
+ 14591929692555 
+17
+flowSum 3442
+1459192969255 17
+1459192970392 17
+flowSum 3442
+1459192970392 17
+1459192971064 0
+flowSum -21856
+avg -6 ( 3 )
+checking artificial sample 1801
+appending artificial sample
+_fireFlowEventIfNeeded 5
+checking artificial sample 1192
+appending artificial sample
+_fireFlowEventIfNeeded 6
+checking artificial sample 1192
+appending artificial sample
+_fireFlowEventIfNeeded 7
+checking artificial sample 1182
+appending artificial sample
+_fireFlowEventIfNeeded 8
+checking artificial sample 1169
+appending artificial sample
+_fireFlowEventIfNeeded 9
+checking artificial sample 1191
+appending artificial sample
+_fireFlowEventIfNeeded 10
+checking artificial sample 1164
+appending artificial sample
+_fireFlowEventIfNeeded 11
+scales rx: >checking artificial sample       0.0011178 
+<, stable=appending artificial sample 
+False_fireFlowEventIfNeeded
+ _fireFlowEventIfNeeded12 
+13
+scales rx: >      0.001 <, stable= True
+_fireFlowEventIfNeeded 14
+scales rx: >      0.002 <, stable= True
+_fireFlowEventIfNeeded 15
+checking artificial sample 577
+checking artificial sample 1645
+appending artificial sample
+_fireFlowEventIfNeeded 16
+checking artificial sample 1174
+appending artificial sample
+_fireFlowEventIfNeeded 17
+checking artificial sample 1174
+appending artificial sample
+_fireFlowEventIfNeeded 18
+checking artificial sample 1173
+appending artificial sample
+_fireFlowEventIfNeeded 19
+checking artificial sample 1185
+appending artificial sample
+_fireFlowEventIfNeeded 20
+checking artificial sample 1174
+appending artificial sample
+_fireFlowEventIfNeeded 21
+checking artificial sample 1185
+appending artificial sample
+_fireFlowEventIfNeeded 22
+checking artificial sample 1176
+appending artificial sample
+_fireFlowEventIfNeeded 23
+checking artificial sample 1196
+appending artificial sample
+_fireFlowEventIfNeeded 24
+checking artificial sample 1178
+appending artificial sample
+_fireFlowEventIfNeeded 25
+checking artificial sample 1176
+appending artificial sample
+_fireFlowEventIfNeeded 26
+checking artificial sample 1185
+appending artificial sample
+_fireFlowEventIfNeeded 27
+checking artificial sample 1194
+appending artificial sample
+_fireFlowEventIfNeeded 28
+checking artificial sample 1201
+appending artificial sample
+_fireFlowEventIfNeeded 29
+checking artificial sample 1176
+appending artificial sample
+_fireFlowEventIfNeeded 30
+checking artificial sample 1192
+appending artificial sample
+_fireFlowEventIfNeeded 31
+checking artificial sample 1190
+appending artificial sample
+_fireFlowEventIfNeeded 32
+checking artificial sample 1219
+appending artificial sample
+_fireFlowEventIfNeeded 33
+checking artificial sample 1182
+appending artificial sample
+_fireFlowEventIfNeeded 34
+checking artificial sample 1186
+appending artificial sample
+_fireFlowEventIfNeeded 35
+checking artificial sample 1207
+appending artificial sample
+_fireFlowEventIfNeeded 36
+checking artificial sample 1196
+appending artificial sample
+_fireFlowEventIfNeeded 37
+checking artificial sample 1184
+appending artificial sample
+_fireFlowEventIfNeeded 38
+_fireFlowEventIfNeeded 39
+checking artificial sample 527
+checking artificial sample 1598
+appending artificial sample
+_fireFlowEventIfNeeded 40
+checking artificial sample 1161
+appending artificial sample
+_fireFlowEventIfNeeded 41
+checking artificial sample 1185
+appending artificial sample
+_fireFlowEventIfNeeded 42
+checking artificial sample 1174
+appending artificial sample
+_fireFlowEventIfNeeded 43
+checking artificial sample 1171
+appending artificial sample
+_fireFlowEventIfNeeded 44
+before join
+ready
+Traceback (most recent call last):
+  File "/home/pi/godisp/main.py", line 207, in <module>
+    main()
+  File "/home/pi/godisp/main.py", line 202, in main
+    root.mainloop()
+checking artificial sample  File "/usr/lib/python3.2/tkinter/__init__.py", line 1027, in mainloop
+     self.tk.mainloop(n)
+1217  File "/usr/lib/python3.2/tkinter/__init__.py", line 1428, in __call__
+
+    raise SystemExit(msg)
+appending artificial sampleSystemExit: 1
+
+_fireFlowEventIfNeeded 45
+>>> 
+checking artificial sample 1434
+appending artificial sample
+_fireFlowEventIfNeeded 46
+checking artificial sample 1164
+appending artificial sample
+_fireFlowEventIfNeeded 47
+checking artificial sample 1186
+appending artificial sample
+_fireFlowEventIfNeeded 48
+checking artificial sample 1209
+appending artificial sample
+_fireFlowEventIfNeeded 49
+checking artificial sample 1215
+appending artificial sample
+_fireFlowEventIfNeeded 50
+checking artificial sample 1170
+appending artificial sample
+_fireFlowEventIfNeeded 51
+================================ RESTART ================================
+>>> ================================ RESTART ================================
+>>> 
+
+Warning (from warnings module):
+  File "/home/pi/godisp/gate.py", line 32
+    GPIO.setup(self.step, GPIO.OUT)
+RuntimeWarning: A physical pull up resistor is fitted on this channel!
+
+Warning (from warnings module):
+  File "/home/pi/godisp/gate.py", line 34
+    GPIO.setup(self.enable, GPIO.OUT)
+RuntimeWarning: A physical pull up resistor is fitted on this channel!
+in loadscales rx: >
+      0.004 <, stable= False
+_fireFlowEventIfNeeded 1
+EXIT _fireFlowEventIfNeeded 1
+scales rx: >      0.003 <, stable= True
+appending artificial sample_fireFlowEventIfNeeded
+ _fireFlowEventIfNeeded2 
+31459193242825
+ 14591932428254 
+41459193244588
+ 14591932445883 
+3flowSum
+ flowSum-568 
+-5681459193244588
+ 14591932445883 
+31459193244573
+ 14591932445734 
+4flowSum
+ flowSum-67235 
+-67235avg
+ avg-33  -33(  (2  2) 
+)1459193242825
+ 14591932428254 
+41459193244588
+ 14591932445883 
+3flowSum
+ flowSum-568 
+-5681459193244588
+ 14591932445883 
+31459193244573
+ 14591932445734 
+4flowSum
+ flowSum-67235 
+-67235avg
+ avg-33  -33(  (2  2) 
+)EXIT _fireFlowEventIfNeeded
+ EXIT _fireFlowEventIfNeeded2 
+2
+appending artificial sample
+_fireFlowEventIfNeeded 3
+1459193244588 3
+1459193244573 4
+flowSum -66667
+1459193244573 4
+1459193247887 4
+flowSum -66667scales rx: >
+ avg    0.000  -32<, stable=  (True 
+2_fireFlowEventIfNeeded  )4
+
+14591932445881459193244588  33
+
+14591932445731459193244573  44
+
+flowSumflowSum  -66667-66667
+
+14591932445731459193244573  44
+
+14591932478871459193247887  44
+
+flowSumflowSum  -66667-66667
+
+14591932478871459193247887  44
+
+14591932486341459193248634  00
+
+flowSumflowSum  -72022-72022
+
+avgavg  -23-23  ((  33  ))
+
+EXIT _fireFlowEventIfNeeded1459193247887  24
+
+1459193248634 0
+flowSum -5355
+avg -4 ( 1 )
+EXIT _fireFlowEventIfNeeded 2
+_fireFlowEventIfNeeded 3
+1459193247887 4
+1459193248634 0
+flowSum -5355
+1459193248634 0
+1459193250611 0
+flowSum -5355
+avg -2 ( 2 )
+1459193247887 4
+1459193248634 0
+flowSum -5355
+1459193248634 0
+1459193250611 0
+flowSum -5355
+avg -2 ( 2 )
+EXIT _fireFlowEventIfNeeded 2
+appending artificial sample
+_fireFlowEventIfNeeded 3
+1459193248634 0
+1459193250611 0
+flowSum 0
+1459193250611 0
+1459193252114 0
+flowSum 0
+avg 0 ( 2 )
+1459193248634 0
+1459193250611 0
+flowSum 0
+1459193250611 0
+1459193252114 0
+flowSum 0
+avg 0 ( 2 )
+EXIT _fireFlowEventIfNeeded 2
+appending artificial sample
+_fireFlowEventIfNeeded 3
+1459193250611 0
+1459193252114 0
+flowSum 0
+1459193252114 0
+1459193254410 0
+flowSum 0
+avg 0 ( 2 )
+EXIT _fireFlowEventIfNeeded 2
+appending artificial sample
+_fireFlowEventIfNeeded 3
+1459193252114 0
+1459193254410 0
+flowSum 0
+1459193254410 0
+1459193256107 0
+flowSum 0
+avg 0 ( 2 )
+EXIT _fireFlowEventIfNeeded 2
+appending artificial sample
+_fireFlowEventIfNeeded 3
+1459193254410 0
+1459193256107 0
+flowSum 0
+1459193256107 0
+1459193257769 0
+flowSum 0
+avg 0 ( 2 )
+EXIT _fireFlowEventIfNeeded 2
+scales rx: >      0.001 <, stable= False
+_fireFlowEventIfNeeded 3
+1459193256107 0
+1459193257769 0
+flowSum 0
+1459193257769 0
+1459193259239 1
+flowSum 680
+avg 0 ( 2 )
+EXIT _fireFlowEventIfNeeded 2
+scales rx: >      0.002 <, stable= True
+_fireFlowEventIfNeeded 3
+1459193257769 0
+1459193259239 1
+flowSum 680
+1459193259239 1
+1459193260052 2
+flowSum 1910
+avg 1 ( 2 )
+1459193257769 0
+1459193259239 1
+flowSum 680
+1459193259239 1
+1459193260052 2
+flowSum 1910
+avg 1 ( 2 )
+EXIT _fireFlowEventIfNeeded 2
+scales rx: >      0.001 <, stable= True
+appending artificial sample_fireFlowEventIfNeeded
+ _fireFlowEventIfNeeded3 
+41459193259239
+ 14591932592391 
+11459193260052
+ 14591932600522 
+2flowSum
+ flowSum1230 
+12301459193260052
+ 14591932600522 
+21459193261512
+ 14591932615121 
+1flowSum
+ flowSum545 
+5451459193261512
+ 14591932615121 
+11459193261497
+ 14591932614972 
+2flowSum
+ flowSum-66122 
+-66122avg
+ avg-21  -21(  (3  3) 
+)1459193259239
+ 14591932592391 
+11459193260052
+ 14591932600522 
+2flowSum
+ flowSum1230 
+12301459193260052
+ 14591932600522 
+21459193261512
+ 14591932615121 
+1flowSum
+ flowSum545 
+5451459193261512
+ 14591932615121 
+11459193261497
+ 14591932614972 
+2flowSum
+ flowSum-66122 
+-66122avg
+ avg-21  -21(  (3  3) 
+)EXIT _fireFlowEventIfNeeded
+ EXIT _fireFlowEventIfNeeded2 
+2
+_fireFlowEventIfNeeded 3
+1459193261512 1
+1459193261497 2
+flowSum -66667
+1459193261497 2
+1459193264644 0
+flowSum -67303
+avg -33 ( 2 )
+1459193261512 1
+1459193261497 2
+flowSum -66667
+1459193261497 2
+1459193264644 0
+flowSum -67303
+avg -33 ( 2 )
+EXIT _fireFlowEventIfNeeded 2
+scales rx: >      0.001 <, stable= False
+_fireFlowEventIfNeeded 3
+1459193261497 2
+1459193264644 0
+flowSum -636
+1459193264644 0
+1459193266046 1
+flowSum 77
+avg 0 ( 2 )
+1459193261497 2
+1459193264644 0
+flowSum -636
+1459193264644 0
+1459193266046 1
+flowSum 77
+avg 0 ( 2 )
+EXIT _fireFlowEventIfNeeded 2
+scales rx: >      0.001 <, stable= True
+_fireFlowEventIfNeeded 3
+1459193264644 0
+1459193266046 1
+flowSum 713
+1459193266046 1
+1459193267415 1
+flowSum 713
+avg 0 ( 2 )
+EXIT _fireFlowEventIfNeeded 2
+scales rx: >      0.006 <, stable= False
+_fireFlowEventIfNeeded 3
+1459193266046 1
+1459193267415 1
+flowSum 0
+1459193267415 1
+1459193268294 6
+flowSum 5688
+avg 3 ( 2 )
+1459193266046 1
+1459193267415 1
+flowSum 0
+1459193267415 1
+1459193268294 6
+flowSum 5688
+avg 3 ( 2 )
+EXIT _fireFlowEventIfNeeded 2
+appending artificial samplescales rx: >
+ _fireFlowEventIfNeeded     0.006  3<, stable=
+ 1459193267415True 
+1_fireFlowEventIfNeeded
+ 14591932682944 
+61459193267415
+ flowSum1 
+56881459193268294
+ 14591932682946 
+6flowSum
+ 14591932695055688 
+61459193268294
+ flowSum6 
+56881459193269505
+ avg6 
+3flowSum  (5688 
+21459193269505  )6
+
+EXIT _fireFlowEventIfNeeded1459193269726  26
+
+flowSum 5688
+avg 2 ( 3 )
+1459193269505 6
+1459193269726 6
+flowSum 0
+avg 0 ( 1 )
+EXIT _fireFlowEventIfNeeded 2
+scales rx: >      0.010 <, stable= False
+_fireFlowEventIfNeeded 3
+1459193269505 6
+1459193269726 6
+flowSum 0
+1459193269726 6
+1459193271455 10
+flowSum 2313
+avg 1 ( 2 )
+1459193269505 6
+1459193269726 6
+flowSum 0
+1459193269726 6
+1459193271455 10
+flowSum 2313
+avg 1 ( 2 )
+EXIT _fireFlowEventIfNeeded 2
+appending artificial samplescales rx: >
+ _fireFlowEventIfNeeded     0.011  3<, stable=
+ 1459193269726False 
+6_fireFlowEventIfNeeded
+ 14591932714554 
+101459193269726
+ flowSum6 
+23131459193271455
+ 145919327145510 
+10flowSum
+ 14591932726692313 
+101459193271455
+ flowSum10 
+23131459193272669
+ avg10 
+1flowSum  (2313 
+21459193272669  )10
+
+EXIT _fireFlowEventIfNeeded1459193272901  211
+
+flowSum 6623
+avg 2 ( 3 )
+1459193272669 10
+1459193272901 11
+flowSum 4310
+avg 4 ( 1 )
+EXIT _fireFlowEventIfNeeded 2
+scales rx: >      0.012 <, stable= False
+_fireFlowEventIfNeeded 3
+1459193272669 10
+1459193272901 11
+flowSum 4310
+1459193272901 11
+1459193274747 12
+flowSum 4851
+avg 2 ( 2 )
+EXIT _fireFlowEventIfNeeded 2
+scales rx: >      0.012 <, stable= True
+_fireFlowEventIfNeeded 3
+1459193272901 11
+1459193274747 12
+flowSum 541
+1459193274747 12
+1459193275480 12
+flowSum 541
+avg 0 ( 2 )
+1459193272901 11
+1459193274747 12
+flowSum 541
+1459193274747 12
+1459193275480 12
+flowSum 541
+avg 0 ( 2 )
+EXIT _fireFlowEventIfNeeded 2
+scales rx: >      0.013 <, stable= True
+_fireFlowEventIfNeeded 3
+1459193274747 12
+1459193275480 12
+flowSum 0
+1459193275480 12
+1459193276712 13
+flowSum 811
+avg 0 ( 2 )
+EXIT _fireFlowEventIfNeeded 2
+scales rx: >      0.014 <, stable= True
+_fireFlowEventIfNeeded 3
+1459193275480 12
+1459193276712 13
+flowSum 811
+1459193276712 13
+1459193277629 14
+flowSum 1901
+avg 1 ( 2 )
+1459193275480 12
+1459193276712 13
+flowSum 811
+1459193276712 13
+1459193277629 14
+flowSum 1901
+avg 1 ( 2 )
+EXIT _fireFlowEventIfNeeded 2
+scales rx: >appending artificial sample 
+     0.015_fireFlowEventIfNeeded  <, stable=3 
+True1459193276712
+ _fireFlowEventIfNeeded13 
+41459193277629
+ 145919327671214 
+13flowSum
+ 14591932776291090 
+141459193277629
+ flowSum14 
+10901459193279030
+ 145919327762914 
+14flowSum
+ 14591932790301090 
+14avg
+ flowSum1  1090(
+ 14591932790302  14)
+
+1459193279274EXIT _fireFlowEventIfNeeded  152
+
+flowSum 5188
+avg 2 ( 3 )
+1459193279030 14
+1459193279274 15
+flowSum 4098
+avg 4 ( 1 )
+EXIT _fireFlowEventIfNeeded 2
+scales rx: >      0.016 <, stable= True
+_fireFlowEventIfNeeded 3
+1459193279030 14
+1459193279274 15
+flowSum 4098
+1459193279274 15
+1459193281098 16
+flowSum 4646
+avg 2 ( 2 )
+EXIT _fireFlowEventIfNeeded 2
+scales rx: >      0.016, <, stable= True
+_fireFlowEventIfNeeded 3
+1459193279274 15
+1459193281098 16
+flowSum 548
+1459193281098 16
+1459193281949 0
+flowSum -18254
+avg -8 ( 2 )
+1459193279274 15
+1459193281098 16
+flowSum 548
+1459193281098 16
+1459193281949 0
+flowSum -18254
+avg -8 ( 2 )
+EXIT _fireFlowEventIfNeeded 2
+scales rx: >      0.016 <, stable= True
+appending artificial sample_fireFlowEventIfNeeded
+ _fireFlowEventIfNeeded3 
+41459193281098
+ 145919328109816 
+161459193281949
+ 14591932819490 
+0flowSum
+ flowSum-18802 
+-188021459193281949
+ 14591932819490 
+01459193283255
+ 145919328325516 
+16flowSum
+ flowSum-6551 
+-65511459193283255
+ 145919328325516 
+161459193283239
+ 14591932832390 
+0flowSum
+ flowSum993449 
+993449avg
+ avg331  331(  (3  3) 
+)1459193281098
+ 145919328109816 
+161459193281949
+ 14591932819490 
+0flowSum
+ flowSum-18802 
+-188021459193281949
+ 14591932819490 
+01459193283255
+ 145919328325516 
+16flowSum
+ flowSum-6551 
+-65511459193283255
+ 145919328325516 
+161459193283239
+ 14591932832390 
+0flowSum
+ flowSum993449 
+993449avg
+ avg331  331(  (3  3) 
+)EXIT _fireFlowEventIfNeeded
+ EXIT _fireFlowEventIfNeeded2 
+2
+scales rx: >  <, stable= True
+_fireFlowEventIfNeeded 3
+1459193283255 16
+1459193283239 0
+flowSum 1000000
+1459193283239 0
+1459193286182 0
+flowSum 1000000
+avg 500 ( 2 )
+1459193283255 16
+1459193283239 0
+flowSum 1000000
+1459193283239 0
+1459193286182 0
+flowSum 1000000
+avg 500 ( 2 )
+EXIT _fireFlowEventIfNeeded 2
+scales rx: >      0.037 <, stable= False
+_fireFlowEventIfNeeded 3
+1459193283239 0
+1459193286182 0
+flowSum 0
+1459193286182 0
+1459193287552 37
+flowSum 27007
+avg 14 ( 2 )
+1459193283239 0
+1459193286182 0
+flowSum 0
+1459193286182 0
+1459193287552 37
+flowSum 27007
+avg 14 ( 2 )
+EXIT _fireFlowEventIfNeeded 2
+scales rx: >      0.038 <, stable= False
+_fireFlowEventIfNeeded 3
+1459193286182 0
+1459193287552 37
+flowSum 27007
+1459193287552 37
+1459193288874 38
+flowSum 27763
+avg 14 ( 2 )
+EXIT _fireFlowEventIfNeeded 2
+scales rx: >      0.039 <, stable= False
+_fireFlowEventIfNeeded 3
+1459193287552 37
+1459193288874 38
+flowSum 756
+1459193288874 38
+1459193289623 39
+flowSum 2091
+avg 1 ( 2 )
+1459193287552 37
+1459193288874 38
+flowSum 756
+1459193288874 38
+1459193289623 39
+flowSum 2091
+avg 1 ( 2 )
+EXIT _fireFlowEventIfNeeded 2
+scales rx: >      0.040 <, stable= False
+_fireFlowEventIfNeeded 3
+1459193288874 38
+1459193289623 39
+flowSum 1335
+1459193289623 39
+1459193290862 40
+flowSum 2142
+avg 1 ( 2 )
+EXIT _fireFlowEventIfNeeded 2
+scales rx: >      0.041 <, stable= False
+_fireFlowEventIfNeeded 3
+1459193289623 39
+1459193290862 40
+flowSum 807
+1459193290862 40
+1459193291609 41
+flowSum 2145
+avg 1 ( 2 )
+EXIT _fireFlowEventIfNeeded 2
+scales rx: >      0.042 <, stable= False
+_fireFlowEventIfNeeded 3
+1459193290862 40
+1459193291609 41
+flowSum 1338
+1459193291609 41
+1459193292344 42
+flowSum 2698
+avg 1 ( 2 )
+EXIT _fireFlowEventIfNeeded 2
+scales rx: >      0.043 <, stable= False
+_fireFlowEventIfNeeded 3
+1459193291609 41
+1459193292344 42
+flowSum 1360
+1459193292344 42
+1459193293173 43
+flowSum 2566
+avg 1 ( 2 )
+EXIT _fireFlowEventIfNeeded 2
+scales rx: >      0.044 <, stable= False
+_fireFlowEventIfNeeded 3
+1459193292344 42
+1459193293173 43
+flowSum 1206
+1459193293173 43
+1459193293942 44
+flowSum 2506
+avg 1 ( 2 )
+EXIT _fireFlowEventIfNeeded 2
+scales rx: >      0.045 <, stable= False
+_fireFlowEventIfNeeded 3
+1459193293173 43
+1459193293942 44
+flowSum 1300
+1459193293942 44
+1459193294689 45
+flowSum 2638
+avg 1 ( 2 )
+EXIT _fireFlowEventIfNeeded 2
+scales rx: >      0.046 <, stable= False
+_fireFlowEventIfNeeded 3
+1459193293942 44
+1459193294689 45
+flowSum 1338
+1459193294689 45
+1459193295458 46
+flowSum 2638
+avg 1 ( 2 )
+EXIT _fireFlowEventIfNeeded 2
+scales rx: >      0.047 <, stable= False
+_fireFlowEventIfNeeded 3
+1459193294689 45
+1459193295458 46
+flowSum 1300
+1459193295458 46
+1459193296216 47
+flowSum 2619
+avg 1 ( 2 )
+EXIT _fireFlowEventIfNeeded 2
+scales rx: >      0.048 <, stable= False
+_fireFlowEventIfNeeded 3
+1459193295458 46
+1459193296216 47
+flowSum 1319
+1459193296216 47
+1459193296965 48
+flowSum 2654
+avg 1 ( 2 )
+EXIT _fireFlowEventIfNeeded 2
+scales rx: >      0.049 <, stable= False
+_fireFlowEventIfNeeded 3
+1459193296216 47
+1459193296965 48
+flowSum 1335
+1459193296965 48
+1459193297745 49
+flowSum 2617
+avg 1 ( 2 )
+EXIT _fireFlowEventIfNeeded 2
+scales rx: >      0.050 <, stable= False
+_fireFlowEventIfNeeded 3
+1459193296965 48
+1459193297745 49
+flowSum 1282
+1459193297745 49
+1459193298593 50
+flowSum 2461
+avg 1 ( 2 )
+EXIT _fireFlowEventIfNeeded 2
+scales rx: >      0.051 <, stable= False
+_fireFlowEventIfNeeded 3
+1459193297745 49
+1459193298593 50
+flowSum 1179
+1459193298593 50
+1459193299362 51
+flowSum 2479
+avg 1 ( 2 )
+EXIT _fireFlowEventIfNeeded 2
+scales rx: >      0.052 <, stable= False
+_fireFlowEventIfNeeded 3
+1459193298593 50
+1459193299362 51
+flowSum 1300
+1459193299362 51
+1459193300106 52
+flowSum 2644
+avg 1 ( 2 )
+EXIT _fireFlowEventIfNeeded 2
+scales rx: >      0.053 <, stable= False
+_fireFlowEventIfNeeded 3
+1459193299362 51
+1459193300106 52
+flowSum 1344
+1459193300106 52
+1459193300842 53
+flowSum 2702
+avg 1 ( 2 )
+EXIT _fireFlowEventIfNeeded 2
+scales rx: >      0.054 <, stable= False
+_fireFlowEventIfNeeded 3
+1459193300106 52
+1459193300842 53
+flowSum 1358
+1459193300842 53
+1459193301580 54
+flowSum 2713
+avg 1 ( 2 )
+EXIT _fireFlowEventIfNeeded 2
+scales rx: >      0.055 <, stable= False
+_fireFlowEventIfNeeded 3
+1459193300842 53
+1459193301580 54
+flowSum 1355
+1459193301580 54
+1459193302342 55
+flowSum 2667
+avg 1 ( 2 )
+EXIT _fireFlowEventIfNeeded 2
+scales rx: >      0.056 <, stable= False
+_fireFlowEventIfNeeded 3
+1459193301580 54
+1459193302342 55
+flowSum 1312
+1459193302342 55
+1459193303167 56
+flowSum 2524
+avg 1 ( 2 )
+EXIT _fireFlowEventIfNeeded 2
+scales rx: >      0.057 <, stable= False
+_fireFlowEventIfNeeded 3
+1459193302342 55
+1459193303167 56
+flowSum 1212
+1459193303167 56
+1459193304014 57
+flowSum 2392
+avg 1 ( 2 )
+EXIT _fireFlowEventIfNeeded 2
+scales rx: >      0.058 <, stable= False
+_fireFlowEventIfNeeded 3
+1459193303167 56
+1459193304014 57
+flowSum 1180
+1459193304014 57
+1459193304811 58
+flowSum 2434
+avg 1 ( 2 )
+EXIT _fireFlowEventIfNeeded 2
+scales rx: >      0.059 <, stable= False
+_fireFlowEventIfNeeded 3
+1459193304014 57
+1459193304811 58
+flowSum 1254
+1459193304811 58
+1459193305615 59
+flowSum 2497
+avg 1 ( 2 )
+EXIT _fireFlowEventIfNeeded 2
+scales rx: >      0.060 <, stable= False
+_fireFlowEventIfNeeded 3
+1459193304811 58
+1459193305615 59
+flowSum 1243
+1459193305615 59
+1459193306388 60
+flowSum 2536
+avg 1 ( 2 )
+EXIT _fireFlowEventIfNeeded 2
+scales rx: >      0.062 <, stable= False
+_fireFlowEventIfNeeded 3
+1459193305615 59
+1459193306388 60
+flowSum 1293
+1459193306388 60
+1459193307131 62
+flowSum 3984
+avg 2 ( 2 )
+1459193305615 59
+1459193306388 60
+flowSum 1293
+1459193306388 60
+1459193307131 62
+flowSum 3984
+avg 2 ( 2 )
+EXIT _fireFlowEventIfNeeded 2
+scales rx: >      0.064 <, stable= False
+_fireFlowEventIfNeeded 3
+1459193306388 60
+1459193307131 62
+flowSum 2691
+1459193307131 62
+1459193308433 64
+flowSum 4227
+avg 2 ( 2 )
+EXIT _fireFlowEventIfNeeded 2
+scales rx: >      0.066 <, stable= False
+_fireFlowEventIfNeeded 3
+1459193307131 62
+1459193308433 64
+flowSum 1536
+1459193308433 64
+1459193309240 66
+flowSum 4014
+avg 2 ( 2 )
+EXIT _fireFlowEventIfNeeded 2
+scales rx: >      0.068 <, stable= False
+_fireFlowEventIfNeeded 3
+1459193308433 64
+1459193309240 66
+flowSum 2478
+1459193309240 66
+1459193310023 68
+flowSum 5032
+avg 3 ( 2 )
+1459193308433 64
+1459193309240 66
+flowSum 2478
+1459193309240 66
+1459193310023 68
+flowSum 5032
+avg 3 ( 2 appending artificial sample)
+
+_fireFlowEventIfNeededEXIT _fireFlowEventIfNeeded  42
+
+EXIT _fireFlowEventIfNeeded 2scales rx: >
+      0.070 <, stable= False
+_fireFlowEventIfNeeded 3
+1459193310023 68
+1459193311066 68
+flowSum 0
+1459193311066 68
+1459193311434 70
+flowSum 5434
+avg 3 ( 2 )
+EXIT _fireFlowEventIfNeeded 2
+scales rx: >      0.072 <, stable= False
+_fireFlowEventIfNeeded 3
+1459193311066 68
+1459193311434 70
+flowSum 5434
+1459193311434 70
+1459193312215 72
+flowSum 7994
+avg 4 ( 2 )
+1459193311066 68
+1459193311434 70
+flowSum 5434
+1459193311434 70
+1459193312215 72
+flowSum 7994
+avg 4 ( 2 )
+EXIT _fireFlowEventIfNeeded appending artificial sample2
+
+_fireFlowEventIfNeededscales rx: >  3     0.073
+ 1459193311434<, stable=  70False
+
+1459193312215_fireFlowEventIfNeeded  724
+
+flowSum1459193311434  256070
+
+14591933122151459193312215  7272
+
+1459193313331flowSum  722560
+
+flowSum1459193312215  256072
+
+avg1459193313331  172 
+(flowSum  22560 
+)1459193313331
+ 145919331143472 
+701459193313682
+ 145919331221573 
+72flowSum
+ flowSum5409 
+2560avg
+ 14591933122152  72(
+ 14591933133313  72)
+
+flowSum1459193311434  256070
+
+14591933133311459193312215  7272
+
+1459193313682flowSum  732560
+
+flowSum1459193312215  540972
+
+avg1459193313331  272 
+(flowSum  32560 
+)1459193313331
+ EXIT _fireFlowEventIfNeeded72 
+21459193313682
+ 73
+flowSum 5409
+avg 2 ( 3 )
+EXIT _fireFlowEventIfNeeded 2
+scales rx: >      0.074 <, stable= False
+_fireFlowEventIfNeeded 3
+1459193313331 72
+1459193313682 73
+flowSum 2849
+1459193313682 73
+1459193316254 74
+flowSum 3237
+avg 2 ( 2 )
+EXIT _fireFlowEventIfNeeded 2
+scales rx: >      0.075 <, stable= False
+_fireFlowEventIfNeeded 3
+1459193313682 73
+1459193316254 74
+flowSum 388
+1459193316254 74
+1459193316978 75
+flowSum 1769
+avg 1 ( 2 )
+1459193313682 73
+1459193316254 74
+flowSum 388
+1459193316254 74
+1459193316978 75
+flowSum 1769
+avg 1 ( 2 )
+EXIT _fireFlowEventIfNeeded 2
+scales rx: >      0.076 <, stable= False
+_fireFlowEventIfNeeded 3
+1459193316254 74
+1459193316978 75
+flowSum 1381
+1459193316978 75
+1459193318248 76
+flowSum 2168
+avg 1 ( 2 )
+EXIT _fireFlowEventIfNeeded 2
+scales rx: >      0.077 <, stable= False
+_fireFlowEventIfNeeded 3
+1459193316978 75
+1459193318248 76
+flowSum 787
+1459193318248 76
+1459193319038 77
+flowSum 2052
+avg 1 ( 2 )
+EXIT _fireFlowEventIfNeeded 2
+scales rx: >      0.078 <, stable= False
+_fireFlowEventIfNeeded 3
+1459193318248 76
+1459193319038 77
+flowSum 1265
+1459193319038 77
+1459193319769 78
+flowSum 2632
+avg 1 ( 2 )
+EXIT _fireFlowEventIfNeeded 2
+scales rx: >      0.079 <, stable= False
+_fireFlowEventIfNeeded 3
+1459193319038 77
+1459193319769 78
+flowSum 1367
+1459193319769 78
+1459193320522 79
+flowSum 2695
+avg 1 ( 2 )
+EXIT _fireFlowEventIfNeeded 2
+scales rx: >      0.080 <, stable= False
+_fireFlowEventIfNeeded 3
+1459193319769 78
+1459193320522 79
+flowSum 1328
+1459193320522 79
+1459193321278 80
+flowSum 2650
+avg 1 ( 2 )
+EXIT _fireFlowEventIfNeeded 2
+scales rx: >      0.081 <, stable= False
+_fireFlowEventIfNeeded 3
+1459193320522 79
+1459193321278 80
+flowSum 1322
+1459193321278 80
+1459193322005 81
+flowSum 2697
+avg 1 ( 2 )
+EXIT _fireFlowEventIfNeeded 2
+scales rx: >      0.083 <, stable= False
+_fireFlowEventIfNeeded 3
+1459193321278 80
+1459193322005 81
+flowSum 1375
+1459193322005 81
+1459193322745 83
+flowSum 4077
+avg 2 ( 2 )
+1459193321278 80
+1459193322005 81
+flowSum 1375
+1459193322005 81
+1459193322745 83
+flowSum 4077
+avg 2 ( 2 appending artificial sample)
+
+_fireFlowEventIfNeededEXIT _fireFlowEventIfNeeded  42
+
+EXIT _fireFlowEventIfNeeded 2scales rx: >
+      0.085 <, stable= False
+_fireFlowEventIfNeeded 3
+1459193322745 83
+1459193323830 83
+flowSum 0
+1459193323830 83
+1459193324173 85
+flowSum 5830
+avg 3 ( 2 )
+1459193322745 83
+1459193323830 83
+flowSum 0
+1459193323830 83
+1459193324173 85
+flowSum 5830
+avg 3 ( 2 )
+EXIT _fireFlowEventIfNeeded 2
+scales rx: >      0.087 <, stable= False
+_fireFlowEventIfNeeded 3
+1459193323830 83
+1459193324173 85
+flowSum 5830
+1459193324173 85
+1459193325464 87
+flowSum 7379
+avg 4 ( 2 )
+1459193323830 83
+1459193324173 85
+flowSum 5830
+1459193324173 85
+1459193325464 87
+flowSum 7379
+avg 4 ( 2 )
+EXIT _fireFlowEventIfNeeded 2
+scales rx: >      0.087, <, stable= False
+_fireFlowEventIfNeeded 3
+1459193324173 85
+1459193325464 87
+flowSum 1549
+1459193325464 87
+1459193326748 0
+flowSum -66209
+avg -32 ( 2 )
+1459193324173 85
+1459193325464 87
+flowSum 1549
+1459193325464 87
+1459193326748 0
+flowSum -66209
+avg -32 ( 2 )
+EXIT _fireFlowEventIfNeeded 2
+scales rx: >      0.087 <, stable= Falseappending artificial sample
+
+_fireFlowEventIfNeeded_fireFlowEventIfNeeded  34
+
+14591933254641459193325464  8787
+
+14591933267481459193326748  00
+
+flowSumflowSum  -67758-67758
+
+14591933267481459193326748  00
+
+14591933281281459193328128  8787
+
+flowSumflowSum  -4715-4715
+
+14591933281281459193328128  8787
+
+14591933280751459193328075  00
+
+flowSumflowSum  16367941636794
+
+avgavg  546546  ((  33  ))
+
+14591933254641459193325464  8787
+
+14591933267481459193326748  00
+
+flowSumflowSum  -67758-67758
+
+14591933267481459193326748  00
+
+14591933281281459193328128  8787
+
+flowSumflowSum  -4715-4715
+
+14591933281281459193328128  8787
+
+14591933280751459193328075  00
+
+flowSumflowSum  16367941636794
+
+avgavg  546546  ((  33  ))
+
+EXIT _fireFlowEventIfNeededEXIT _fireFlowEventIfNeeded  22
+
+scales rx: >      0.089 <, stable= False
+_fireFlowEventIfNeeded 3
+1459193328128 87
+1459193328075 0
+flowSum 1641509
+1459193328075 0
+1459193331123 89
+flowSum 1670708
+avg 835 ( 2 )
+1459193328128 87
+1459193328075 0
+flowSum 1641509
+1459193328075 0
+1459193331123 89
+flowSum 1670708
+avg 835 ( 2 )
+EXIT _fireFlowEventIfNeeded 2
+scales rx: >      0.090 <, stable= False
+_fireFlowEventIfNeeded 3
+1459193328075 0
+1459193331123 89
+flowSum 29199
+1459193331123 89
+1459193332509 90
+flowSum 29920
+avg 15 ( 2 )
+1459193328075 0
+1459193331123 89
+flowSum 29199
+1459193331123 89
+1459193332509 90
+flowSum 29920
+avg 15 ( 2 )
+EXIT _fireFlowEventIfNeeded 2
+scales rx: >    220 <, stable= False
+_fireFlowEventIfNeeded 3
+1459193331123 89
+1459193332509 90
+flowSum 721
+1459193332509 90
+1459193333868 220000
+flowSum 161818233
+avg 80909 ( 2 )
+1459193331123 89
+1459193332509 90
+flowSum 721
+1459193332509 90
+1459193333868 220000
+flowSum 161818233
+avg 80909 ( 2 )
+EXIT _fireFlowEventIfNeeded 2
+appending artificial samplescales rx: >
+ _fireFlowEventIfNeeded     0.220  3<, stable=
+ 1459193332509True 
+90_fireFlowEventIfNeeded
+ 14591933338684 
+2200001459193332509
+ flowSum90 
+1618175121459193333868
+ 1459193333868220000 
+220000flowSum
+ 1459193334997161817512 
+2200001459193333868
+ flowSum220000 
+1618175121459193334997
+ avg220000 
+80909flowSum  (161817512 
+21459193334997  )220000
+
+EXIT _fireFlowEventIfNeeded1459193335211  2220
+
+flowSum -865191834
+avg -288396 ( 3 )
+1459193334997 220000
+1459193335211 220
+flowSum -1027009346
+avg -1027008 ( 1 )
+EXIT _fireFlowEventIfNeeded 2
+appending artificial sample
+_fireFlowEventIfNeeded 3
+1459193334997 220000
+1459193335211 220
+flowSum -1027009346scales rx: >
+ 1459193335211     0.22 0  220<, stable=
+ 1459193337204True 
+220_fireFlowEventIfNeeded
+ flowSum4 
+-10270093461459193334997
+ avg220000 
+-5135041459193335211  (220 
+2flowSum  )-1027009346
+
+14591933349971459193335211  220000220
+
+14591933352111459193337204  220220
+
+flowSumflowSum  -1027009346-1027009346
+
+14591933352111459193337204  220220
+
+14591933372041459193337701  2200
+
+flowSumflowSum  -1027009346-1027452002
+
+1459193337204avg  220-342483
+ 1459193337701(  03
+ flowSum) 
+-10274520021459193334997
+ avg220000 
+-3424831459193335211  (220 
+3flowSum  )-1027009346
+
+EXIT _fireFlowEventIfNeededException in thread Thread-2:
+Traceback (most recent call last):
+  File "/home/pi/godisp/scales.py", line 99, in _processRxData
+    Publisher.dispatch(self, "WeightChanged", [int(float(rx[4:-5]) * 1000.0 + 0.5), stable])
+ValueError: could not convert string to float: '     0.22\x000'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.2/threading.py", line 740, in _bootstrap_inner
+    self.run()
+  File "/home/pi/godisp/scales.py", line 68, in run
+    self._processRxData(rx)
+  File "/home/pi/godisp/scales.py", line 101, in _processRxData
+    Publisher.dispatch(self, "WeightChanged", [0, True])
+  File "/home/pi/godisp/Util/Publisher.py", line 21, in dispatch
+    callback(message)
+  File "/home/pi/godisp/DispensingControl.py", line 51, in onWeightChanged
+    synchronized(self._internalOnWeightChanged(weightAndState))
+  File "/home/pi/godisp/DispensingControl.py", line 56, in _internalOnWeightChanged
+    self._fireFlowEventIfNeeded()
+  File "/home/pi/godisp/DispensingControl.py", line 63, in _fireFlowEventIfNeeded
+    Publisher.dispatch(self, "FlowChanged", self._calculateFlow())
+  File "/home/pi/godisp/DispensingControl.py", line 74, in _calculateFlow
+    ts1, w1 = self.Samples[i]
+IndexError: list index out of range
+
+ 2
+appending artificial sample
+_fireFlowEventIfNeeded 3
+1459193337204 220
+1459193337701 0
+flowSum -442656
+1459193337701 0
+1459193340580 0
+flowSum -442656
+avg -220 ( 2 )
+1459193337204 220
+1459193337701 0
+flowSum -442656
+1459193337701 0
+1459193340580 0
+flowSum -442656
+avg -220 ( 2 )
+EXIT _fireFlowEventIfNeeded 2
+appending artificial sample
+_fireFlowEventIfNeeded 3
+1459193337701 0
+1459193340580 0
+flowSum 0
+1459193340580 0
+1459193342820 0
+flowSum 0
+avg 0 ( 2 )
+1459193337701 0
+1459193340580 0
+flowSum 0
+1459193340580 0
+1459193342820 0
+flowSum 0
+avg 0 ( 2 )
+EXIT _fireFlowEventIfNeeded 2
+appending artificial sample
+_fireFlowEventIfNeeded 3
+1459193340580 0
+1459193342820 0
+flowSum 0
+1459193342820 0
+1459193345117 0
+flowSum 0
+avg 0 ( 2 )
+EXIT _fireFlowEventIfNeeded 2
+appending artificial sample
+_fireFlowEventIfNeeded 3
+1459193342820 0
+1459193345117 0
+flowSum 0
+1459193345117 0
+1459193346765 0
+flowSum 0
+avg 0 ( 2 )
+EXIT _fireFlowEventIfNeeded 2
+appending artificial sample
+_fireFlowEventIfNeeded 3
+1459193345117 0
+1459193346765 0
+flowSum 0
+1459193346765 0
+1459193348443 0
+flowSum 0
+avg 0 ( 2 )
+before joinEXIT _fireFlowEventIfNeeded
+ 2
+ready
+Traceback (most recent call last):
+  File "/home/pi/godisp/main.py", line 207, in <module>
+    main()
+  File "/home/pi/godisp/main.py", line 202, in main
+    root.mainloop()
+  File "/usr/lib/python3.2/tkinter/__init__.py", line 1027, in mainloop
+    self.tk.mainloop(n)
+  File "/usr/lib/python3.2/tkinter/__init__.py", line 1428, in __call__
+    raise SystemExit(msg)
+SystemExit: 1
+>>> appending artificial sample
+_fireFlowEventIfNeeded 3
+1459193346765 0
+1459193348443 0
+flowSum 0
+1459193348443 0
+1459193350156 0
+flowSum 0
+avg 0 ( 2 )
+EXIT _fireFlowEventIfNeeded 2
+appending artificial sample
+_fireFlowEventIfNeeded 3
+1459193348443 0
+1459193350156 0
+flowSum 0
+1459193350156 0
+1459193351889 0
+flowSum 0
+avg 0 ( 2 )
+EXIT _fireFlowEventIfNeeded 2
+appending artificial sample
+_fireFlowEventIfNeeded 3
+1459193350156 0
+1459193351889 0
+flowSum 0
+1459193351889 0
+1459193353563 0
+flowSum 0
+avg 0 ( 2 )
+EXIT _fireFlowEventIfNeeded 2
+================================ RESTART ================================
+>>> 
