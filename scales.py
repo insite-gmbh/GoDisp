@@ -1,5 +1,9 @@
 #!/usr/bin/python
 # coding=utf-8
+# pylint: disable=C0103
+# pylint: disable=C0111
+# pylint: disable=W0621
+# pylint: disable=W0312
 import queue
 import threading
 import numpy as np
@@ -95,7 +99,7 @@ class Scales (threading.Thread, Publisher):
 		stable = rx.startswith("ST")
 		if stable or rx.startswith("US"):
 			try:
-				print("scales rx: >", rx[4:-5], "<, stable=", stable)
+				#print("scales rx: >", rx[4:-5], "<, stable=", stable)
 				Publisher.dispatch(self, "WeightChanged", [int(float(rx[4:-5]) * 1000.0 + 0.5), stable])
 			except:
 				Publisher.dispatch(self, "WeightChanged", [0, True])

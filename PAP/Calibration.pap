@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FRAME GUID="2FB25471-B62C-4EE6-BD43-F819C095ACF8" FORMAT="0000" APP_VERSION="2.2.0.8" CHECKSUM="9C7800E7590CCC6A">
+  <PROJECT FORMAT="1.00" NAME="Calibration" AUTHOR="Michael" CREATED="2017.03.16 17:27:29" MODIFIED="2017.03.16 21:48:47">
+    <DIAGRAMS>
+      <DIAGRAM FORMAT="1.00" ID="0" NAME="Calibration Mode" CREATED="2017.03.16 17:27:35" MODIFIED="2017.03.16 21:48:47">
+        <LAYOUT FORMAT="1.00" COLUMNS="3" ROWS="14">
+          <ENTRIES>
+            <ENTRY COLUMN="0" ROW="4">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="172">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="6">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="178">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="8">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="166">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="0" ANCHOR="True">
+              <FIGURE SUBTYPE="PapTitle" FORMAT="1.00" ID="0">
+                <TEXT><![CDATA[Calibration Mode]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="1">
+              <FIGURE SUBTYPE="PapStart" FORMAT="1.00" ID="1">
+                <TEXT><![CDATA[Start]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="2">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="199">
+                <TEXT><![CDATA[maxSamples = 40]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="3">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="181">
+                <TEXT><![CDATA[min Samples = 5]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="4">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="154">
+                <TEXT><![CDATA[Collect Samples]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="5">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="158">
+                <TEXT><![CDATA[OnFlowChanged]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="6">
+              <FIGURE SUBTYPE="PapCondition" FORMAT="1.00" ID="176">
+                <TEXT><![CDATA[Samples.length >= minSamples?]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="7">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="160">
+                <TEXT><![CDATA[CheckSlope]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="8">
+              <FIGURE SUBTYPE="PapCondition" FORMAT="1.00" ID="162">
+                <TEXT><![CDATA[Slope within desired Range ?]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="9">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="164">
+                <TEXT><![CDATA[write Average to CSV]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="10">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="186">
+                <TEXT><![CDATA[Next Opening]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="12">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="196">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="13">
+              <FIGURE SUBTYPE="PapEnd" FORMAT="1.00" ID="2">
+                <TEXT><![CDATA[Ende]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="2" ROW="2">
+              <FIGURE SUBTYPE="PapComment" FORMAT="1.00" ID="201">
+                <TEXT><![CDATA[Bei Überschreiten Exception oder einfach Force Average berechnung ?]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="2" ROW="3">
+              <FIGURE SUBTYPE="PapComment" FORMAT="1.00" ID="184">
+                <TEXT><![CDATA[Sollte irgendwie geregelt werden, sonst könnte er nach 2 samples schon weiter gehen]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="2" ROW="4">
+              <FIGURE SUBTYPE="PapComment" FORMAT="1.00" ID="185">
+                <TEXT><![CDATA[sende an Sample Statistics]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="2" ROW="5">
+              <FIGURE SUBTYPE="PapComment" FORMAT="1.00" ID="175">
+                <TEXT><![CDATA[irgend einen Trigger brauchen wir um den Slope Berechnen zu lassen]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="2" ROW="8">
+              <FIGURE SUBTYPE="PapComment" FORMAT="1.00" ID="202">
+                <TEXT><![CDATA[desired Range ist konfigurierbar]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="2" ROW="9">
+              <FIGURE SUBTYPE="PapComment" FORMAT="1.00" ID="203">
+                <TEXT><![CDATA[average aus statistics]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="2" ROW="10">
+              <FIGURE SUBTYPE="PapInput" FORMAT="1.00" ID="190">
+                <TEXT><![CDATA[OnOpeningChanged]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="2" ROW="11">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="193">
+                <TEXT><![CDATA[reset Statistics]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="2" ROW="12">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="194">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+          </ENTRIES>
+        </LAYOUT>
+        <CONNECTIONS>
+          <CONNECTION FORMAT="1.00" ID="159" FROM="158" TO="176" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="156" FROM="154" TO="158" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="161" FROM="160" TO="162" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="163" FROM="162" TO="164" TEXT="yes" />
+          <CONNECTION FORMAT="1.00" ID="165" FROM="164" TO="186" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="167" FROM="162" TO="166" TEXT="no" />
+          <CONNECTION FORMAT="1.00" ID="179" FROM="178" TO="172" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="174" FROM="172" TO="154" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="177" FROM="176" TO="160" TEXT="ja" />
+          <CONNECTION FORMAT="1.00" ID="169" FROM="166" TO="178" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="180" FROM="176" TO="178" TEXT="nein" />
+          <CONNECTION FORMAT="1.00" ID="182" FROM="181" TO="154" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="183" FROM="1" TO="199" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="189" FROM="186" TO="190" TEXT="löst aus" />
+          <CONNECTION FORMAT="1.00" ID="192" FROM="190" TO="193" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="195" FROM="193" TO="194" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="197" FROM="194" TO="196" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="198" FROM="196" TO="2" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="200" FROM="199" TO="181" TEXT="" />
+        </CONNECTIONS>
+      </DIAGRAM>
+    </DIAGRAMS>
+  </PROJECT>
+</FRAME>

@@ -1,21 +1,28 @@
 #!/usr/bin/python
 # coding=utf-8
+
+# pylint: disable=C0103
+# pylint: disable=C0111
+# pylint: disable=W0621
+# pylint: disable=W0312
+
 import queue
 import threading
 from time import sleep
+from Util.Publisher import Publisher
 
 try:
-        import RPi.GPIO as GPIO
+	import RPi.GPIO as GPIO
 except ImportError:
-        import MockGPIO as GPIO
-        
-class Gate (threading.Thread):
-	
+	import MockGPIO as GPIO
+
+class Gate(threading.Thread, Publisher):
+
 	ExitFlag = 0
 	State = 0
-	
-	
+
 	def __init__(self, openingChangedHandler):
+		Publisher.__init__(self, ["OpeningChanged"])
 		threading.Thread.__init__(self)
 		self.step = 5
 		self.dir = 7
@@ -24,8 +31,8 @@ class Gate (threading.Thread):
 		self.maxpos = 200
 		self.curpos = self.maxpos
 		self.stop = 0
-		self.qLock = threading.Lock();
-		self.q = queue.Queue(10);
+		self.qLock = threading.Lock()
+		self.q = queue.Queue(10)
 		self.openingChangedHandler = openingChangedHandler
 		GPIO.setmode(GPIO.BOARD)
 		GPIO.setwarnings(False)
@@ -35,6 +42,9 @@ class Gate (threading.Thread):
 		GPIO.output(self.step, False)
 		GPIO.output(self.dir, True)
 		GPIO.output(self.enable, True)
+
+	def get_position(self):
+		return self._stepsToPercentage(self.curpos)
 
 	def _close(self):
 		self._turn(0.005, self.maxpos, 1, True)
@@ -62,7 +72,7 @@ class Gate (threading.Thread):
 
 		for i in range(0, steps):
 			if (limits) and (((self.curpos + delta) < self.minpos) or ((self.curpos + delta) > self.maxpos)):
-				break;
+				break
 			GPIO.output(self.step, True)
 			sleep(speed)
 			GPIO.output(self.step, False)
@@ -80,12 +90,12 @@ class Gate (threading.Thread):
 				self._processQData(data)
 			self.qLock.release()
 			sleep(0.05)
-	
+
 	def execute(self, cmd):
 		self.qLock.acquire()
 		self.q.put(cmd)
 		self.qLock.release()
-		
+
 	def _processQData(self, data):
 		self.State = 1
 		if data[0] == "O":
@@ -107,6 +117,7 @@ class Gate (threading.Thread):
 				self._up(int(targetPos - self.curpos + 0.5))
 			elif targetPos < self.curpos:
 				self._down(int(self.curpos - targetPos + 0.5))
+			Publisher.dispatch(self, "OpeningChanged", self._stepsToPercentage(self.curpos))
 		else:
 			targetPos = int(self._percentageToSteps(data[0]))
 			if targetPos > self.curpos:
@@ -114,13 +125,13 @@ class Gate (threading.Thread):
 			elif targetPos < self.curpos:
 				self._down(int(self.curpos - targetPos + 0.5))
 		self.State = 0
-		
+
 	def _percentageToSteps(self, percentage):
 		return self.minpos + (((self.maxpos - self.minpos) * percentage) / 100)
-		
+
 	def _stepsToPercentage(self, steps):
 		return int(steps / (self.maxpos - self.minpos) * 100 + 0.5)
-		
+
 	def __del__(self):
 		GPIO.cleanup()
 

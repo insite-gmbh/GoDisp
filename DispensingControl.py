@@ -1,86 +1,68 @@
 #!/usr/bin/python
 # coding=utf-8
+# pylint: disable=C0103
+# pylint: disable=C0111
+# pylint: disable=W0621
+# pylint: disable=W0312
+
+import threading
 import time
 from Util.Publisher import Publisher
-from Util.Synchronization import *
-import threading
+from Util.Synchronization import synchronized, Synchronization
 
 class DispensingControl(Publisher, Synchronization):
 
-	class ForceFlowChange(threading.Thread):
-		def __init__(self, event, parent=None):
-			threading.Thread.__init__(self)
-			self.stopped = event
-			self.parent = parent
-
-		def run(self):
-			while not self.stopped.wait(1.0):
-				self.parent and self.parent.forceFlowChanges()
-
-			
-	CountSamples = 3
-	Samples = []
-	LastFlow = 0
-
-	def __init__(self, scales, gate):
-		Publisher.__init__(self, ["FlowChanged"])
-		self.scales = scales
-		self.gate = gate
-		self.scales.subscribe("WeightChanged", self)
-		Publisher.dispatch(self, "FlowChanged", self.LastFlow)
-		self.stopFlowChangeForcer = threading.Event()
-		self.flowChangeForcer = DispensingControl.ForceFlowChange(self.stopFlowChangeForcer, self)
-		self.flowChangeForcer.start()
-
-	def __del__(self):
-		self.stopFlowChangeForcer.set()
-
-	def forceFlowChanges(self):
-		synchronized(self._internalForceFlowChanges())
+	def __init__(self, dispensingRule, flowControl, scales):
+		Publisher.__init__(self, ["DispensingStarted","DispensingFinished","PercentageReached","DispensingError"])
+		self._dispensingRule = dispensingRule
+		self._FlowControl = flowControl
+		self._scales = scales
+		self._currentWeight = 0
+		self._targetWeight = None
 		
-	def _internalForceFlowChanges(self):
-		if len(self.Samples) > 0:
-			currentTS = int(round(time.time() * 1000))
-			ts, w = self.Samples[len(self.Samples) - 1]
-			if (currentTS - ts) >= 1000:
-				print("appending artificial sample")
-				self.Samples.append([currentTS, w])
-				self._fireFlowEventIfNeeded()
+	def start(self):
+		print("START DISPENSING")
+		self._rumblecounter = 0
+		self._FlowControl.setSampleCount(self._dispensingRule.getSampleCountSetting())
+		self._FlowControl.setIncrement(self._dispensingRule.getIncrementSetting())
+		self._scales.subscribe("WeightChanged", self)
+		self._FlowControl.setTargetFlow(self._dispensingRule.getFlowForWeight(0))
+		self._targetWeight = self._dispensingRule.GetDestinationWeight()
+		self._FlowControl.start()
 		
-	def onWeightChanged(self, weightAndState):
-		synchronized(self._internalOnWeightChanged(weightAndState))
-
-	def _internalOnWeightChanged(self, weightAndState):
-		weight = weightAndState[0]
-		self.Samples.append([int(round(time.time() * 1000)), weight])
-		self._fireFlowEventIfNeeded()
-
-	def _fireFlowEventIfNeeded(self):
-		print("_fireFlowEventIfNeeded", len(self.Samples))
-		if len(self.Samples) >= self.CountSamples:
-			newFlow = self._calculateFlow()
-			if newFlow != self.LastFlow:
-				Publisher.dispatch(self, "FlowChanged", self._calculateFlow())
-				self.LastFlow = newFlow
-			while len(self.Samples) >= self.CountSamples:
-				del self.Samples[0]
-		print("EXIT _fireFlowEventIfNeeded", len(self.Samples))
-		
-	def _calculateFlow(self):
-		count = 0
-		flowSum = 0
-		for i in range(1, len(self.Samples)):
-			ts0, w0 = self.Samples[i - 1]
-			ts1, w1 = self.Samples[i]
-			print(ts0, w0)
-			print(ts1, w1)
-			flowSum += ((w1 - w0) * 1000000) // (ts1 - ts0)
-			print("flowSum", flowSum)
-			count += 1
-		avg = int(flowSum / (count * 1000) + 0.5)
-		print("avg", avg, "(", count, ")")
-		return avg
 	
-
-
-
+	def stop(self):
+		print("STOPPING DISPENSING CONTROL")
+		self._FlowControl.stop()
+		Publisher.dispatch(self, "DispensingFinished", True )
+		self._scales.unsubscribe("WeightChanged", self)
+		Publisher.dispatch(self,"PercentageReached", 100)
+		
+		
+	def onWeightChanged(self,weight):
+		synchronized(self._internalonWeightChanged(weight[0]))
+		
+	def _internalonWeightChanged(self,weight):
+		self._currentWeight = weight
+		if weight < self._targetWeight:
+			if(self._targetWeight - weight > 10):
+				self._FlowControl.setTargetFlow(int(self._dispensingRule.getFlowForWeight(weight)))
+				self.firePercentageEvent(weight)
+			else:
+				self._FlowControl._rumbleintverval = 0
+		else:
+			self.stop()
+			
+	def firePercentageEvent(self,weight):
+		if weight > 0:
+			percentage = 100 / (self._targetWeight / weight);
+			if(percentage % 5 < 1):
+				if percentage < 95:
+					Publisher.dispatch(self,"PercentageReached", percentage)
+				elif percentage < 100:
+					Publisher.dispatch(self,"PercentageReached", percentage)
+				else:
+					Publisher.dispatch(self,"PercentageReached", 100)
+		else:
+			Publisher.dispatch(self,"PercentageReached", 0)
+	

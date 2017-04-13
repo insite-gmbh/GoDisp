@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FRAME GUID="2FB25471-B62C-4EE6-BD43-F819C095ACF8" FORMAT="0000" APP_VERSION="2.2.0.8" CHECKSUM="CC69B08046CF08A2">
+  <PROJECT FORMAT="1.00" NAME="Honig" AUTHOR="Michael" CREATED="2017.02.22 12:32:00" MODIFIED="2017.03.04 18:20:29">
+    <DIAGRAMS>
+      <DIAGRAM FORMAT="1.00" ID="0" NAME="Data Collection" CREATED="2017.02.22 12:32:04" MODIFIED="2017.03.04 18:20:29">
+        <LAYOUT FORMAT="1.00" COLUMNS="3" ROWS="11">
+          <ENTRIES>
+            <ENTRY COLUMN="0" ROW="8">
+              <FIGURE SUBTYPE="PapComment" FORMAT="1.00" ID="138">
+                <TEXT><![CDATA[evtl mit toleranz oder so damit die csv nicht zu groß wird]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="0" ANCHOR="True">
+              <FIGURE SUBTYPE="PapTitle" FORMAT="1.00" ID="0">
+                <TEXT><![CDATA[Data Collection]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="1">
+              <FIGURE SUBTYPE="PapStart" FORMAT="1.00" ID="1">
+                <TEXT><![CDATA[Start]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="2">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="78">
+                <TEXT><![CDATA[On Weight Changed]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="3">
+              <FIGURE SUBTYPE="PapCondition" FORMAT="1.00" ID="80">
+                <TEXT><![CDATA[Stable Weight ?]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="4">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="82">
+                <TEXT><![CDATA[append to weight_data array]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="5">
+              <FIGURE SUBTYPE="PapCondition" FORMAT="1.00" ID="84">
+                <TEXT><![CDATA[weight data array.length == 100 ?]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="6">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="86">
+                <TEXT><![CDATA[calculate flow, save to flow_data array]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="7">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="88">
+                <TEXT><![CDATA[calculate average flow]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="8">
+              <FIGURE SUBTYPE="PapCondition" FORMAT="1.00" ID="105">
+                <TEXT><![CDATA[duplicate data in csv file ?]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="9">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="90">
+                <TEXT><![CDATA[save average flow and gate opening to csv file]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="2" ROW="3">
+              <FIGURE SUBTYPE="PapComment" FORMAT="1.00" ID="111">
+                <TEXT><![CDATA[stabiles gewicht ist nutzlose information bezogen auf durchfluss]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="2" ROW="5">
+              <FIGURE SUBTYPE="PapComment" FORMAT="1.00" ID="112">
+                <TEXT><![CDATA[nach jeweils 100 Gewichtsveränderungen wird der Durchfluss berechnet]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="2" ROW="6">
+              <FIGURE SUBTYPE="PapComment" FORMAT="1.00" ID="113">
+                <TEXT><![CDATA[ermittle die 50 durchflusswerte aus den 100 gewichten (differenz)]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="2" ROW="7">
+              <FIGURE SUBTYPE="PapComment" FORMAT="1.00" ID="114">
+                <TEXT><![CDATA[Durchschnitt aus den 50 durchfluss-werten]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="2" ROW="8">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="126">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="2" ROW="9">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="96">
+                <TEXT><![CDATA[empty flow_data & weight_data arrays]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="2" ROW="10">
+              <FIGURE SUBTYPE="PapEnd" FORMAT="1.00" ID="2">
+                <TEXT><![CDATA[Ende]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+          </ENTRIES>
+        </LAYOUT>
+        <CONNECTIONS>
+          <CONNECTION FORMAT="1.00" ID="81" FROM="80" TO="82" TEXT="no" />
+          <CONNECTION FORMAT="1.00" ID="83" FROM="82" TO="84" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="79" FROM="78" TO="80" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="127" FROM="105" TO="126" TEXT="yes" />
+          <CONNECTION FORMAT="1.00" ID="85" FROM="84" TO="86" TEXT="yes" />
+          <CONNECTION FORMAT="1.00" ID="87" FROM="86" TO="88" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="106" FROM="105" TO="90" TEXT="no" />
+          <CONNECTION FORMAT="1.00" ID="99" FROM="90" TO="96" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="72" FROM="1" TO="78" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="89" FROM="88" TO="105" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="128" FROM="126" TO="96" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="133" FROM="96" TO="2" TEXT="" />
+        </CONNECTIONS>
+      </DIAGRAM>
+    </DIAGRAMS>
+  </PROJECT>
+</FRAME>
